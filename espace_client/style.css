@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(163, 84, 84);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    top:0 ;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    display:flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.container{
+    background-color: #7e4646;
+    flex: 1;
+    height: 100%;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: ease-in-out 0.3s;
+
+}
+
+.container:hover{
+    background-color: rgb(182, 112, 112);
+    flex: 1.03;
+    transition: ease-in-out 0.3s;
+}
+
+.title{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.title:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+
+}
+.title h1{
+    font-size: 250%;
+}
+#nv_projet{
+    background-position-x: 0%;
+}
+
+#suivis_projet{
+    background-position-x: 50%;
+
+}
+
+#moderation_devis{
+    background-position-x: 100%;
+
+}
+#nv_projet, #suivis_projet, #moderation_devis{
+    background-image: url(../media/m-client/people-2594745_1280.jpg);
+    background-size: 300%;
+    background-repeat: no-repeat; 
+
+}
