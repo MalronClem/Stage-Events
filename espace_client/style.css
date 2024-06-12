@@ -34,14 +34,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: ease-in-out 0.3s;
-
-}
-
-.container:hover{
-    background-color: rgb(182, 112, 112);
-    flex: 1.03;
-    transition: ease-in-out 0.3s;
 }
 
 .title{
@@ -50,14 +42,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: ease-in-out 0.3s;
 }
 
 .title:hover{
     cursor: pointer;
-    transform: scale(1.03);
-    transition: ease-in-out 0.3s;
-
 }
 .title h1{
     font-size: 250%;
