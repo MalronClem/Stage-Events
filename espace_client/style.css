@@ -1,4 +1,11 @@
-*{
+@font-face {
+    font-family: 'NomDeVotrePolice';
+    src: url('../font/Oxygen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,26 +13,25 @@
     overflow-x: hidden;
 }
 
-body{
+body {
     background-color: rgb(163, 84, 84);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'NomDeVotrePolice', sans-serif;
 }
 
-main{
-    top:0 ;
+main {
+    top: 0;
     left: 0;
     display: flex;
     flex-direction: row;
-    display:flex;
     position: absolute;
     width: 100%;
     height: 100%;
-    flex-direction: row;
 }
 
-.container{
+.container {
     background-color: #7e4646;
     flex: 1;
     height: 100%;
@@ -36,7 +42,7 @@ main{
     flex-direction: column;
 }
 
-.title{
+.title {
     width: 80%;
     height: 70%;
     display: flex;
@@ -44,28 +50,28 @@ main{
     justify-content: center;
 }
 
-.title:hover{
+.title:hover {
     cursor: pointer;
 }
-.title h1{
+
+.title h1 {
     font-size: 250%;
 }
-#nv_projet{
+
+#nv_projet {
     background-position-x: 0%;
 }
 
-#suivis_projet{
+#suivis_projet {
     background-position-x: 50%;
-
 }
 
-#moderation_devis{
+#moderation_devis {
     background-position-x: 100%;
-
 }
-#nv_projet, #suivis_projet, #moderation_devis{
-    background-image: url(../media/m-client/people-2594745_1280.jpg);
-    background-size: 300%;
-    background-repeat: no-repeat; 
 
+#nv_projet, #suivis_projet, #moderation_devis {
+    background-image: url(../media/m-client/people.jpg);
+    background-size: 300%;
+    background-repeat: no-repeat;
 }
