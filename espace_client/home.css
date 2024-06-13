@@ -63,15 +63,12 @@ main {
 }
 
 #suivis_projet {
-    background-position-x: 50%;
-}
-
-#moderation_devis {
     background-position-x: 100%;
 }
 
+
 #nv_projet, #suivis_projet, #moderation_devis {
     background-image: url(../media/m-client/people.jpg);
-    background-size: 300%;
+    background-size: 200%;
     background-repeat: no-repeat;
 }
