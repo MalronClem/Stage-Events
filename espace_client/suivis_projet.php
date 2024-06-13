@@ -6,7 +6,7 @@
     <title>Suivis Projet</title>
     <link rel="stylesheet" href="suivis.css">
     
-    </head
+</head>
 <body>
 
 </body>
