@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'NomDeVotrePolice';
+    src: url('../font/Oxygen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(163, 84, 84);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'NomDeVotrePolice', sans-serif;
+}
+
+.container_back{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav{
+    position: relative;
+    background-color: rgb(145, 145, 145);
+    width: 14%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo_container{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_container img{
+    width: 40%;
+}
+
+.nav_container{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(109, 109, 109);
+
+}
+.container_front{
+    position: relative;
+    background-color: rgb(221, 221, 221);
+    width: 86%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
