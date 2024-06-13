@@ -1,1 +1,7 @@
-12/06 : -creation des premiers fichierts nécessairtes pour le site, plus cpécifiquement pour la la page d'accueil de l'espace client
+12/06 : creation des premiers fichierts nécessairtes pour le site, plus cpécifiquement pour la la page d'accueil de l'espace client
+13/06 : creation de la page principale pour le "Suivis projet" en partant des visuels fournis. Les svg (icones choisis peuvent à tout moment etre remplacer car ils ne sont pas parfait. Il faut que je trouve un moyen où 
+        lorsque je clique sur une icone ca ne me charge pas une nouvelles pages mais que ca me change juste les données dans mon "container-front". Je dois aussi travailler sur l'implémentation des animations lors que 
+        chargement de la page et de son utilisation.
+        Il faut que quand je ne suis pas connecté de base, lorsque je clique sur "suivis projet" depuis le menu principale ca me redirige vers une page connexion pour ensuite m'amener automatiquement à l'interface de suivis 
+        de projet.
+14/06 : 
