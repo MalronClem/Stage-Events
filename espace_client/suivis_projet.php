@@ -103,7 +103,46 @@
                 <div class="data">
                     <div id="mariages">
                         <div class="left">
-                            <div class="left_top"></div>
+                            <div class="left_top">
+                                <div class="user">
+                                    <div class="user_left">
+                                        <div class="user_left_son">
+                                        <p></p>
+                                            <div class="user_data">
+                                                <div class="photo">
+                                            
+                                                </div>
+                                                <div class="text">
+                                                    <p class="nom">Welcome Maryna</p>
+                                                    <p class="date">15 septembre 2023 18:01</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user_right">
+                                        <div class="user_right_son">
+                                            <p>Checklist</p>
+                                            <div class="svg_container">
+
+                                            </div>
+                                        </div>
+                                        <div class="user_right_son">
+                                            <p>Messagerie</p>
+                                            <div class="svg_container">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search">
+                                    <div class="search_bar">
+                                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>dmajnfiulahbfefboehbfgeo</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="mid"></div>
                             <div class="left_bottom"></div>
                         </div>
