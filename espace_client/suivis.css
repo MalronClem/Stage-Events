@@ -128,6 +128,97 @@ ul .svg{
     background-color: rgb(221, 221, 221);
     width: 86%;
     height: 100%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data{
+    width: 95%;
+    height: 95%;
+    border-radius: 50px;
+}
+
+#mariages{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: aqua;
+
+}
+#mariages .left{
+    position: relative;
+    height: 100%;
+    width: 93%;
+    background-color: aquamarine;
+}
+
+#mariages .right{
+    position: relative;
+    height: 100%;
+    width: 7%;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#mariages .right .right_top{
+    background-color: rgb(133, 110, 82);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .circle{
+        background-color: aliceblue;
+        border-radius: 50%;
+        height: 35%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+
+        svg{
+            width: 50%;
+        }
+    
+    }
+}
+
+#mariages .right .right_bottom{
+    background-color: bisque;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    .circle{
+        background-color: aliceblue;
+        border-radius: 50%;
+        height: 60%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+
+        svg{
+            width: 50%;
+        }
+    }
 }
