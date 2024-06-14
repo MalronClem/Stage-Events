@@ -293,12 +293,12 @@ ul .svg{
             top: 10%;
             width: 70%;
             height: 90%;
-            background-color: #654141;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: row;
+            border: solid 1px black;
 
             p{
                 display: flex;
