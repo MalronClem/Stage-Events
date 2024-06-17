@@ -93,10 +93,36 @@
         </ul>
     </nav>
     <main>
-
+        <div class="container" id="logo">
+            <div class="carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="../media/park-7407081.jpg" alt="Photo 1"></li>
+                        <li class="carousel-slide"><img src="../media/pexels-juliano-astc-1623739-12303272.jpg" alt="Photo 2"></li>
+                        <li class="carousel-slide"><img src="../media/people.jpg" alt="Photo 3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="mariage">
+        </div>
+        <div class="container" id="taches">
+        </div>
+        <div class="container" id="prestataires">
+        </div>
+        <div class="container" id="invites">
+        </div>
+        <div class="container" id="messages">
+        </div>
+        <div class="container" id="budget">
+        </div>
+        <div class="container" id="aide">
+        </div>
+        <div class="container" id="deconnexion">
+        </div>
     </main>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="accueil.js"></script>
 
 </html>
