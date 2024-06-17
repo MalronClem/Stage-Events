@@ -4,4 +4,5 @@
         chargement de la page et de son utilisation.
         Il faut que quand je ne suis pas connecté de base, lorsque je clique sur "suivis projet" depuis le menu principale ca me redirige vers une page connexion pour ensuite m'amener automatiquement à l'interface de suivis 
         de projet.
-14/06 : 
+17/06 : Reprise du projet à zéro niveau interface du a des problemes de communication. J'ai fais le fonctionnement du changement de page entre chaque onglet de la nav barre. J'ai un problème a faire fonctionner le carousselle
+        dans la page d'accueil (ie LOGO), il n'y a que la premiere image qui s'affiche. 
