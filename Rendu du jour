@@ -6,3 +6,4 @@
         de projet.
 17/06 : Reprise du projet à zéro niveau interface du a des problemes de communication. J'ai fais le fonctionnement du changement de page entre chaque onglet de la nav barre. J'ai un problème a faire fonctionner le carousselle
         dans la page d'accueil (ie LOGO), il n'y a que la premiere image qui s'affiche. 
+18/09: Commencement de la page invité (specialement la mis en page), et enfin réussi a créer un carousel d'image automatique (a améliorer et optimiser)
