@@ -93,14 +93,137 @@
         </ul>
     </nav>
     <main>
-        <div class="container" id="logo">
+    <div class="container" id="logo">
             <div class="carousel">
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide"><img src="../media/park-7407081.jpg" alt="Photo 1"></li>
-                        <li class="carousel-slide"><img src="../media/pexels-juliano-astc-1623739-12303272.jpg" alt="Photo 2"></li>
-                        <li class="carousel-slide"><img src="../media/people.jpg" alt="Photo 3"></li>
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="../media/test/couple-443600_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/test/couple-4615557_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/test/wedding-7335258_1920.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="invites">
+            <div class="liste_invites">
+                <div class="title">
+                    <h1>Liste des invités</h1>
+                </div>
+                <div class="liste">
+                    <ul>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+                        <li>jean</li>
+                        <li>dupont</li>
+                        <li>edward</li>
+
+
                     </ul>
+                </div>
+                <div class="boutons">
+                    <div class="bouton">Ajouter</div>
+                    <div class="bouton">Supprimer</div>
+                </div>
+            </div>
+            <div class="gestion_place">
+            <div class="title">
+                    <h1>Gestion des places</h1>
+                </div>
+                <div class="liste">
+                    <ul>
+                        <li>tables 1:</li>
+                        <li>tables 2:</li>
+                        <li>tables 3:</li>
+                        <li>tables 4:</li>
+                        <li>tables 5:</li>
+                        <li>tables 6:</li>
+                        <li>tables 1</li>
+                        <li>tables 2</li>
+                        <li>tables 3</li>
+                        <li>tables 4</li>
+                        <li>tables 5</li>
+                        <li>tables 6</li>
+                        <li>tables 1</li>
+                        <li>tables 2</li>
+                        <li>tables 3</li>
+                        <li>tables 4</li>
+                        <li>tables 5</li>
+                        <li>tables 6</li>
+                        <li>tables 1</li>
+                        <li>tables 2</li>
+                        <li>tables 3</li>
+                        <li>tables 4</li>
+                        <li>tables 5</li>
+                        <li>tables 6</li>
+                        <li>tables 1</li>
+                        <li>tables 2</li>
+                        <li>tables 3</li>
+                        <li>tables 4</li>
+                        <li>tables 5</li>
+                        <li>tables 6</li>
+
+                    </ul>
+                </div>
+                <div class="boutons">
+                    <div class="bouton">Ajouter</div>
+                    <div class="bouton">Modifier</div>
+                    <div class="bouton">Supprimer</div>
                 </div>
             </div>
         </div>
@@ -109,8 +232,6 @@
         <div class="container" id="taches">
         </div>
         <div class="container" id="prestataires">
-        </div>
-        <div class="container" id="invites">
         </div>
         <div class="container" id="messages">
         </div>
