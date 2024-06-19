@@ -6,4 +6,6 @@
         de projet.
 17/06 : Reprise du projet à zéro niveau interface du a des problemes de communication. J'ai fais le fonctionnement du changement de page entre chaque onglet de la nav barre. J'ai un problème a faire fonctionner le carousselle
         dans la page d'accueil (ie LOGO), il n'y a que la premiere image qui s'affiche. 
-18/09: Commencement de la page invité (specialement la mis en page), et enfin réussi a créer un carousel d'image automatique (a améliorer et optimiser)
+18/06: Commencement de la page invité (specialement la mis en page), et enfin réussi a créer un carousel d'image automatique (a améliorer et optimiser)
+19/06: Je me suis occupé du visuel de la page déconnexion, j'ai commencé aussi a y faire qql animation (minime pour le momment). Les grosses animation seront fais grace a du js (gsap). Pour terminer le fonctionnement de la page 
+        il faudra que Jamila (ma collègue) s'occupe du back-end. Comme Miguel l'a dit. 
