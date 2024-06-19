@@ -93,7 +93,17 @@
         </ul>
     </nav>
     <main>
-    <div class="container" id="logo">
+
+        <div class="container" id="deconnexion">
+            <div class="deco_container">
+                <h1>Vouslez vous vraiment vous déconnecter ?</h1>
+                <div class="boutons">
+                    <div class="bouton">Oui</div>
+                    <div class="bouton">Non</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="logo">
             <div class="carousel">
                 <div class="carousel-container">
                     <div class="carousel-item">
@@ -239,8 +249,7 @@
         </div>
         <div class="container" id="aide">
         </div>
-        <div class="container" id="deconnexion">
-        </div>
+
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -27,7 +27,7 @@
 
     let currentIndex = 0;
     const totalItems = carouselItems.length;
-    const intervalTime = 3000; // Temps en millisecondes entre chaque diapositive (3 secondes dans cet exemple)
+    const intervalTime = 1000; // Temps en millisecondes entre chaque diapositive (3 secondes dans cet exemple)
     let slideInterval;
 
     function startSlide() {

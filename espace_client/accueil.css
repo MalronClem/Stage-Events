@@ -26,7 +26,7 @@ nav{
     background-color: black;
     width: 100%;
     height: 11%;
-    color: aliceblue;
+    color: #e7e7fa;
 
     ul{
         display: flex;
@@ -49,12 +49,12 @@ nav{
                 height: 40%;
                 width: 40%;
 
-                fill: #ffffff; 
-                stroke: #ffffff; 
+                fill: #e7e7fa; 
+                stroke: #e7e7fa; 
             }
 
             p{
-                color: white;            
+                color: #e7e7fa;            
             }
         }
 
@@ -70,7 +70,8 @@ main{
     width: 100%;
     height: 89%;
     overflow-y: hidden;
-            background-color: #E6E6FA;
+    background-color: #ccccfa;
+        
 }
 
 .container{
@@ -78,8 +79,9 @@ main{
     height: 100%;
 }
 
-#logo{
-    
+#logo{ 
+    overflow: hidden;
+
     .carousel {
         width: 100%;
         overflow: hidden;
@@ -292,6 +294,77 @@ main{
 
 }
 #deconnexion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9d9f8;
+    background-image: url('../media/luxa.org-vignette-pexels-iriser-916340 (1)-modified.jpg');
+    background-size: cover;
+    background-position: center;
 
+    .deco_container{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 25%;
+        width: 50%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 40px;
+        transition: box-shadow 0.3s;
+        transition: 0.2s ease-in-out;
+
+        h1{
+            text-align: center;
+            width: 100%;
+            height: 40%;
+        }
+
+        .boutons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            flex-direction: row;
+            width: 80%;
+            height: 20%;
+
+            .bouton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                background-color:  #d9d9f8;
+                transition: 0.1s ease-in-out;
+                width: 20%;
+                height: 80%;
+                color: #000000;
+
+    
+            }
+            .bouton:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 0.1s ease-in-out;
+                background-color:  #c3c3fa;
+                width: 25%;
+            }
+        }
+    }
+
+    .deco_container:hover{
+        transform: scale(1.01);
+        transition: 0.2s ease-in-out;
+        animation: pulse 1s forwards;
+    }
 }
 
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 200px 75px rgba(0, 0, 0, 0.2);
+    }
+}
