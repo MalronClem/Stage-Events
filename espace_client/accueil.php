@@ -93,10 +93,9 @@
         </ul>
     </nav>
     <main>
-
         <div class="container" id="deconnexion">
             <div class="deco_container">
-                <h1>Vouslez vous vraiment vous déconnecter ?</h1>
+                <h1>Voulez vous vraiment vous déconnecter ?</h1>
                 <div class="boutons">
                     <div class="bouton">Oui</div>
                     <div class="bouton">Non</div>

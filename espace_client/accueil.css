@@ -310,7 +310,7 @@ main{
         flex-direction: column;
         height: 25%;
         width: 50%;
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.945);
         border-radius: 40px;
         transition: box-shadow 0.3s;
         transition: 0.2s ease-in-out;
@@ -357,6 +357,8 @@ main{
         transform: scale(1.01);
         transition: 0.2s ease-in-out;
         animation: pulse 1s forwards;
+        background-color: rgb(0, 0, 0);
+
     }
 }
 
