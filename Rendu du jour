@@ -8,4 +8,5 @@
         dans la page d'accueil (ie LOGO), il n'y a que la premiere image qui s'affiche. 
 18/06: Commencement de la page invité (specialement la mis en page), et enfin réussi a créer un carousel d'image automatique (a améliorer et optimiser)
 19/06: Je me suis occupé du visuel de la page déconnexion, j'ai commencé aussi a y faire qql animation (minime pour le momment). Les grosses animation seront fais grace a du js (gsap). Pour terminer le fonctionnement de la page 
-        il faudra que Jamila (ma collègue) s'occupe du back-end. Comme Miguel l'a dit. 
+        il faudra que Jamila (ma collègue) s'occupe du back-end. Comme Miguel l'a dit. Je me suis aussi occupé a revoir les couleuurs principale du site, je pense avoir trouvé une variante au blanc trop agressif ( un blanc 
+        lavandé). Reste a trouver un substitu au noir et trouver une couleur plus coloré pour casser le "noir et blanc".
