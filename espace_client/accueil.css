@@ -26,7 +26,12 @@ nav{
     background-color: black;
     width: 100%;
     height: 11%;
-    color: #e7e7fa;
+    color: #d9d9f8;
+    z-index: 1000; /* Pour s'assurer qu'elle est au-dessus des autres éléments */
+    box-shadow: 0 5px 30px -20px #DAA520, /* Ombre en bas */
+                5px 0 30px -15px #DAA520, /* Ombre à droite */
+               -5px 0 30px -15px #DAA520, /* Ombre à gauche */
+               inset 0 10px 20px -10px #DAA520; /* Ombre intérieure en haut */
 
     ul{
         display: flex;
@@ -49,12 +54,12 @@ nav{
                 height: 40%;
                 width: 40%;
 
-                fill: #e7e7fa; 
-                stroke: #e7e7fa; 
+                fill: #d9d9f8; 
+                stroke: #d9d9f8; 
             }
 
             p{
-                color: #e7e7fa;            
+                color: #d9d9f8;            
             }
         }
 
@@ -69,9 +74,7 @@ nav{
 main{
     width: 100%;
     height: 89%;
-    overflow-y: hidden;
-    background-color: #ccccfa;
-        
+    overflow-y: hidden;        
 }
 
 .container{
@@ -120,7 +123,17 @@ main{
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    color: #E6E6FA;
+    color: #d9d9f8;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Pour remplir le conteneur sans déformation */
+        z-index: -1; /* Pour placer la vidéo en arrière-plan */
+    }
 
     .liste_invites{
         width: 35%;
@@ -129,6 +142,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        background-color: #00000075;
 
 
         .title{
@@ -138,7 +152,7 @@ main{
             width: 80%;
             height: 10%;
             border-radius: 20px;
-            background-color:  rgb(84, 40, 40);
+            background-color:  rgb(0, 0, 0);
 
             h1{
                 letter-spacing: 2px;
@@ -148,13 +162,14 @@ main{
         .liste{
             display: flex;
             align-items: center;
-            width: 80%;
+            width: 60%;
             height: 60%;
             border-radius: 20px;
-            background-color:  rgb(84, 40, 40);
+            background-color:  rgb(0, 0, 0);
             overflow-y: scroll;
             overflow-x: hidden;
             scroll-behavior: smooth;
+            transition: 0.2s ease-in-out;
 
             ul{
                 width: 100%;
@@ -162,16 +177,40 @@ main{
                 margin-left: 3%;
 
 
-                li{
-                    width: 97%;
-                    height: 7%;
-                    border-bottom: 1px solid black ;
-                    margin-right: 3%;
+                li {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    position: relative;
                     display: flex;
                     align-items: center;
+                    transition: color 0.4s ease-in-out; /* Transition de couleur pour le texte */
+                }
+                
+                li::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px; /* Hauteur de la bordure inférieure */
+                    background-color: #DAA520; /* Couleur de la bordure inférieure */
+                    transition: width 0.4s ease-in-out; /* Transition pour l'agrandissement de la bordure */
+                }
+                
+                li:hover::before {
+                    width: 97%; /* Agrandissement de la bordure inférieure au survol */
+                }
+                
+                li:hover {
+                    color: #DAA520; /* Changement de couleur du texte au survol */
                 }
             }
-
+        }
+        .liste:hover{
+            width: 70%;
+            box-shadow: 0 0 10px 0.5px #DAA520;
+            transform: scale(1.01);
         }
 
         .boutons{
@@ -191,17 +230,20 @@ main{
                 width: 30%;
                 height: 90%;
                 border-radius: 20px;
-                background-color:  rgb(84, 40, 40);
+                background-color:  rgb(0, 0, 0);
                 transition: 0.1s ease-in-out;
 
     
             }
             .bouton:hover{
                 cursor: pointer;
-                transform: scale(1.05);
+                transform: scale(1.09);
                 transition: 0.1s ease-in-out;
-                background-color:  rgb(104, 50, 50);
-
+                background-color:  rgb(0, 0, 0);
+                box-shadow: inset 0 0 5px 0.5px #DAA520,
+                    0 0 10px 0.5px #DAA520;
+                border: #DAA520 1px solid;
+                color: #DAA520;
             }
         }
     }
@@ -213,6 +255,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        background-color: #000000c0;
 
         .title{
             display: flex;
@@ -221,7 +264,7 @@ main{
             width: 80%;
             height: 10%;
             border-radius: 20px;
-            background-color: rgb(84, 40, 40);
+            background-color: rgb(0, 0, 0);
 
             h1{
                 letter-spacing: 2px;
@@ -231,27 +274,54 @@ main{
         .liste{
             display: flex;
             align-items: center;
-            width: 80%;
+            width: 70%;
             height: 60%;
             border-radius: 20px;
-            background-color: rgb(84, 40, 40);
+            background-color:  rgb(0, 0, 0);
             overflow-y: scroll;
             overflow-x: hidden;
-            
+            scroll-behavior: smooth;
+            transition: 0.2s ease-in-out;
+
             ul{
                 width: 100%;
                 height: 100%;
                 margin-left: 2%;
 
-                li{
-                    width: 98%;
-                    height: 7%;
-                    border-bottom: 1px solid #000000 ;
-                    margin-right: 2%;
+                li {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    position: relative;
                     display: flex;
                     align-items: center;
+                    transition: color 0.4s ease-in-out; /* Transition de couleur pour le texte */
+                }
+                
+                li::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px; /* Hauteur de la bordure inférieure */
+                    background-color: #DAA520; /* Couleur de la bordure inférieure */
+                    transition: width 0.4s ease-in-out; /* Transition pour l'agrandissement de la bordure */
+                }
+                
+                li:hover::before {
+                    width: 97%; /* Agrandissement de la bordure inférieure au survol */
+                }
+                
+                li:hover {
+                    color: #DAA520; /* Changement de couleur du texte au survol */
                 }
             }
+        }
+        .liste:hover{
+            width: 80%;
+            box-shadow: 0 0 10px 0.5px #DAA520;
+            transform: scale(1.01);
         }
 
         .boutons{
@@ -271,15 +341,20 @@ main{
                 width: 25%;
                 height: 90%;
                 border-radius: 20px;
-                background-color: rgb(84, 40, 40);
+                background-color:  rgb(0, 0, 0);
                 transition: 0.1s ease-in-out;
+
+    
             }
             .bouton:hover{
                 cursor: pointer;
-                transform: scale(1.05);
+                transform: scale(1.09);
                 transition: 0.1s ease-in-out;
-                background-color:  rgb(104, 50, 50);
-
+                background-color:  rgb(0, 0, 0);
+                box-shadow: inset 0 0 5px 0.5px #DAA520,
+                    0 0 10px 0.5px #DAA520;
+                border: #DAA520 1px solid;
+                color: #DAA520;
             }
         }
     }
@@ -335,7 +410,7 @@ main{
                 align-items: center;
                 justify-content: center;
                 border-radius: 20px;
-                background-color:  #d9d9f8;
+                background-color:  #ffffff;
                 transition: 0.1s ease-in-out;
                 width: 20%;
                 height: 80%;
@@ -347,7 +422,7 @@ main{
                 cursor: pointer;
                 transform: scale(1.05);
                 transition: 0.1s ease-in-out;
-                background-color:  #c3c3fa;
+                background-color:  #d9d9f8;
                 width: 25%;
             }
         }
@@ -358,15 +433,16 @@ main{
         transition: 0.2s ease-in-out;
         animation: pulse 1s forwards;
         background-color: rgb(0, 0, 0);
-
+        box-shadow: inset 0 0 10px 5px #DAA520;
+    
     }
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0 0 #DAA520;
     }
     100% {
-        box-shadow: 0 0 200px 75px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 500px 5px #DAA520;
     }
 }
