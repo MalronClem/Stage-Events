@@ -93,7 +93,13 @@
         </ul>
     </nav>
     <main>
-    <div class="container" id="invites">
+
+        <div class="container" id="invites">
+            <video autoplay loop muted id="video_invites">
+                <source src="../media/3188991-hd_1920_1080_25fps (1).mp4" type="video/mp4">
+                <!-- Ajoutez d'autres sources pour la compatibilité avec différents navigateurs -->
+                Your browser does not support the video tag.
+            </video>
             <div class="liste_invites">
                 <div class="title">
                     <h1>Liste des invités</h1>
@@ -212,6 +218,8 @@
                 </div>
             </div>
         </div>
+        <div class="container" id="aide">
+        </div>
         <div class="container" id="deconnexion">
             <div class="deco_container">
                 <h1>Voulez vous vraiment vous déconnecter ?</h1>
@@ -236,40 +244,6 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="invites">
-            <video autoplay loop muted id="video_invites">
-                <source src="../media/3188991-hd_1920_1080_25fps (1).mp4" type="video/mp4">
-                <!-- Ajoutez d'autres sources pour la compatibilité avec différents navigateurs -->
-                Your browser does not support the video tag.
-            </video>
-            <div class="liste_invites">
-                <div class="title">
-                    <h1>Liste des invités</h1>
-                </div>
-                <div class="liste">
-                    <ul>
-                    </ul>
-                </div>
-                <div class="boutons">
-                    <div class="bouton">Ajouter</div>
-                    <div class="bouton">Supprimer</div>
-                </div>
-            </div>
-            <div class="gestion_place">
-            <div class="title">
-                    <h1>Gestion des places</h1>
-                </div>
-                <div class="liste">
-                    <ul>
-                    </ul>
-                </div>
-                <div class="boutons">
-                    <div class="bouton">Ajouter</div>
-                    <div class="bouton">Modifier</div>
-                    <div class="bouton">Supprimer</div>
-                </div>
-            </div>
-        </div>
         <div class="container" id="mariage">
         </div>
         <div class="container" id="taches">
@@ -280,8 +254,7 @@
         </div>
         <div class="container" id="budget">
         </div>
-        <div class="container" id="aide">
-        </div>
+
 
     </main>
 </body>

@@ -21,6 +21,8 @@
  });
 
 
+ //Logo carousel d'image
+
  document.addEventListener("DOMContentLoaded", function() {
     const carouselContainer = document.querySelector('.carousel-container');
     const carouselItems = document.querySelectorAll('.carousel-item');
@@ -48,4 +50,4 @@
     startSlide();
 });
 
-
+//Aide grid
