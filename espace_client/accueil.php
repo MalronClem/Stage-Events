@@ -105,71 +105,12 @@
                     <h1>Liste des invités</h1>
                 </div>
                 <div class="liste">
-                    <ul>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-                        <li>jean</li>
-                        <li>dupont</li>
-                        <li>edward</li>
-
-
+                    <ul id="invite_list"></ul>
                     </ul>
                 </div>
                 <div class="boutons">
-                    <div class="bouton">Ajouter</div>
-                    <div class="bouton">Supprimer</div>
+                    <div class="bouton" id="btn_add_invite">Ajouter</div>
+                    <div class="bouton" id="btn_remove_invite">Supprimer</div>
                 </div>
             </div>
             <div class="gestion_place">
@@ -177,44 +118,13 @@
                     <h1>Gestion des places</h1>
                 </div>
                 <div class="liste">
-                    <ul>
-                        <li>tables 1:</li>
-                        <li>tables 2:</li>
-                        <li>tables 3:</li>
-                        <li>tables 4:</li>
-                        <li>tables 5:</li>
-                        <li>tables 6:</li>
-                        <li>tables 1</li>
-                        <li>tables 2</li>
-                        <li>tables 3</li>
-                        <li>tables 4</li>
-                        <li>tables 5</li>
-                        <li>tables 6</li>
-                        <li>tables 1</li>
-                        <li>tables 2</li>
-                        <li>tables 3</li>
-                        <li>tables 4</li>
-                        <li>tables 5</li>
-                        <li>tables 6</li>
-                        <li>tables 1</li>
-                        <li>tables 2</li>
-                        <li>tables 3</li>
-                        <li>tables 4</li>
-                        <li>tables 5</li>
-                        <li>tables 6</li>
-                        <li>tables 1</li>
-                        <li>tables 2</li>
-                        <li>tables 3</li>
-                        <li>tables 4</li>
-                        <li>tables 5</li>
-                        <li>tables 6</li>
-
+                    <ul id="table_liste">
                     </ul>
                 </div>
                 <div class="boutons">
-                    <div class="bouton">Ajouter</div>
-                    <div class="bouton">Modifier</div>
-                    <div class="bouton">Supprimer</div>
+                    <div class="bouton" id="btn_add_table">Ajouter</div>
+                    <div class="bouton" id="btn_modifie_table">Modifier</div>
+                    <div class="bouton" id="btn_remove_table">Supprimer</div>
                 </div>
             </div>
         </div>
