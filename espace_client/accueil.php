@@ -80,10 +80,77 @@
     <main>
         <div class="container" id="aide">
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Rechercher des aides..." >
+                <input type="text" id="searchInput" placeholder="Rechercher..." onkeyup="filterContent()">
             </div>
-            <div class="card-container" id="cardContainer">
-                <!-- Cards will be inserted here -->
+            <div class="help-content" id="helpContent">
+                <div class="help-item" data-keywords="inscription compte création">
+                    <h2>Comment créer un compte ?</h2>
+                    <p>Pour créer un compte, cliquez sur "S'inscrire" en haut à droite et suivez les instructions. Remplissez le formulaire avec vos informations personnelles et vérifiez votre adresse e-mail pour activer votre compte. Une fois votre compte activé, vous pourrez vous connecter et accéder à toutes les fonctionnalités de notre plateforme.</p>
+                </div>
+                <div class="help-item" data-keywords="mot de passe oublié récupération">
+                    <h2>J'ai oublié mon mot de passe</h2>
+                    <p>Si vous avez oublié votre mot de passe, ne vous inquiétez pas. Sur la page de connexion, cliquez sur "Mot de passe oublié". Entrez l'adresse e-mail associée à votre compte et suivez les instructions pour réinitialiser votre mot de passe. Un e-mail contenant un lien de réinitialisation vous sera envoyé. Cliquez sur ce lien et suivez les étapes pour choisir un nouveau mot de passe sécurisé.</p>
+                </div>
+                <div class="help-item" data-keywords="paiement carte crédit">
+                    <h2>Comment effectuer un paiement ?</h2>
+                    <p>Pour effectuer un paiement sur notre plateforme, connectez-vous à votre compte. Ajoutez les articles que vous souhaitez acheter à votre panier. Ensuite, allez dans la section "Paiement". Choisissez votre méthode de paiement préférée, que ce soit par carte de crédit, virement bancaire ou toute autre option disponible. Suivez les instructions à l'écran pour finaliser votre transaction. Une fois le paiement confirmé, vous recevrez une confirmation de commande par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison commande suivi">
+                    <h2>Comment suivre ma commande ?</h2>
+                    <p>Pour suivre votre commande, connectez-vous à votre compte. Accédez à la section "Historique des commandes" où vous trouverez une liste de toutes vos commandes passées. Trouvez la commande que vous souhaitez suivre et cliquez sur "Suivi de commande". Vous serez redirigé vers une page où vous pourrez voir l'état actuel de votre commande et le numéro de suivi si disponible. Vous recevrez également des notifications par e-mail à chaque étape clé de la livraison.</p>
+                </div>
+                <div class="help-item" data-keywords="produit retour échange">
+                    <h2>Comment retourner ou échanger un produit ?</h2>
+                    <p>Si vous n'êtes pas entièrement satisfait de votre achat, vous pouvez retourner ou échanger un produit sous certaines conditions. Tout d'abord, connectez-vous à votre compte et accédez à la section "Retours et échanges". Sélectionnez la commande contenant le produit que vous souhaitez retourner ou échanger. Remplissez le formulaire de retour en indiquant la raison du retour ou de l'échange. Une fois votre demande approuvée, vous recevrez des instructions sur la façon de renvoyer le produit. Une fois que nous aurons reçu le produit retourné, nous procéderons au remboursement ou à l'échange selon vos instructions.</p>
+                </div>
+                <div class="help-item" data-keywords="contact service client assistance">
+                    <h2>Comment contacter le service client ?</h2>
+                    <p>Notre service client est là pour vous aider ! Pour nous contacter, visitez notre page de contact sur notre site web. Vous y trouverez toutes les informations nécessaires pour nous joindre par e-mail, téléphone ou chat en direct. Assurez-vous de fournir toutes les informations pertinentes concernant votre requête afin que nous puissions vous aider rapidement et efficacement. Notre équipe est disponible pour répondre à toutes vos questions du lundi au vendredi de 9h à 18h.</p>
+                </div>
+                <div class="help-item" data-keywords="application installation guide">
+                    <h2>Comment installer notre application ?</h2>
+                    <p>L'installation de notre application est rapide et simple. Vous pouvez la télécharger depuis l'App Store (pour les utilisateurs iOS) ou Google Play Store (pour les utilisateurs Android). Une fois le téléchargement terminé, ouvrez l'application et suivez les instructions à l'écran pour l'installer sur votre appareil. Une fois installée, connectez-vous à votre compte ou créez un nouveau compte si nécessaire. Explorez toutes les fonctionnalités disponibles et commencez à profiter de notre application où que vous soyez.</p>
+                </div>
+                <div class="help-item" data-keywords="abonnement résiliation annulation">
+                    <h2>Comment annuler mon abonnement ?</h2>
+                    <p>Si vous souhaitez annuler votre abonnement, vous pouvez le faire à tout moment en vous connectant à votre compte. Accédez à la section "Abonnements" où vous trouverez une liste de tous les abonnements actifs associés à votre compte. Trouvez l'abonnement que vous souhaitez annuler et suivez les instructions pour résilier. Assurez-vous de consulter les conditions d'annulation de votre abonnement pour éviter tout frais supplémentaire. Une fois l'abonnement annulé, vous recevrez une confirmation par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="promotion offre spéciale réduction">
+                    <h2>Comment utiliser une offre spéciale ou une promotion ?</h2>
+                    <p>Profitez de nos offres spéciales et promotions en suivant quelques étapes simples. Lors du paiement de votre commande, recherchez la section "Code promo" ou "Offres spéciales". Entrez le code promo que vous avez reçu par e-mail ou trouvé sur notre site web dans le champ prévu à cet effet. Assurez-vous de vérifier la validité et les conditions d'utilisation du code promo avant de finaliser votre commande. Une fois le code appliqué avec succès, la réduction correspondante sera appliquée à votre total.</p>
+                </div>
+                <div class="help-item" data-keywords="problème connexion compte bloqué">
+                    <h2>J'ai des problèmes pour me connecter à mon compte.</h2>
+                    <p>Si vous rencontrez des difficultés pour accéder à votre compte, assurez-vous d'abord que vous utilisez les bonnes informations d'identification (adresse e-mail et mot de passe). Si vous avez oublié votre mot de passe, utilisez l'option "Mot de passe oublié" sur la page de connexion pour réinitialiser votre mot de passe. Si vous continuez à rencontrer des problèmes, votre compte pourrait être temporairement bloqué pour des raisons de sécurité. Contactez notre service client pour une assistance immédiate et pour débloquer votre compte.</p>
+                </div>
+                <div class="help-item" data-keywords="produit défectueux garantie retour">
+                    <h2>Mon produit est défectueux, que dois-je faire ?</h2>
+                    <p>Nous sommes désolés d'apprendre que votre produit est défectueux. Pour résoudre ce problème, veuillez contacter notre service clientèle dans les 30 jours suivant la réception de votre commande. Expliquez le problème avec votre produit et fournissez des photos si possible pour une évaluation rapide. Selon notre politique de garantie, nous pourrions vous offrir un remboursement complet, un remplacement du produit ou une réparation gratuite, selon la disponibilité et la gravité du défaut.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison retard suivi colis">
+                    <h2>Ma livraison a du retard, comment suivre mon colis ?</h2>
+                    <p>Si votre livraison prend plus de temps que prévu, nous vous prions de nous excuser pour ce désagrément. Pour suivre l'état de votre colis, connectez-vous à votre compte et accédez à la section "Suivi de commande". Vous y trouverez le numéro de suivi de votre colis. Utilisez ce numéro sur le site du transporteur pour obtenir des informations détaillées sur l'emplacement actuel de votre colis et la date prévue de livraison. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à contacter notre équipe de support clientèle.</p>
+                </div>     
+                <div class="help-item" data-keywords="abonnement résiliation annulation">
+                    <h2>Comment annuler mon abonnement ?</h2>
+                    <p>Si vous souhaitez annuler votre abonnement, vous pouvez le faire à tout moment en vous connectant à votre compte. Accédez à la section "Abonnements" où vous trouverez une liste de tous les abonnements actifs associés à votre compte. Trouvez l'abonnement que vous souhaitez annuler et suivez les instructions pour résilier. Assurez-vous de consulter les conditions d'annulation de votre abonnement pour éviter tout frais supplémentaire. Une fois l'abonnement annulé, vous recevrez une confirmation par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="promotion offre spéciale réduction">
+                    <h2>Comment utiliser une offre spéciale ou une promotion ?</h2>
+                    <p>Profitez de nos offres spéciales et promotions en suivant quelques étapes simples. Lors du paiement de votre commande, recherchez la section "Code promo" ou "Offres spéciales". Entrez le code promo que vous avez reçu par e-mail ou trouvé sur notre site web dans le champ prévu à cet effet. Assurez-vous de vérifier la validité et les conditions d'utilisation du code promo avant de finaliser votre commande. Une fois le code appliqué avec succès, la réduction correspondante sera appliquée à votre total.</p>
+                </div>
+                <div class="help-item" data-keywords="problème connexion compte bloqué">
+                    <h2>J'ai des problèmes pour me connecter à mon compte.</h2>
+                    <p>Si vous rencontrez des difficultés pour accéder à votre compte, assurez-vous d'abord que vous utilisez les bonnes informations d'identification (adresse e-mail et mot de passe). Si vous avez oublié votre mot de passe, utilisez l'option "Mot de passe oublié" sur la page de connexion pour réinitialiser votre mot de passe. Si vous continuez à rencontrer des problèmes, votre compte pourrait être temporairement bloqué pour des raisons de sécurité. Contactez notre service client pour une assistance immédiate et pour débloquer votre compte.</p>
+                </div>
+                <div class="help-item" data-keywords="produit défectueux garantie retour">
+                    <h2>Mon produit est défectueux, que dois-je faire ?</h2>
+                    <p>Nous sommes désolés d'apprendre que votre produit est défectueux. Pour résoudre ce problème, veuillez contacter notre service clientèle dans les 30 jours suivant la réception de votre commande. Expliquez le problème avec votre produit et fournissez des photos si possible pour une évaluation rapide. Selon notre politique de garantie, nous pourrions vous offrir un remboursement complet, un remplacement du produit ou une réparation gratuite, selon la disponibilité et la gravité du défaut.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison retard suivi colis">
+                    <h2>Ma livraison a du retard, comment suivre mon colis ?</h2>
+                    <p>Si votre livraison prend plus de temps que prévu, nous vous prions de nous excuser pour ce désagrément. Pour suivre l'état de votre colis, connectez-vous à votre compte et accédez à la section "Suivi de commande". Vous y trouverez le numéro de suivi de votre colis. Utilisez ce numéro sur le site du transporteur pour obtenir des informations détaillées sur l'emplacement actuel de votre colis et la date prévue de livraison. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à contacter notre équipe de support clientèle.</p>
+                </div>       
             </div>
         </div>
         <div class="container" id="invites">
@@ -154,5 +221,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="accueil.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </html>

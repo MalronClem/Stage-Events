@@ -368,3 +368,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /****************************************************************************************/
 //gestion de la page aide
+
+function filterContent() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const helpItems = document.querySelectorAll('.help-item');
+
+    helpItems.forEach(item => {
+        const keywords = item.getAttribute('data-keywords').toLowerCase();
+        if (keywords.includes(input)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
