@@ -1,3 +1,5 @@
+/****************************************************************************************/
+//gestion de la page invité (à terminer avec une réelle base de données mysql -> intégration de php nécessaire)
 document.addEventListener('DOMContentLoaded', function() {
 
     // Fonction pour charger la liste des invités depuis localStorage
@@ -301,11 +303,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+/****************************************************************************************/
+//gestion de la nav et du changement de page
 
-
-// Sélection des éléments <li> dans la navigation
 const navItems = document.querySelectorAll('nav ul li');
-
 // Ajout d'un écouteur de clic à chaque <li>
 navItems.forEach(item => {
     item.addEventListener('click', function() {
@@ -325,14 +326,16 @@ navItems.forEach(item => {
     });
 });
 
-// Logo carousel d'image
+//gestion de la page logo
+
+//carousel d'image (a terminer et optimiser)
 document.addEventListener("DOMContentLoaded", function() {
     const carouselContainer = document.querySelector('.carousel-container');
     const carouselItems = document.querySelectorAll('.carousel-item');
 
     let currentIndex = 0;
     const totalItems = carouselItems.length;
-    const intervalTime = 1000; // Temps en millisecondes entre chaque diapositive (3 secondes dans cet exemple)
+    const intervalTime = 1000; 
     let slideInterval;
 
     function startSlide() {
