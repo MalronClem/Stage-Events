@@ -111,9 +111,6 @@ main{
 #mariage{
 
 }
-#taches{
-
-}
 #prestataires{
 
 }
@@ -142,7 +139,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #00000075;
+        background-color: #00000046;
 
 
         .title{
@@ -255,7 +252,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #000000c0;
+        background-color: #0000008c;
 
         .title{
             display: flex;
@@ -362,11 +359,8 @@ main{
 #messages{
 
 }
-#budget{
-
-}
 #aide{
-
+    
 }
 #deconnexion{
     display: flex;

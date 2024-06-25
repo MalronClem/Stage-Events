@@ -1,5 +1,5 @@
 /****************************************************************************************/
-//gestion de la page invité (à terminer avec une réelle base de données mysql -> intégration de php nécessaire)
+//gestion de la page invité (à terminer avec une réelle base de données mysql -> intégration de php nécessaire<)
 document.addEventListener('DOMContentLoaded', function() {
 
     // Fonction pour charger la liste des invités depuis localStorage
@@ -303,6 +303,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
 /****************************************************************************************/
 //gestion de la nav et du changement de page
 
@@ -355,3 +357,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Démarrer le carousel automatique
     startSlide();
 });
+
+
+
+
+
+
+
+
+
+/****************************************************************************************/
+//gestion de la page aide

@@ -34,16 +34,6 @@
                             </svg>
                             <p>Mon Mariage</p>
                         </li>
-                        <li data-content="taches">
-                            <svg class="svg" fill="#000000" height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g id="task">
-	<path d="M4,23.4l-3.7-3.7l1.4-1.4L4,20.6l4.3-4.3l1.4,1.4L4,23.4z M24,21H12v-2h12V21z M4,15.4l-3.7-3.7l1.4-1.4L4,12.6l4.3-4.3
-		l1.4,1.4L4,15.4z M24,13H12v-2h12V13z M4,7.4L0.3,3.7l1.4-1.4L4,4.6l4.3-4.3l1.4,1.4L4,7.4z M24,5H12V3h12V5z"/>
-</g>
-                            </svg>
-                            <p>Tâches</p>
-                        </li>
                         <li data-content="prestataires">
                             <svg class="svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 7.00003H4M8 12H4M8 17H4M12 3V21M9.2 21H16.8C17.9201 21 18.4802 21 18.908 20.782C19.2843 20.5903 19.5903 20.2843 19.782 19.908C20 19.4802 20 18.9201 20 17.8V6.20003C20 5.07993 20 4.51987 19.782 4.09205C19.5903 3.71573 19.2843 3.40977 18.908 3.21802C18.4802 3.00003 17.9201 3.00003 16.8 3.00003H9.2C8.07989 3.00003 7.51984 3.00003 7.09202 3.21802C6.71569 3.40977 6.40973 3.71573 6.21799 4.09205C6 4.51987 6 5.07993 6 6.20003V17.8C6 18.9201 6 19.4802 6.21799 19.908C6.40973 20.2843 6.71569 20.5903 7.09202 20.782C7.51984 21 8.07989 21 9.2 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,12 +61,6 @@
                             </svg>
                             <p>Messages</p>
                         </li>
-                        <li data-content="budget">
-                            <svg class="svg"  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 9H19M15 18V15M9 18H9.01M12 18H12.01M12 15H12.01M9 15H9.01M15 12H15.01M12 12H12.01M9 12H9.01M8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V6.2C19 5.0799 19 4.51984 18.782 4.09202C18.5903 3.71569 18.2843 3.40973 17.908 3.21799C17.4802 3 16.9201 3 15.8 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.07989 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <p>Mon Budget</p>
-                        </li>
                         <li data-content="aide">
                             <svg class="svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 19.5C16.1421 19.5 19.5 16.1421 19.5 12C19.5 7.85786 16.1421 4.5 12 4.5C7.85786 4.5 4.5 7.85786 4.5 12C4.5 16.1421 7.85786 19.5 12 19.5ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12.75 15V16.5H11.25V15H12.75ZM10.5 10.4318C10.5 9.66263 11.1497 9 12 9C12.8503 9 13.5 9.66263 13.5 10.4318C13.5 10.739 13.3151 11.1031 12.9076 11.5159C12.5126 11.9161 12.0104 12.2593 11.5928 12.5292L11.25 12.7509V14.25H12.75V13.5623C13.1312 13.303 13.5828 12.9671 13.9752 12.5696C14.4818 12.0564 15 11.3296 15 10.4318C15 8.79103 13.6349 7.5 12 7.5C10.3651 7.5 9 8.79103 9 10.4318H10.5Z" fill="#080341"/>
@@ -92,8 +76,16 @@
                     
         </ul>
     </nav>
-    <main>
 
+    <main>
+        <div class="container" id="aide">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher des aides..." >
+            </div>
+            <div class="card-container" id="cardContainer">
+                <!-- Cards will be inserted here -->
+            </div>
+        </div>
         <div class="container" id="invites">
             <video autoplay loop muted id="video_invites">
                 <source src="../media/3188991-hd_1920_1080_25fps (1).mp4" type="video/mp4">
@@ -128,8 +120,6 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="aide">
-        </div>
         <div class="container" id="deconnexion">
             <div class="deco_container">
                 <h1>Voulez vous vraiment vous déconnecter ?</h1>
@@ -156,16 +146,10 @@
         </div>
         <div class="container" id="mariage">
         </div>
-        <div class="container" id="taches">
-        </div>
         <div class="container" id="prestataires">
         </div>
         <div class="container" id="messages">
         </div>
-        <div class="container" id="budget">
-        </div>
-
-
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
