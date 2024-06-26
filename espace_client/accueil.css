@@ -20,6 +20,7 @@ body {
     font-family: 'NomDeVotrePolice', sans-serif;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -29,9 +30,9 @@ nav{
     height: 11%;
     color: #d9d9f8;
     z-index: 1000; 
-    box-shadow: 0 5px 30px -20px #DAA520,
+    box-shadow: 0 5px 30px -20px #DAA520, 
                 5px 0 30px -15px #DAA520, 
-               -5px 0 30px -15px #DAA520, 
+               -5px 0 30px -15px #DAA520,
                inset 0 10px 20px -10px #DAA520; 
 
     ul{
@@ -182,7 +183,7 @@ main{
                     position: relative;
                     display: flex;
                     align-items: center;
-                    transition: color 0.4s ease-in-out; 
+                    transition: color 0.4s ease-in-out;
                 }
                 
                 li::before {
@@ -191,17 +192,17 @@ main{
                     bottom: 0;
                     left: 0;
                     width: 0;
-                    height: 1px; 
+                    height: 1px;
                     background-color: #DAA520;
                     transition: width 0.4s ease-in-out; 
                 }
                 
                 li:hover::before {
-                    width: 97%; 
+                    width: 97%;
                 }
                 
                 li:hover {
-                    color: #DAA520; 
+                    color: #DAA520;
                 }
             }
         }
@@ -294,6 +295,7 @@ main{
                     display: flex;
                     align-items: center;
                     transition: color 0.4s ease-in-out; 
+                }
                 
                 li::before {
                     content: '';
@@ -304,6 +306,7 @@ main{
                     height: 1px; 
                     background-color: #DAA520; 
                     transition: width 0.4s ease-in-out; 
+                }
                 
                 li:hover::before {
                     width: 97%; 
@@ -439,9 +442,49 @@ main{
             width: 85%;
             background-color: #0000008a;
             height: 100%;
-            border-radius: 0 20px 20px 0;;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+
+            .messages_container{
+                width: 100%;
+                height: 87.5%;
+                background-color: rgb(30, 75, 75);
+
+            }
+
+            .barre{
+                width: 100%;
+                height: 12.5%;
+                display: flex;
+                flex-direction: row;
+
+                .write{
+                    width: 90%;
+                    height: 100%;
+                    background-color: rgb(63, 94, 94);
+    
+                }
+                .send{
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg{
+                        width: 55%;
+                        height: 55%;
+                        transition: 1s ease-in-out;                }
+
+                    svg:hover{
+                        fill: #DAA520;
+                    }
+                }
+            }
         }
     }
+
 }
 #aide{
     display: flex;
@@ -573,4 +616,5 @@ main{
         }
     }
 }
-    }}
+
+
