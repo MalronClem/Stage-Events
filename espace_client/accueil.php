@@ -78,6 +78,104 @@
     </nav>
 
     <main>
+        <div class="container" id="messages">
+            <div class="card">
+                <div class="left">
+                    <h2>Vos contacts</h2>
+                    <ul class="contact_list">
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+                        <li class="contact"><h4>Jean</h4></li>
+
+                    </ul>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="container" id="logo">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="../media/test/couple-443600_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/test/couple-4615557_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/test/wedding-7335258_1920.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="invites">
+            <video autoplay loop muted id="video_invites">
+                <source src="../media/3188991-hd_1920_1080_25fps (1).mp4" type="video/mp4">
+                <!-- Ajoutez d'autres sources pour la compatibilité avec différents navigateurs -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="liste_invites">
+                <div class="title">
+                    <h1>Liste des invités</h1>
+                </div>
+                <div class="liste">
+                    <ul id="invite_list"></ul>
+                    </ul>
+                </div>
+                <div class="boutons">
+                    <div class="bouton" id="btn_add_invite">Ajouter</div>
+                    <div class="bouton" id="btn_remove_invite">Supprimer</div>
+                </div>
+            </div>
+            <div class="gestion_place">
+            <div class="title">
+                    <h1>Gestion des places</h1>
+                </div>
+                <div class="liste">
+                    <ul id="table_liste">
+                    </ul>
+                </div>
+                <div class="boutons">
+                    <div class="bouton" id="btn_add_table">Ajouter</div>
+                    <div class="bouton" id="btn_modifie_table">Modifier</div>
+                    <div class="bouton" id="btn_remove_table">Supprimer</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="deconnexion">
+            <div class="deco_container">
+                <h1>Voulez vous vraiment vous déconnecter ?</h1>
+                <div class="boutons">
+                    <div class="bouton">Oui</div>
+                    <div class="bouton">Non</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="mariage">
+        </div>
+        <div class="container" id="prestataires">
+        </div>
         <div class="container" id="aide">
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Rechercher..." onkeyup="filterContent()">
@@ -153,74 +251,9 @@
                 </div>       
             </div>
         </div>
-        <div class="container" id="invites">
-            <video autoplay loop muted id="video_invites">
-                <source src="../media/3188991-hd_1920_1080_25fps (1).mp4" type="video/mp4">
-                <!-- Ajoutez d'autres sources pour la compatibilité avec différents navigateurs -->
-                Your browser does not support the video tag.
-            </video>
-            <div class="liste_invites">
-                <div class="title">
-                    <h1>Liste des invités</h1>
-                </div>
-                <div class="liste">
-                    <ul id="invite_list"></ul>
-                    </ul>
-                </div>
-                <div class="boutons">
-                    <div class="bouton" id="btn_add_invite">Ajouter</div>
-                    <div class="bouton" id="btn_remove_invite">Supprimer</div>
-                </div>
-            </div>
-            <div class="gestion_place">
-            <div class="title">
-                    <h1>Gestion des places</h1>
-                </div>
-                <div class="liste">
-                    <ul id="table_liste">
-                    </ul>
-                </div>
-                <div class="boutons">
-                    <div class="bouton" id="btn_add_table">Ajouter</div>
-                    <div class="bouton" id="btn_modifie_table">Modifier</div>
-                    <div class="bouton" id="btn_remove_table">Supprimer</div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="deconnexion">
-            <div class="deco_container">
-                <h1>Voulez vous vraiment vous déconnecter ?</h1>
-                <div class="boutons">
-                    <div class="bouton">Oui</div>
-                    <div class="bouton">Non</div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="logo">
-            <div class="carousel">
-                <div class="carousel-container">
-                    <div class="carousel-item">
-                        <img src="../media/test/couple-443600_1920.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../media/test/couple-4615557_1920.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../media/test/wedding-7335258_1920.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="mariage">
-        </div>
-        <div class="container" id="prestataires">
-        </div>
-        <div class="container" id="messages">
-        </div>
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="accueil.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </html>
