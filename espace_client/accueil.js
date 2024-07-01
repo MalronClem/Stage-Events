@@ -328,35 +328,19 @@ navItems.forEach(item => {
     });
 });
 
+
+
+
+
+
+
+
+
+
+/****************************************************************************************/
 //gestion de la page logo
 
-//carousel d'image (a terminer et optimiser)
-document.addEventListener("DOMContentLoaded", function() {
-    const carouselContainer = document.querySelector('.carousel-container');
-    const carouselItems = document.querySelectorAll('.carousel-item');
 
-    let currentIndex = 0;
-    const totalItems = carouselItems.length;
-    const intervalTime = 1000; 
-    let slideInterval;
-
-    function startSlide() {
-        slideInterval = setInterval(nextSlide, intervalTime);
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        updateCarousel();
-    }
-
-    function updateCarousel() {
-        const itemWidth = carouselItems[0].clientWidth;
-        carouselContainer.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
-    }
-
-    // Démarrer le carousel automatique
-    startSlide();
-});
 
 
 
@@ -381,4 +365,19 @@ function filterContent() {
             item.style.display = 'none';
         }
     });
-}
+} 
+
+
+
+
+
+
+
+
+/****************************************************************************************/
+//gestion de la page messages
+
+
+/****************************************************************************************/
+//gestion de la page prestataires
+
