@@ -125,7 +125,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        display: none;
         color: #d9d9f8;
 
         .bouton{    
@@ -135,11 +134,11 @@ body {
             border-radius: 7px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* ombre légère qui entoure */
         }
 
         .input{
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* ombre légère qui entoure */
 
         }
 
@@ -163,6 +162,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        display: none;
 
         .bouton{    
             border: none;
@@ -171,11 +171,11 @@ body {
             border-radius: 7px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ombre légère qui entoure */
         }
 
         .input{
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ombre légère qui entoure */
 
         }
     }

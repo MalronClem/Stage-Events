@@ -7,8 +7,8 @@ document.getElementById('sign_move').addEventListener('click', function() {
 
     moveDiv.classList.remove('login');
     moveDiv.classList.add('sign');
-    logDiv.style.display="flex"
-    signDiv.style.display="none"
+    logDiv.style.display="none"
+    signDiv.style.display="flex"
     rightVideo.pause();
     rightVideo.classList.remove('grayscale');
     leftVideo.play();
@@ -25,8 +25,8 @@ document.getElementById('login_move').addEventListener('click', function() {
 
     moveDiv.classList.remove('sign');
     moveDiv.classList.add('login');
-    logDiv.style.display="none"
-    signDiv.style.display="flex"
+    logDiv.style.display="flex"
+    signDiv.style.display="none"
     rightVideo.play();
     rightVideo.classList.add('grayscale');
     leftVideo.pause();
