@@ -14,3 +14,4 @@
         only java-script, le tout est sauvegarder dans le "localStorage" de la session. Le but seras d'intégrer des base de données mysql avec l'utilisation du php
 25/06: Je me suis occupé de la page "aide" qui recensera toutes les aides pour l'utilisateur. J'ai fais une barre de recherche dynamique qui affiche en temps réel les meilleurs résultats selon le mot clef qui s'écrit. Les aides
         sont misent dans une grid sous forme de card. Il faudra terminer la mis en page pour rendre la page plus agréable.
+02/07: J'ai commencé et pratiquement finis la page de connexion/inscription pour le site. Reste ^plus qu'a la faire fonctionner avec le backEnd la relier avec le site et paufiner les animations
