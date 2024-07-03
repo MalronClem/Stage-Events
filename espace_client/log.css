@@ -103,10 +103,10 @@ main{
     align-items: center;
     justify-content: center;
     background-image: url('../media/pexels-pixabay-265836.jpg');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image in the element */
-    transition: filter 0.3s ease-in-out; /* Smooth transition for filter changes */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: filter 0.3s ease-in-out; 
 
 }
 
@@ -121,10 +121,10 @@ main{
     align-items: center;
     justify-content: center;
     background-image: url('../media/pexels-iriser-1122639.jpg');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image in the element */
-    transition: filter 0.5s ease; /* Smooth transition for filter changes */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    transition: filter 0.5s ease;
 
 }
 
@@ -159,7 +159,7 @@ main{
     border-radius: 10px;
     z-index: 1;
     color: #d9d9f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* ombre légère qui entoure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
 
 }
 
@@ -206,11 +206,11 @@ main{
             border-radius: 7px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
         }
 
         .input{
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
 
         }
 
@@ -243,11 +243,11 @@ main{
             border-radius: 7px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
         }
 
         .input{
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ombre légère qui entoure */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 
         }
     }

@@ -110,11 +110,10 @@
         </div>
         <div class="left grayscale" id="leftDiv">
             <!--
-        <video id="left_video" pause muted loop>
+            <video id="left_video" pause muted loop>
                 <source src="../media/3444227-hd_720_1094_25fps (1).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>-->
-
             <div class="text">
                 <h1>Vous avez déjà un compte ?</h1>
                 <input id="login_move" class="bouton" type="button" value="Se connecter">
