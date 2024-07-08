@@ -9,7 +9,7 @@
 <body>
     <nav>
         <ul>
-                        <li data-content="prestataire">
+                        <li data-content="prestations">
                             <svg fill="#000000" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                 <path d="M1,19H5V15H1Zm7,0h4V15H8Zm7,0h4V15H15ZM1,12H5V8H1Zm7,0h4V8H8Zm7,0h4V8H15ZM1,5H5V1H1ZM8,5h4V1H8Zm7-4V5h4V1Z"/>
@@ -43,6 +43,185 @@
         </ul>
     </nav>
     <main>
+        <div class="container" id="logo">
+            <div class="left">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../media/pexels-juliano-astc-1623739-12303272.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/people.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/park-7407081.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="data">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi ipsum consequatur sunt, saepe rerum cumque impedit eum distinctio, temporibus ut laudantium autem vel sit. Ratione aliquam voluptatem iste asperiores?
+                </div>  
+            </div>
+        </div>
+        <div class="container" id="prestations">
+            <div class="data">
+                <div class="title">
+                    <h1 id="companyName">Nom de l'entreprise</h1>
+                </div>
+                <div class="description">
+                    <div class="left">
+                        <div class="photos" id="photos">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right_son">
+                            <h3>Description de l'entreprise </h3>
+                            <p id="companyDescription"></p>
+                        </div>
+                        <div class="right_son">
+                            <h3>Coordonnées </h3>
+                            <p id="coordonnees"></p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="data_modifie">
+                <h2>Modifier le contenu</h2>
+                <label for="companyNameInput">Nom de l'entreprise :</label>
+                <input type="text" id="companyNameInput">
+                <label for="companyDescriptionInput">Description de l'entreprise :</label>
+                <textarea id="companyDescriptionInput"></textarea>
+                <label for="coordonneesInput">Coordonnées :</label>
+                <textarea id="coordonneesInput"></textarea>
+                <label for="photosInput">URL des photos (séparées par des virgules) :</label>
+                <textarea id="photosInput"></textarea>
+                <button onclick="updateContent()">Mettre à jour</button>
+            </div>
+        </div>
+        <div class="container" id="aide">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher..." onkeyup="filterContent()">
+            </div>
+            <div class="help-content" id="helpContent">
+                <div class="help-item" data-keywords="inscription compte création">
+                    <h2>Comment créer un compte ?</h2>
+                    <p>Pour créer un compte, cliquez sur "S'inscrire" en haut à droite et suivez les instructions. Remplissez le formulaire avec vos informations personnelles et vérifiez votre adresse e-mail pour activer votre compte. Une fois votre compte activé, vous pourrez vous connecter et accéder à toutes les fonctionnalités de notre plateforme.</p>
+                </div>
+                <div class="help-item" data-keywords="mot de passe oublié récupération">
+                    <h2>J'ai oublié mon mot de passe</h2>
+                    <p>Si vous avez oublié votre mot de passe, ne vous inquiétez pas. Sur la page de connexion, cliquez sur "Mot de passe oublié". Entrez l'adresse e-mail associée à votre compte et suivez les instructions pour réinitialiser votre mot de passe. Un e-mail contenant un lien de réinitialisation vous sera envoyé. Cliquez sur ce lien et suivez les étapes pour choisir un nouveau mot de passe sécurisé.</p>
+                </div>
+                <div class="help-item" data-keywords="paiement carte crédit">
+                    <h2>Comment effectuer un paiement ?</h2>
+                    <p>Pour effectuer un paiement sur notre plateforme, connectez-vous à votre compte. Ajoutez les articles que vous souhaitez acheter à votre panier. Ensuite, allez dans la section "Paiement". Choisissez votre méthode de paiement préférée, que ce soit par carte de crédit, virement bancaire ou toute autre option disponible. Suivez les instructions à l'écran pour finaliser votre transaction. Une fois le paiement confirmé, vous recevrez une confirmation de commande par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison commande suivi">
+                    <h2>Comment suivre ma commande ?</h2>
+                    <p>Pour suivre votre commande, connectez-vous à votre compte. Accédez à la section "Historique des commandes" où vous trouverez une liste de toutes vos commandes passées. Trouvez la commande que vous souhaitez suivre et cliquez sur "Suivi de commande". Vous serez redirigé vers une page où vous pourrez voir l'état actuel de votre commande et le numéro de suivi si disponible. Vous recevrez également des notifications par e-mail à chaque étape clé de la livraison.</p>
+                </div>
+                <div class="help-item" data-keywords="produit retour échange">
+                    <h2>Comment retourner ou échanger un produit ?</h2>
+                    <p>Si vous n'êtes pas entièrement satisfait de votre achat, vous pouvez retourner ou échanger un produit sous certaines conditions. Tout d'abord, connectez-vous à votre compte et accédez à la section "Retours et échanges". Sélectionnez la commande contenant le produit que vous souhaitez retourner ou échanger. Remplissez le formulaire de retour en indiquant la raison du retour ou de l'échange. Une fois votre demande approuvée, vous recevrez des instructions sur la façon de renvoyer le produit. Une fois que nous aurons reçu le produit retourné, nous procéderons au remboursement ou à l'échange selon vos instructions.</p>
+                </div>
+                <div class="help-item" data-keywords="contact service client assistance">
+                    <h2>Comment contacter le service client ?</h2>
+                    <p>Notre service client est là pour vous aider ! Pour nous contacter, visitez notre page de contact sur notre site web. Vous y trouverez toutes les informations nécessaires pour nous joindre par e-mail, téléphone ou chat en direct. Assurez-vous de fournir toutes les informations pertinentes concernant votre requête afin que nous puissions vous aider rapidement et efficacement. Notre équipe est disponible pour répondre à toutes vos questions du lundi au vendredi de 9h à 18h.</p>
+                </div>
+                <div class="help-item" data-keywords="application installation guide">
+                    <h2>Comment installer notre application ?</h2>
+                    <p>L'installation de notre application est rapide et simple. Vous pouvez la télécharger depuis l'App Store (pour les utilisateurs iOS) ou Google Play Store (pour les utilisateurs Android). Une fois le téléchargement terminé, ouvrez l'application et suivez les instructions à l'écran pour l'installer sur votre appareil. Une fois installée, connectez-vous à votre compte ou créez un nouveau compte si nécessaire. Explorez toutes les fonctionnalités disponibles et commencez à profiter de notre application où que vous soyez.</p>
+                </div>
+                <div class="help-item" data-keywords="abonnement résiliation annulation">
+                    <h2>Comment annuler mon abonnement ?</h2>
+                    <p>Si vous souhaitez annuler votre abonnement, vous pouvez le faire à tout moment en vous connectant à votre compte. Accédez à la section "Abonnements" où vous trouverez une liste de tous les abonnements actifs associés à votre compte. Trouvez l'abonnement que vous souhaitez annuler et suivez les instructions pour résilier. Assurez-vous de consulter les conditions d'annulation de votre abonnement pour éviter tout frais supplémentaire. Une fois l'abonnement annulé, vous recevrez une confirmation par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="promotion offre spéciale réduction">
+                    <h2>Comment utiliser une offre spéciale ou une promotion ?</h2>
+                    <p>Profitez de nos offres spéciales et promotions en suivant quelques étapes simples. Lors du paiement de votre commande, recherchez la section "Code promo" ou "Offres spéciales". Entrez le code promo que vous avez reçu par e-mail ou trouvé sur notre site web dans le champ prévu à cet effet. Assurez-vous de vérifier la validité et les conditions d'utilisation du code promo avant de finaliser votre commande. Une fois le code appliqué avec succès, la réduction correspondante sera appliquée à votre total.</p>
+                </div>
+                <div class="help-item" data-keywords="problème connexion compte bloqué">
+                    <h2>J'ai des problèmes pour me connecter à mon compte.</h2>
+                    <p>Si vous rencontrez des difficultés pour accéder à votre compte, assurez-vous d'abord que vous utilisez les bonnes informations d'identification (adresse e-mail et mot de passe). Si vous avez oublié votre mot de passe, utilisez l'option "Mot de passe oublié" sur la page de connexion pour réinitialiser votre mot de passe. Si vous continuez à rencontrer des problèmes, votre compte pourrait être temporairement bloqué pour des raisons de sécurité. Contactez notre service client pour une assistance immédiate et pour débloquer votre compte.</p>
+                </div>
+                <div class="help-item" data-keywords="produit défectueux garantie retour">
+                    <h2>Mon produit est défectueux, que dois-je faire ?</h2>
+                    <p>Nous sommes désolés d'apprendre que votre produit est défectueux. Pour résoudre ce problème, veuillez contacter notre service clientèle dans les 30 jours suivant la réception de votre commande. Expliquez le problème avec votre produit et fournissez des photos si possible pour une évaluation rapide. Selon notre politique de garantie, nous pourrions vous offrir un remboursement complet, un remplacement du produit ou une réparation gratuite, selon la disponibilité et la gravité du défaut.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison retard suivi colis">
+                    <h2>Ma livraison a du retard, comment suivre mon colis ?</h2>
+                    <p>Si votre livraison prend plus de temps que prévu, nous vous prions de nous excuser pour ce désagrément. Pour suivre l'état de votre colis, connectez-vous à votre compte et accédez à la section "Suivi de commande". Vous y trouverez le numéro de suivi de votre colis. Utilisez ce numéro sur le site du transporteur pour obtenir des informations détaillées sur l'emplacement actuel de votre colis et la date prévue de livraison. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à contacter notre équipe de support clientèle.</p>
+                </div>     
+                <div class="help-item" data-keywords="abonnement résiliation annulation">
+                    <h2>Comment annuler mon abonnement ?</h2>
+                    <p>Si vous souhaitez annuler votre abonnement, vous pouvez le faire à tout moment en vous connectant à votre compte. Accédez à la section "Abonnements" où vous trouverez une liste de tous les abonnements actifs associés à votre compte. Trouvez l'abonnement que vous souhaitez annuler et suivez les instructions pour résilier. Assurez-vous de consulter les conditions d'annulation de votre abonnement pour éviter tout frais supplémentaire. Une fois l'abonnement annulé, vous recevrez une confirmation par e-mail.</p>
+                </div>
+                <div class="help-item" data-keywords="promotion offre spéciale réduction">
+                    <h2>Comment utiliser une offre spéciale ou une promotion ?</h2>
+                    <p>Profitez de nos offres spéciales et promotions en suivant quelques étapes simples. Lors du paiement de votre commande, recherchez la section "Code promo" ou "Offres spéciales". Entrez le code promo que vous avez reçu par e-mail ou trouvé sur notre site web dans le champ prévu à cet effet. Assurez-vous de vérifier la validité et les conditions d'utilisation du code promo avant de finaliser votre commande. Une fois le code appliqué avec succès, la réduction correspondante sera appliquée à votre total.</p>
+                </div>
+                <div class="help-item" data-keywords="problème connexion compte bloqué">
+                    <h2>J'ai des problèmes pour me connecter à mon compte.</h2>
+                    <p>Si vous rencontrez des difficultés pour accéder à votre compte, assurez-vous d'abord que vous utilisez les bonnes informations d'identification (adresse e-mail et mot de passe). Si vous avez oublié votre mot de passe, utilisez l'option "Mot de passe oublié" sur la page de connexion pour réinitialiser votre mot de passe. Si vous continuez à rencontrer des problèmes, votre compte pourrait être temporairement bloqué pour des raisons de sécurité. Contactez notre service client pour une assistance immédiate et pour débloquer votre compte.</p>
+                </div>
+                <div class="help-item" data-keywords="produit défectueux garantie retour">
+                    <h2>Mon produit est défectueux, que dois-je faire ?</h2>
+                    <p>Nous sommes désolés d'apprendre que votre produit est défectueux. Pour résoudre ce problème, veuillez contacter notre service clientèle dans les 30 jours suivant la réception de votre commande. Expliquez le problème avec votre produit et fournissez des photos si possible pour une évaluation rapide. Selon notre politique de garantie, nous pourrions vous offrir un remboursement complet, un remplacement du produit ou une réparation gratuite, selon la disponibilité et la gravité du défaut.</p>
+                </div>
+                <div class="help-item" data-keywords="livraison retard suivi colis">
+                    <h2>Ma livraison a du retard, comment suivre mon colis ?</h2>
+                    <p>Si votre livraison prend plus de temps que prévu, nous vous prions de nous excuser pour ce désagrément. Pour suivre l'état de votre colis, connectez-vous à votre compte et accédez à la section "Suivi de commande". Vous y trouverez le numéro de suivi de votre colis. Utilisez ce numéro sur le site du transporteur pour obtenir des informations détaillées sur l'emplacement actuel de votre colis et la date prévue de livraison. Si vous avez d'autres questions ou préoccupations, n'hésitez pas à contacter notre équipe de support clientèle.</p>
+                </div>       
+            </div>
+        </div>
+        <div class="container" id="deconnexion">
+            <div class="deco_container">
+                <h1>Voulez vous vraiment vous déconnecter ?</h1>
+                <div class="boutons">
+                    <div class="bouton">Oui</div>
+                    <div class="bouton">Non</div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="messages">
+            <div class="card">
+                <div class="left">
+                    <h2>Vos contacts</h2>
+                    <ul class="contact_list">
+                        <li class="contact"><h4>test</h4></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="messages_container"></div>
+                    <div class="barre">
+                        <div class="write">
+                            <textarea placeholder="Écrire un message..."></textarea>
+                        </div>
+                        <div class="send">
+                        <svg id="send_svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.0004 18.5816V12.5M12.7976 18.754L15.8103 19.7625C17.4511 20.3118 18.2714 20.5864 18.7773 20.3893C19.2166 20.2182 19.5499 19.8505 19.6771 19.3965C19.8236 18.8737 19.4699 18.0843 18.7624 16.5053L14.2198 6.36709C13.5279 4.82299 13.182 4.05094 12.7001 3.81172C12.2814 3.60388 11.7898 3.60309 11.3705 3.80958C10.8878 4.04726 10.5394 4.8182 9.84259 6.36006L5.25633 16.5082C4.54325 18.086 4.18671 18.875 4.33169 19.3983C4.4576 19.8528 4.78992 20.2216 5.22888 20.394C5.73435 20.5926 6.55603 20.3198 8.19939 19.7744L11.2797 18.752C11.5614 18.6585 11.7023 18.6117 11.8464 18.5933C11.9742 18.5769 12.1036 18.5771 12.2314 18.5938C12.3754 18.6126 12.5162 18.6597 12.7976 18.754Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
