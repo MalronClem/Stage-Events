@@ -81,32 +81,27 @@
     <main>
         <div class="container" id="logo">
             <div class="left">
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../media/pexels-juliano-astc-1623739-12303272.jpg" class="d-block w-100" alt="Image 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../media/people.jpg" class="d-block w-100" alt="Image 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../media/park-7407081.jpg" class="d-block w-100" alt="Image 3">
-                        </div>
+                <div class="carousel">
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item">
+                        <img src="../media\park-7407081.jpg" alt="Deuxième image">
                     </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item">
+                        <img src="../media\people.jpg" alt="Troisième image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media\pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media\coiffeur.jpg" alt="Troisième image">
+                    </div>
                 </div>
+                <div class="boutons">
+                    <button class="carousel-control-prev">&#10094;</button>
+                    <button class="carousel-control-next">&#10095;</button>
+                </div>
+            </div>
             </div>
             <div class="right">
                 <div class="data">

@@ -99,7 +99,71 @@ main{
         padding: 0;
         overflow: hidden;
         background-color: #DAA520;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+
+        }
+        .carousel-item {
+            min-width: 100%;
+            transition: opacity 1s ease-in-out;
+
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .boutons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+
+            .carousel-control-prev, .carousel-control-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 1%;
+                padding-left: 2%;
+                padding-right: 2%;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0,5s ease-in-out;
+            }
+            .carousel-control-prev {
+                left: 1%;
+            }
+            .carousel-control-next {
+                right: 1%;
+            } 
+
+            .carousel-control-prev:hover, .carousel-control-next:hover{
+                background-color: rgb(0, 0, 0);
+
+            }
+
+
+        }
     }
+
     .right {
         width: 20%;
         height: 100%;
@@ -107,38 +171,15 @@ main{
         margin: 0;
         padding: 0;
     }
-    #carousel {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .carousel-inner {
-        height: 100%;
-    }
-    .carousel-item {
-        height: 100%;
-    }
-    .carousel-item img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    /* Suppression des marges et paddings par défaut */
-    .container,
-    .carousel,
-    .carousel-inner,
-    .carousel-item img {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
     
 
 
 }
+
 #mariage{
 
 }
+
 #prestataires{
     display: flex;
     flex-direction: column;
@@ -329,6 +370,7 @@ main{
 
     
 }
+
 #invites{
     display: flex;
     flex-direction: row;
@@ -571,6 +613,7 @@ main{
         }
     }
 }
+
 #messages{
     display: flex;
     justify-content: center;
