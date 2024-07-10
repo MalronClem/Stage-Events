@@ -1,4 +1,4 @@
-document.getElementById('sign_move').addEventListener('click', function() {
+/*document.getElementById('sign_move').addEventListener('click', function() {
     var moveDiv = document.getElementById('move');
     var logDiv = document.getElementById('log');
     var signDiv = document.getElementById('sign');
@@ -14,14 +14,9 @@ document.getElementById('sign_move').addEventListener('click', function() {
 
     leftDiv.classList.remove('grayscale');
     rightDiv.classList.add('grayscale');
-
-    /*
-    rightVideo.pause();
-    rightVideo.classList.remove('grayscale');
-    leftVideo.play();
-    leftVideo.classList.add('grayscale');*/
-
 });
+
+
 
 document.getElementById('login_move').addEventListener('click', function() {
     var moveDiv = document.getElementById('move');
@@ -41,10 +36,11 @@ document.getElementById('login_move').addEventListener('click', function() {
     leftDiv.classList.add('grayscale');
     rightDiv.classList.remove('grayscale');
 
-    /*
-    rightVideo.play();
-    rightVideo.classList.add('grayscale');
-    leftVideo.pause();
-    leftVideo.classList.remove('grayscale');*/
 
+});
+
+*/
+
+document.querySelector('.img__btn').addEventListener('click', function() {
+    document.querySelector('.cont').classList.toggle('s--signup');
 });

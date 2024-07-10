@@ -78,7 +78,7 @@ function updateContent() {
 
 
 /****************************************************************************************/
-//gestion de la page logo
+//gestion de la page accueil
 
 
 const prevButton = document.querySelector('.carousel-control-prev');

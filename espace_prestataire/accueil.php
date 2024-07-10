@@ -24,7 +24,7 @@
                             </svg>
                             <p>Messages</p>
                         </li>
-                        <li data-content="logo">
+                        <li data-content="accueil">
                             <p>LOGO</p>
                         </li>
                         <li data-content="aide">
@@ -43,33 +43,38 @@
         </ul>
     </nav>
     <main>
-        <div class="container" id="logo">
+        <div class="container" id="accueil">
             <div class="left">
                 <div class="carousel">
-                <div class="carousel-inner">
-                    
-                    <div class="carousel-item">
-                        <img src="../media\park-7407081.jpg" alt="Deuxième image">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="../media\park-7407081.jpg" alt="Deuxième image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media\people.jpg" alt="Troisième image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media\pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media\coiffeur.jpg" alt="Troisième image">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../media\people.jpg" alt="Troisième image">
+                    <div class="title">
+                        <h1>Orchestrez votre mariage de rêve</h1>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../media\pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../media\coiffeur.jpg" alt="Troisième image">
+                    <div class="boutons">
+                        <button class="carousel-control-prev">&#10094;</button>
+                        <button class="carousel-control-next">&#10095;</button>
                     </div>
                 </div>
-                <div class="boutons">
-                    <button class="carousel-control-prev">&#10094;</button>
-                    <button class="carousel-control-next">&#10095;</button>
-                </div>
-            </div>
             </div>
             <div class="right">
                 <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi ipsum consequatur sunt, saepe rerum cumque impedit eum distinctio, temporibus ut laudantium autem vel sit. Ratione aliquam voluptatem iste asperiores?
+                    <div class="text">
+                        <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
+                        <p>Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
+                    </div>
                 </div>  
                 <div class="avis">
                     <h2>Avis</h2>
