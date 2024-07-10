@@ -71,3 +71,52 @@ function updateContent() {
         photosContainer.appendChild(img);
     });
 }
+
+
+
+
+
+
+/****************************************************************************************/
+//gestion de la page logo
+
+
+const prevButton = document.querySelector('.carousel-control-prev');
+const nextButton = document.querySelector('.carousel-control-next');
+const carouselInner = document.querySelector('.carousel-inner');
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+let autoScrollInterval;
+
+function showSlide(index) {
+    if (index >= carouselItems.length) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = carouselItems.length - 1;
+    } else {
+        currentIndex = index;
+    }
+    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+function startAutoScroll() {
+    autoScrollInterval = setInterval(nextSlide, 4000); 
+}
+function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+}
+nextButton.addEventListener('click', () => {
+    nextSlide();
+    stopAutoScroll();
+    startAutoScroll();
+});
+prevButton.addEventListener('click', () => {
+    showSlide(currentIndex - 1);
+    stopAutoScroll();
+    startAutoScroll();
+});
+startAutoScroll(); 
+
+
