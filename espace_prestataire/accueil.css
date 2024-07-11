@@ -23,7 +23,6 @@ body {
     overflow: hidden;
 }
 
-
 nav{
     background-color: black;
     width: 100%;
@@ -74,15 +73,10 @@ nav{
 }
 
 main{
+    position: absolute;
+    top: 11%;
     width: 100%;
     height: 89%;
-    overflow: hidden;        
-}
-
-.container{
-    width: 100%;
-    height: 100%;
-    color: #d9d9f8;
 }
 
 #messages{
@@ -298,6 +292,9 @@ main{
     background-image: url('../media/luxa.org-vignette-pexels-iriser-916340 (1)-modified.jpg');
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 100%;
+
 
     .deco_container{
         position: absolute;
@@ -535,19 +532,81 @@ main{
 }
 
 #accueil{
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
+    overflow: scroll;
 
-    .left {
+    .top{
+        position: absolute;
+        top: 0;
+        background-color: aqua;
+        width: 100%;
+        height: 50%;
+        border-bottom: solid 2px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #8f5050;
+            overflow: hidden;
+
+            .carousel-inner{
+                width: 100%;
+                height: 100%;
+                transition: transform 0.5s ease;
+                background-color: #d6a8a8;
+                display: flex;
+
+                .carousel-item {
+                    transition: opacity 1s ease-in-out;
+                    min-width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }    
+        }
+
+        .title{
+            position: absolute;
+        }
+
+        .boutons{
+            position: absolute;
+        }
+
+    }
+
+    .bottom{
+        position: absolute;
+        top: 50%;
+        background-color: #d9d9f8;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    /*
+    .top {
         position: relative;
         top: 0;
         left: 0;
-        width: 80%;
-        height: 100%;
+        width: 100%;
+        height: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -573,9 +632,7 @@ main{
                     font-size: 380%;
                     padding: 1%;
                     border-radius: 20px;
-                    border: solid rgb(0, 0, 0) 1px;
-                    box-shadow: 0 0 100px 30px #000000, inset 0 0 50px 15px #000000;
-                    filter: blur(0.5px)
+                    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.3), 10px 10px 15px rgba(0, 0, 0, 0.15), inset -10px -10px 15px rgba(0, 0, 0, 0.3), inset 10px 10px 15px rgba(0, 0, 0, 0.15);
                 }
             }
         }
@@ -630,13 +687,19 @@ main{
 
     }
 
-    .right {
-        width: 20%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+    .bottom {
+        position: absolute;
+        top: 50%;
+        height: 50%;
         border-left: #000000 solid 2px;
         border-right: #000000 solid 2px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+
 
         .description{
             width: 100%;
@@ -712,5 +775,5 @@ main{
                 }
             }
         }
-    }
+    }*/
 }

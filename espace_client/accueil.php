@@ -50,7 +50,7 @@
                             </svg>
                             <p>Invités</p>
                         </li>
-                        <li data-content="logo">
+                        <li data-content="accueil">
                             <p>LOGO</p>
                         </li>
                         <li data-content="messages">
@@ -77,7 +77,7 @@
     </nav>
 
     <main>
-        <div class="container" id="logo">
+        <div class="container" id="accueil">
             <div class="left">
                 <div class="carousel">
                 <div class="carousel-inner">

@@ -44,7 +44,8 @@
     </nav>
     <main>
         <div class="container" id="accueil">
-            <div class="left">
+            <div class="top">
+                
                 <div class="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item">
@@ -59,6 +60,9 @@
                         <div class="carousel-item">
                             <img src="../media\coiffeur.jpg" alt="Troisième image">
                         </div>
+                        <div class="carousel-item">
+                            <img src="../media\pexels-trungnguyenphotog-1603884 (1).jpg" alt="Troisième image">
+                        </div>
                     </div>
                     <div class="title">
                         <h1>Orchestrez votre mariage de rêve</h1>
@@ -69,7 +73,9 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
+            
+            <div class="bottom">
+                <!--
                 <div class="description">
                     <div class="text">
                         <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
@@ -110,7 +116,7 @@
                         
                     </ul>
 
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="container" id="prestations">
