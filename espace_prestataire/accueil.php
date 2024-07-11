@@ -65,7 +65,8 @@
                         </div>
                     </div>
                     <div class="title">
-                        <h1>Orchestrez votre mariage de rêve</h1>
+                        <h1>♦ Orchestrez votre mariage de rêve ♦</h1>
+                        <p>"" Réalisez le mariage de vos rêves avec 1001 Clicks. Nous nous occupons de chaque détail pour que votre journée soit parfaite et inoubliable. Profitez de chaque instant, nous nous occupons du reste. ""</p>
                     </div>
                     <div class="boutons">
                         <button class="carousel-control-prev">&#10094;</button>
@@ -75,7 +76,6 @@
             </div>
             
             <div class="bottom">
-                <!--
                 <div class="description">
                     <div class="text">
                         <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
@@ -113,10 +113,8 @@
                             <p>nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
-                        
                     </ul>
-
-                </div>-->
+                </div>
             </div>
         </div>
         <div class="container" id="prestations">
