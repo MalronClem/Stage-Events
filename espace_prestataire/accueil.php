@@ -73,8 +73,27 @@
             <div class="bottom">
                 <div class="description">
                     <div class="text">
-                        <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
-                        <p>Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
+                        <div class="left">
+                            <h2>Pourquoi nous choisir ?</h2>
+                            <svg version="1.1" id="ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+             width="200px" height="200px" viewBox="0 0 512 512"  xml:space="preserve" fill="black">
+            <g>
+                <path class="st0" d="M504.041,193.859c-14.703-57.156-117.75-108.953-248.047-108.953c-130.281,0-233.344,51.797-248.047,108.953
+                    C-2.975,227.594-1.49,272.891,5.447,299c18.375,78.391,113.594,128.094,250.547,128.094c136.938,0,232.172-49.703,250.547-128.094
+                    C513.494,272.891,514.979,227.594,504.041,193.859z M214.354,337.813c-58.125-1.266-109.766-17.5-140.094-33.625
+                    c-10.156-5.453-17.922-10.75-23.297-16.438c-2.984-3.313-5.609-6.75-6.406-12.078c-0.656-5.219,3.031-9.953,8.234-10.594
+                    c4.984-0.625,9.469,2.781,10.391,7.656l0.063-0.016l0.016,0.016l0.094,0.172c0.188,0.328,0.688,1.031,1.5,1.891
+                    c1.609,1.75,4.422,4.109,8.234,6.656c7.609,5.109,19.047,10.953,33.094,16.375c28.156,10.875,66.875,20.172,108.563,21.016
+                    c5.25,0.109,9.391,4.438,9.297,9.672C223.932,333.75,219.604,337.922,214.354,337.813z M255.994,295.906
+                    c-91.391,0-183.375-25.078-192.563-59.313c2.344-29.641,101.172-59.297,192.563-59.297s190.234,29.656,192.578,59.297
+                    C439.385,270.828,347.385,295.906,255.994,295.906z"/>
+            </g>
+        </svg>
+                        </div>
+                        <div class="right">
+                            <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
+                            <p>Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
+                        </div>
                     </div>
                     <div class="cta">
                         <input type="button" value="Votre mariage">
@@ -83,74 +102,6 @@
                 <div class="avis">
                     <h2>Avis</h2>
                     <ul>
-                        <li class=>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
                         <li>
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
@@ -180,6 +131,35 @@
                             <p>commentaire de la personne</p>
                         </li>
                     </ul>
+                </div>
+                <div class="footer">
+                    <div class="top_f">
+                        <div class="left">
+                            <h1>LOGO</h1>
+                            <p> Tel : XX XX XX XX XX</p>
+                            <p> Mail : test@test.com</p>
+
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="title"><h2>Info</h2></li>
+                                <li>Mention légale</li>
+                                <li>CGV</li>
+                                <li>Politique de confidentialité</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom_f">
+                        <p>Copyright © 2024 - Eventos - All Rights Reserved</p>
+                        <div class="paiement_type">
+                            <img src="../media/visa.png" alt="">
+                            <img src="../media/discover.png" alt="">
+                            <img src="../media/jcb.png" alt="">
+                            <img src="../media/paypal.png" alt="">
+                            <img src="../media/mastercard.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
