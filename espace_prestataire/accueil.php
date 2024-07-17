@@ -44,24 +44,20 @@
     </nav>
     <main>
         <div class="container" id="accueil">
-            <div class="top">
-                
+            <div class="top">   
                 <div class="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <img src="../media\park-7407081.jpg" alt="Deuxième image">
+                        <div class="carousel-item carousel-overlay" data-color="#ffffff">
+                            <img src="../media/people.jpg" alt="Troisième image">
                         </div>
-                        <div class="carousel-item">
-                            <img src="../media\people.jpg" alt="Troisième image">
+                        <div class="carousel-item carousel-overlay" data-color="#000000">
+                            <img src="../media/pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
                         </div>
-                        <div class="carousel-item">
-                            <img src="../media\pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
+                        <div class="carousel-item carousel-overlay" data-color="#ff0000">
+                            <img src="../media/coiffeur.jpg" alt="Troisième image">
                         </div>
-                        <div class="carousel-item">
-                            <img src="../media\coiffeur.jpg" alt="Troisième image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../media\pexels-trungnguyenphotog-1603884 (1).jpg" alt="Troisième image">
+                        <div class="carousel-item carousel-overlay" data-color="#00ff00">
+                            <img src="../media/pexels-trungnguyenphotog-1603884 (1).jpg" alt="Troisième image">
                         </div>
                     </div>
                     <div class="title">
@@ -73,44 +69,114 @@
                         <button class="carousel-control-next">&#10095;</button>
                     </div>
                 </div>
-            </div>
-            
+            </div>      
             <div class="bottom">
                 <div class="description">
                     <div class="text">
                         <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
                         <p>Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
                     </div>
+                    <div class="cta">
+                        <input type="button" value="Votre mariage">
+                    </div>
                 </div>  
                 <div class="avis">
                     <h2>Avis</h2>
                     <ul>
-                        <li>
-                            <p>nb étoile</p>
+                        <li class=>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                         <li>
-                            <p>nb étoile</p>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
+                            <p>commentaire de la personne</p>
+                        </li>
+                        <li>
+                            <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
                         </li>
                     </ul>

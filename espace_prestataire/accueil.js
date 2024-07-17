@@ -135,3 +135,5 @@ prevButton.addEventListener('click', () => {
 startAutoScroll(); 
 
 
+
+
