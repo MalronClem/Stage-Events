@@ -135,5 +135,25 @@ prevButton.addEventListener('click', () => {
 startAutoScroll(); 
 
 
+let currentCardIndex = 0;
+const commentCards = document.querySelectorAll('.card');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
+function showCard(index) {
+    commentCards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+    });
+}
 
+prevBtn.addEventListener('click', () => {
+    currentCardIndex = (currentCardIndex > 0) ? currentCardIndex - 1 : commentCards.length - 1;
+    showCard(currentCardIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+    currentCardIndex = (currentCardIndex < commentCards.length - 1) ? currentCardIndex + 1 : 0;
+    showCard(currentCardIndex);
+});
+
+showCard(currentCardIndex);

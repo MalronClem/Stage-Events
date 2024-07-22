@@ -88,7 +88,7 @@
                     c-91.391,0-183.375-25.078-192.563-59.313c2.344-29.641,101.172-59.297,192.563-59.297s190.234,29.656,192.578,59.297
                     C439.385,270.828,347.385,295.906,255.994,295.906z"/>
             </g>
-        </svg>
+                            </svg>
                         </div>
                         <div class="right">
                             <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
@@ -101,36 +101,56 @@
                 </div>  
                 <div class="avis">
                     <h2>Avis</h2>
-                    <ul>
-                        <li>
+                    <div class="wrapper">
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="card">
                             <p class="stars">nb étoile</p>
                             <p>commentaire de la personne</p>
-                        </li>
-                        <li>
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="for_prestataire">
+                    <div class="left">
+                        <h1>Rejoignez Notre Réseau de Professionnels du Mariage !</h1>
+                        <p>Êtes-vous un expert en organisation de mariages à la recherche de nouvelles opportunités pour étendre votre portée ? LusoPicTours est la plateforme idéale pour vous ! Rejoignez-nous dès maintenant et proposez vos services à des milliers de couples du monde entier.</p>
+                        <input type="button" value="Vendre mes services !">                
+                    </div>
+                    <div class="right">
+                        <h1>Les prestataire à la une :</h1>
+                        <div class="card" id="prest1">
+                            <div class="photo">
+                                <img src="../media\pexels-luis-quintero-1793305.jpg" alt="">
+                            </div>
+                            <h2>Prestataire 1</h2>
+                            <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                        </div>
+                        <div class="card" id="prest2">
+                            <div class="photo">
+                                <img src="../media\pexels-andrea-piacquadio-874158.jpg" alt="">
+                            </div>
+                            <h2>Prestataire 2</h2>
+                            <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer">
                     <div class="top_f">
