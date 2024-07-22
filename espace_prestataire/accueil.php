@@ -74,7 +74,7 @@
                 <div class="description">
                     <div class="text">
                         <div class="left">
-                            <h2>Pourquoi nous choisir ?</h2>
+                            <h2>POURQUOI NOUS CHOISIR ?</h2>
                             <svg version="1.1" id="ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
              width="200px" height="200px" viewBox="0 0 512 512"  xml:space="preserve" fill="black">
             <g>
@@ -89,68 +89,184 @@
                     C439.385,270.828,347.385,295.906,255.994,295.906z"/>
             </g>
                             </svg>
+                            <input type="button" value="Votre mariage">
+
                         </div>
                         <div class="right">
-                            <p>Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
-                            <p>Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
+                            <p> • Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
+                            <p> • Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
                         </div>
                     </div>
-                    <div class="cta">
-                        <input type="button" value="Votre mariage">
-                    </div>
-                </div>  
-                <div class="avis">
-                    <h2>Avis</h2>
-                    <div class="wrapper">
+                </div> 
+                <div class="proposition">
+                    <h2> NOUS VOUS PROPOSONS :</h2>
+                    <div class="grid">
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 1</h3>
                         </div>
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 2</h3>
                         </div>
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 3</h3>
                         </div>
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 4</h3>
                         </div>
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 5</h3>
                         </div>
                         <div class="card">
-                            <p class="stars">nb étoile</p>
-                            <p>commentaire de la personne</p>
+                            <h3>Card 6</h3>
                         </div>
                     </div>
                 </div>
                 <div class="for_prestataire">
-                    <div class="left">
-                        <h1>Rejoignez Notre Réseau de Professionnels du Mariage !</h1>
-                        <p>Êtes-vous un expert en organisation de mariages à la recherche de nouvelles opportunités pour étendre votre portée ? LusoPicTours est la plateforme idéale pour vous ! Rejoignez-nous dès maintenant et proposez vos services à des milliers de couples du monde entier.</p>
-                        <input type="button" value="Vendre mes services !">                
-                    </div>
-                    <div class="right">
-                        <h1>Les prestataire à la une :</h1>
-                        <div class="card" id="prest1">
-                            <div class="photo">
-                                <img src="../media\pexels-luis-quintero-1793305.jpg" alt="">
-                            </div>
-                            <h2>Prestataire 1</h2>
-                            <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                    <div class="top">
+                        <div class="left">
+                            <h1>Rejoignez Notre Réseau de Professionnels du Mariage !</h1>
                         </div>
-                        <div class="card" id="prest2">
-                            <div class="photo">
-                                <img src="../media\pexels-andrea-piacquadio-874158.jpg" alt="">
-                            </div>
-                            <h2>Prestataire 2</h2>
-                            <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                        <div class="right">
+                            <p>Êtes-vous un expert en organisation de mariages à la recherche de nouvelles opportunités pour étendre votre portée ? LusoPicTours est la plateforme idéale pour vous ! Rejoignez-nous dès maintenant et proposez vos services à des milliers de couples du monde entier.</p>
+                            <input type="button" value="Vendre mes services !">                
                         </div>
                     </div>
+                    <div class="bottom">
+                        <h1>LES PRESTATAIRES A LA UNE :</h1>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="prevSlide()">&#10094;</button>
+                            <div class="carousel-track-container">
+                                <div class="carousel-track">
+                                    <div class="card" id="prest1">
+                                        <div class="photo">
+                                            <img src="../media/pexels-luis-quintero-1793305.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 1</h2>
+                                        <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest2">
+                                        <div class="photo">
+                                            <img src="../media/pexels-andrea-piacquadio-874158.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 2</h2>
+                                        <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                                    </div>
+                                    <div class="card" id="prest3">
+                                        <div class="photo">
+                                            <img src="../media/pexels-mentatdgt-1138903.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 3</h2>
+                                        <p>Capturez chaque moment précieux avec Jean Photographie, pour des souvenirs inoubliables de votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest4">
+                                        <div class="photo">
+                                            <img src="../media/pexels-luis-quintero-1793305.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 4</h2>
+                                        <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest5">
+                                        <div class="photo">
+                                            <img src="../media/pexels-andrea-piacquadio-874158.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 5</h2>
+                                        <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                                    </div>
+                                    <div class="card" id="prest6">
+                                        <div class="photo">
+                                            <img src="../media/pexels-mentatdgt-1138903.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 6</h2>
+                                        <p>Capturez chaque moment précieux avec Jean Photographie, pour des souvenirs inoubliables de votre mariage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="avis">
+                    <h2>Avis</h2>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="title">
+                        <h2>FAQ</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <h3>aide 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
+                        </li>
+                        <li>
+                            <h3>aide 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
+                        </li>
+                        <li>
+                            <h3>aide 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
+                        </li>
+                        <li>
+                            <h3>aide 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
+                        </li>
+                        <li>
+                            <h3>aide 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer">
                     <div class="top_f">

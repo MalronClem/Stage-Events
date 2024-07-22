@@ -135,25 +135,36 @@ prevButton.addEventListener('click', () => {
 startAutoScroll(); 
 
 
-let currentCardIndex = 0;
-const commentCards = document.querySelectorAll('.card');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
 
-function showCard(index) {
-    commentCards.forEach((card, i) => {
-        card.classList.toggle('active', i === index);
-    });
+const track = document.querySelector('.carousel-track');
+const cards = Array.from(track.children);
+const prevButton2 = document.querySelector('.prev');
+const nextButton2 = document.querySelector('.next');
+const cardWidth = cards[0].getBoundingClientRect().width;
+
+let currentIndex2 = 0;
+
+function setCardPosition(card, index) {
+    card.style.left = cardWidth * index + 'px';
 }
 
-prevBtn.addEventListener('click', () => {
-    currentCardIndex = (currentCardIndex > 0) ? currentCardIndex - 1 : commentCards.length - 1;
-    showCard(currentCardIndex);
-});
+cards.forEach(setCardPosition);
 
-nextBtn.addEventListener('click', () => {
-    currentCardIndex = (currentCardIndex < commentCards.length - 1) ? currentCardIndex + 1 : 0;
-    showCard(currentCardIndex);
-});
+function moveToSlide(track, currentIndex) {
+    const amountToMove = -currentIndex2 * cardWidth;
+    track.style.transform = `translateX(${amountToMove}px)`;
+}
 
-showCard(currentCardIndex);
+function nextSlide() {
+    if (currentIndex2 < cards.length - 3) {
+        currentIndex2++;
+        moveToSlide(track, currentIndex2);
+    }
+}
+
+function prevSlide() {
+    if (currentIndex2 > 0) {
+        currentIndex2--;
+        moveToSlide(track, currentIndex2);
+    }
+}
