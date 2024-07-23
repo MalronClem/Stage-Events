@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'NomDeVotrePolice1';
+    src: url('../font/Oxygen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NomDeVotrePolice2';
+    src: url('../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NomDeVotrePolice3';
+    src: url('../font/PlayfairDisplaySC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'NomDeVotrePolice1', sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 11%;
+    color: #d9d9f8;
+    z-index: 1000; 
+    box-shadow: 0 5px 30px -20px #DAA520, 
+                5px 0 30px -15px #DAA520, 
+               -5px 0 30px -15px #DAA520,
+               inset 0 10px 20px -10px #DAA520; 
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            transition: 0.2s ease-in-out;
+
+            svg{
+                height: 40%;
+                width: 40%;
+
+                fill: #d9d9f8; 
+                stroke: #d9d9f8; 
+            }
+
+            p{
+                color: #d9d9f8;            
+            }
+        }
+
+        li:hover{
+            cursor: pointer;
+            transform: translateY(-3%);
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+main{
+    position: absolute;
+    top: 11%;
+    width: 100%;
+    height: 89%;
+    overflow-y: scroll;
+
+}
+
+.conf{
+    height: 100%; 
+    width: 100%;
+    overflow-y: scroll; 
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .data{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 325%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 275%;
+            height: 4%;
+
+        }
+        ul{
+            width: 100%;
+            height: 96%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-bottom: 3%;
+
+            li{
+                width: 80%;
+                height:auto ;
+                display: flex;
+                align-items: left;
+                justify-content: center;
+                justify-content: space-around;
+                flex-direction: column;
+                font-family: NomDeVotrePolice1 ;
+
+                h2{
+                    font-size: 150%;
+                    margin-bottom:2%;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    transition: 0.3s ease-in-out all;
+
+                }
+
+                p{
+                    opacity: 0.70;
+                    font-size: 110%;
+                    line-height: 1.7;
+                    margin-left: 2%;
+                    transition: 0.4s ease-in-out all;
+
+                }
+
+
+            }
+
+            li:hover h2{
+                color: #DAA520;
+            }
+
+            li:hover p{
+                opacity: 1;
+
+            }
+        }
+
+    }
+
+    .footer{
+        position: absolute;
+        top: 325%;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #000000;
+        border-top: #000000 solid 2px ;
+
+        .top_f{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            
+            .left{
+                width: 50%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                h1{
+                    margin-left: 50%;
+                    margin-bottom: 5%;
+                }
+                p{
+                    margin-left: 50%;
+                    margin-bottom: 1%;
+                    font-size: 110%;
+                }
+            }
+
+            .right{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ul{
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 25%;
+
+                    li:not(.title){
+                        cursor: pointer;
+                        width: 100%;
+                        transition: all 0.2s ease-in-out; 
+                    }
+
+                    li:not(.title):hover{
+                        padding-left: 1%;
+                    }
+
+                    h2{
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+
+        .bottom_f{
+            width: 90%;
+            height: 20%;
+            border-top: #0000007c 1px solid ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 80%;
+                font-size: 110%;
+                transition: 0.3s ease-in-out;
+
+            }
+
+            .paiement_type{
+                width: 50%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+
+                img{
+                    height: 80%;
+                    margin-left: 5%;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
