@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil prestataire</title>
+    <title>Politique de Confidentialité</title>
     <link rel="stylesheet" href="footer_pages.css">
 </head>
 <body>
@@ -122,35 +122,6 @@
                         </P>
                     </li>
                 </ul>
-            </div>
-            <div class="footer">
-                    <div class="top_f">
-                        <div class="left">
-                            <h1>LOGO</h1>
-                            <p> Tel : XX XX XX XX XX</p>
-                            <p> Mail : test@test.com</p>
-
-                        </div>
-                        <div class="right">
-                            <ul>
-                                <li class="title"><h2>Info</h2></li>
-                                <li>Mention légale</li>
-                                <li>CGV</li>
-                                <li>Politique de confidentialité</li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="bottom_f">
-                        <p>Copyright © 2024 - Eventos - All Rights Reserved</p>
-                        <div class="paiement_type">
-                            <img src="../media/visa.png" alt="">
-                            <img src="../media/discover.png" alt="">
-                            <img src="../media/jcb.png" alt="">
-                            <img src="../media/paypal.png" alt="">
-                            <img src="../media/mastercard.png" alt="">
-                        </div>
-                    </div>
             </div>
         </div>
     </main>

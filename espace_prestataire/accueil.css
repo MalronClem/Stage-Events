@@ -692,7 +692,7 @@ main{
         position: absolute;
         top: 100%;
         width: 100%;
-        height: 475%;
+        height: 400%;
         overflow-y: hidden;
 
         .description{
@@ -700,7 +700,7 @@ main{
             top: 0;
             left: 0;
             width: 100%;
-            height: 20%;
+            height: 22%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -825,7 +825,7 @@ main{
             left: 0;
             width: 100%;
             background-color: #ffffff;
-            height: 24%;
+            height: 26%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -885,7 +885,7 @@ main{
 
         .for_prestataire{
             position: relative;
-            height: 22%;
+            height: 30%;
             width: 100%;
             overflow: hidden;
 
@@ -982,7 +982,7 @@ main{
 
                 .carousel-container {
                     position: absolute;
-                    top: 15%;
+                    top: 17%;
                     max-width: 80%;
                     margin: auto;
                     overflow: hidden;
@@ -1085,7 +1085,7 @@ main{
 
         .avis{
             position: relative;
-            height: 12%;
+            height: 14%;
             width: 100%;
             display: flex;
             align-items: center;
@@ -1228,7 +1228,7 @@ main{
                 background: #DAA520;
             }
         }
-
+        /*
         .faq{
             position: relative;
             height: 16%;
@@ -1322,12 +1322,12 @@ main{
                     transform: translateY(-100%);
                 }
             }
-        }
+        }*/
 
         .footer{
             position: absolute;
             bottom: 0;
-            height: 6%;
+            height: 7%;
             width: 100%;
             display: flex;
             align-items: center;

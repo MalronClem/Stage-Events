@@ -78,33 +78,234 @@
 
     <main>
         <div class="container" id="accueil">
-            <div class="left">
+            <div class="top">   
                 <div class="carousel">
-                <div class="carousel-inner">
-                    
-                    <div class="carousel-item">
-                        <img src="../media\park-7407081.jpg" alt="Deuxième image">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-overlay" data-color="#ffffff">
+                            <img src="../media/people.jpg" alt="Troisième image">
+                        </div>
+                        <div class="carousel-item carousel-overlay" data-color="#000000">
+                            <img src="../media/pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
+                        </div>
+                        <div class="carousel-item carousel-overlay" data-color="#ff0000">
+                            <img src="../media/coiffeur.jpg" alt="Troisième image">
+                        </div>
+                        <div class="carousel-item carousel-overlay" data-color="#00ff00">
+                            <img src="../media/pexels-trungnguyenphotog-1603884 (1).jpg" alt="Troisième image">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../media\people.jpg" alt="Troisième image">
+                    <div class="title">
+                        <h1>♦ Orchestrez votre mariage de rêve ♦</h1>
+                        <p>"" Réalisez le mariage de vos rêves avec 1001 Clicks. Nous nous occupons de chaque détail pour que votre journée soit parfaite et inoubliable. Profitez de chaque instant, nous nous occupons du reste. ""</p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../media\pexels-juliano-astc-1623739-12303272.jpg" alt="Deuxième image">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../media\coiffeur.jpg" alt="Troisième image">
+                    <div class="boutons">
+                        <button class="carousel-control-prev">&#10094;</button>
+                        <button class="carousel-control-next">&#10095;</button>
                     </div>
                 </div>
-                <div class="boutons">
-                    <button class="carousel-control-prev">&#10094;</button>
-                    <button class="carousel-control-next">&#10095;</button>
+            </div>      
+            <div class="bottom">
+                <div class="description">
+                    <div class="text">
+                        <div class="left">
+                            <h2>POURQUOI NOUS CHOISIR ?</h2>
+                            <svg version="1.1" id="ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+             width="200px" height="200px" viewBox="0 0 512 512"  xml:space="preserve" fill="black">
+            <g>
+                <path class="st0" d="M504.041,193.859c-14.703-57.156-117.75-108.953-248.047-108.953c-130.281,0-233.344,51.797-248.047,108.953
+                    C-2.975,227.594-1.49,272.891,5.447,299c18.375,78.391,113.594,128.094,250.547,128.094c136.938,0,232.172-49.703,250.547-128.094
+                    C513.494,272.891,514.979,227.594,504.041,193.859z M214.354,337.813c-58.125-1.266-109.766-17.5-140.094-33.625
+                    c-10.156-5.453-17.922-10.75-23.297-16.438c-2.984-3.313-5.609-6.75-6.406-12.078c-0.656-5.219,3.031-9.953,8.234-10.594
+                    c4.984-0.625,9.469,2.781,10.391,7.656l0.063-0.016l0.016,0.016l0.094,0.172c0.188,0.328,0.688,1.031,1.5,1.891
+                    c1.609,1.75,4.422,4.109,8.234,6.656c7.609,5.109,19.047,10.953,33.094,16.375c28.156,10.875,66.875,20.172,108.563,21.016
+                    c5.25,0.109,9.391,4.438,9.297,9.672C223.932,333.75,219.604,337.922,214.354,337.813z M255.994,295.906
+                    c-91.391,0-183.375-25.078-192.563-59.313c2.344-29.641,101.172-59.297,192.563-59.297s190.234,29.656,192.578,59.297
+                    C439.385,270.828,347.385,295.906,255.994,295.906z"/>
+            </g>
+                            </svg>
+                            <input type="button" value="Votre mariage">
+
+                        </div>
+                        <div class="right">
+                            <p> • Notre site est dédié à l'art de planifier des mariages inoubliables. Nous offrons des outils et des ressources pour aider les futurs mariés à organiser chaque détail de leur journée spéciale avec élégance et précision. De la sélection des prestataires en passant par la gestion des invités... </p>
+                            <p> • Nous vous accompagnons à chaque étape pour faire de votre mariage un événement parfaitement orchestré et mémorable. Laissez-nous vous aider à transformer vos rêves nuptiaux en réalité.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="proposition">
+                    <h2> NOUS VOUS PROPOSONS :</h2>
+                    <div class="grid">
+                        <div class="card">
+                            <h3>Card 1</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Card 2</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Card 3</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Card 4</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Card 5</h3>
+                        </div>
+                        <div class="card">
+                            <h3>Card 6</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="right">
-                <div class="data">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi ipsum consequatur sunt, saepe rerum cumque impedit eum distinctio, temporibus ut laudantium autem vel sit. Ratione aliquam voluptatem iste asperiores?
-                </div>  
+                <div class="for_prestataire">
+                    <div class="top">
+                        <div class="left">
+                            <h1>Rejoignez Notre Réseau de Professionnels du Mariage !</h1>
+                        </div>
+                        <div class="right">
+                            <p>Êtes-vous un expert en organisation de mariages à la recherche de nouvelles opportunités pour étendre votre portée ? LusoPicTours est la plateforme idéale pour vous ! Rejoignez-nous dès maintenant et proposez vos services à des milliers de couples du monde entier.</p>
+                            <input type="button" value="Vendre mes services !">                
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h1>LES PRESTATAIRES A LA UNE :</h1>
+                        <div class="carousel-container">
+                            <button class="prev" onclick="prevSlide()">&#10094;</button>
+                            <div class="carousel-track-container">
+                                <div class="carousel-track">
+                                    <div class="card" id="prest1">
+                                        <div class="photo">
+                                            <img src="../media/pexels-luis-quintero-1793305.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 1</h2>
+                                        <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest2">
+                                        <div class="photo">
+                                            <img src="../media/pexels-andrea-piacquadio-874158.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 2</h2>
+                                        <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                                    </div>
+                                    <div class="card" id="prest3">
+                                        <div class="photo">
+                                            <img src="../media/pexels-mentatdgt-1138903.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 3</h2>
+                                        <p>Capturez chaque moment précieux avec Jean Photographie, pour des souvenirs inoubliables de votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest4">
+                                        <div class="photo">
+                                            <img src="../media/pexels-luis-quintero-1793305.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 4</h2>
+                                        <p>Créez une atmosphère romantique avec Eric Décoration, spécialisée dans des arrangements floraux éblouissants pour votre mariage.</p>
+                                    </div>
+                                    <div class="card" id="prest5">
+                                        <div class="photo">
+                                            <img src="../media/pexels-andrea-piacquadio-874158.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 5</h2>
+                                        <p>Régalez vos invités avec les délices savoureux de Sébastien Traiteur, pour une expérience culinaire exceptionnelle lors de votre journée spéciale.</p>
+                                    </div>
+                                    <div class="card" id="prest6">
+                                        <div class="photo">
+                                            <img src="../media/pexels-mentatdgt-1138903.jpg" alt="">
+                                        </div>
+                                        <h2>Prestataire 6</h2>
+                                        <p>Capturez chaque moment précieux avec Jean Photographie, pour des souvenirs inoubliables de votre mariage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="avis">
+                    <h2>Avis</h2>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="left">
+                                <h3>Titre du commentaire</h3>
+                                <p>commentaire de la personne</p>
+                                <p class="stars">nb étoile</p>
+                            </div>
+                            <div class="right">
+                                <img>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="top_f">
+                        <div class="left">
+                            <h1>LOGO</h1>
+                            <p> Tel : XX XX XX XX XX</p>
+                            <p> Mail : test@test.com</p>
+
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="title"><h2>Info</h2></li>
+                                <li>Mention légale</li>
+                                <li>CGV</li>
+                                <li>Politique de confidentialité</li>
+                                <li>FAQ</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom_f">
+                        <p>Copyright © 2024 - Eventos - All Rights Reserved</p>
+                        <div class="paiement_type">
+                            <img src="../media/visa.png" alt="">
+                            <img src="../media/discover.png" alt="">
+                            <img src="../media/jcb.png" alt="">
+                            <img src="../media/paypal.png" alt="">
+                            <img src="../media/mastercard.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" id="prestataires">
@@ -156,8 +357,8 @@
                         </div>
                         <div class="send">
                         <svg id="send_svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.0004 18.5816V12.5M12.7976 18.754L15.8103 19.7625C17.4511 20.3118 18.2714 20.5864 18.7773 20.3893C19.2166 20.2182 19.5499 19.8505 19.6771 19.3965C19.8236 18.8737 19.4699 18.0843 18.7624 16.5053L14.2198 6.36709C13.5279 4.82299 13.182 4.05094 12.7001 3.81172C12.2814 3.60388 11.7898 3.60309 11.3705 3.80958C10.8878 4.04726 10.5394 4.8182 9.84259 6.36006L5.25633 16.5082C4.54325 18.086 4.18671 18.875 4.33169 19.3983C4.4576 19.8528 4.78992 20.2216 5.22888 20.394C5.73435 20.5926 6.55603 20.3198 8.19939 19.7744L11.2797 18.752C11.5614 18.6585 11.7023 18.6117 11.8464 18.5933C11.9742 18.5769 12.1036 18.5771 12.2314 18.5938C12.3754 18.6126 12.5162 18.6597 12.7976 18.754Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                            <path d="M12.0004 18.5816V12.5M12.7976 18.754L15.8103 19.7625C17.4511 20.3118 18.2714 20.5864 18.7773 20.3893C19.2166 20.2182 19.5499 19.8505 19.6771 19.3965C19.8236 18.8737 19.4699 18.0843 18.7624 16.5053L14.2198 6.36709C13.5279 4.82299 13.182 4.05094 12.7001 3.81172C12.2814 3.60388 11.7898 3.60309 11.3705 3.80958C10.8878 4.04726 10.5394 4.8182 9.84259 6.36006L5.25633 16.5082C4.54325 18.086 4.18671 18.875 4.33169 19.3983C4.4576 19.8528 4.78992 20.2216 5.22888 20.394C5.73435 20.5926 6.55603 20.3198 8.19939 19.7744L11.2797 18.752C11.5614 18.6585 11.7023 18.6117 11.8464 18.5933C11.9742 18.5769 12.1036 18.5771 12.2314 18.5938C12.3754 18.6126 12.5162 18.6597 12.7976 18.754Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                         </div>
                     </div>
                 </div>

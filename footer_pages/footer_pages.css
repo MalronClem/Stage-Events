@@ -174,115 +174,182 @@ main{
         }
 
     }
+}
 
-    .footer{
-        position: absolute;
-        top: 325%;
-        left: 0;
+#aide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    color: #d9d9f8;
+    
+    .search-container{
         width: 100%;
-        height: 30%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 10%;
+
+        input{
+            width: 10%;
+            background-color: #000000da;
+            border: none;
+            padding: 0.5%;
+            border-radius: 10px;
+            transition: ease-out 0.45s;
+            color: #d9d9f8;
+
+        }
+
+        input:hover{
+            width: 80%;
+        }
+    }
+
+    .help-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 3%; 
+        overflow-y: scroll;
+        max-width: 100%;
+        max-height: 90%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+        .help-item {
+            background-color: #000000da;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            padding: 2%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+            transition: 0.4s ease-in-out all;
+
+            h2{
+                width: 95%;
+                margin-left: 3%;
+                margin-bottom: 3%;
+                transition: 0.4s ease-in-out all;
+
+            }
+
+            p{
+                width: 96%;
+                margin-left: 2%;
+                opacity: 0.85;
+                transition: 0.4s ease-in-out all;
+
+            }
+        }
+
+        .help-item:hover{
+            transform: scale(1.01);
+            background-color: #000000cb;
+        }
+
+        .help-item:hover h2{
+            color: #DAA520;
+            margin-left: 5%;
+        }
+        .help-item:hover p{
+            opacity: 1;
+        }
+    }
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1{
+        height: 7%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            font-size: 275%;
+        font-family: 'NomDeVotrePolice1', sans-serif;
+
+    }
+
+    form{
+        height: 83%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: #000000;
-        border-top: #000000 solid 2px ;
+        justify-content: space-around;
+        
 
-        .top_f{
-            background-color: rgb(255, 255, 255);
-            width: 100%;
-            height: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            
-            .left{
-                width: 50%;
-                height: 70%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                h1{
-                    margin-left: 50%;
-                    margin-bottom: 5%;
-                }
-                p{
-                    margin-left: 50%;
-                    margin-bottom: 1%;
-                    font-size: 110%;
-                }
-            }
-
-            .right{
-                width: 50%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                ul{
-                    height: 80%;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    width: 25%;
-
-                    li:not(.title){
-                        cursor: pointer;
-                        width: 100%;
-                        transition: all 0.2s ease-in-out; 
-                    }
-
-                    li:not(.title):hover{
-                        padding-left: 1%;
-                    }
-
-                    h2{
-                        margin-left: 50%;
-                        transform: translateX(-50%);
-                    }
-                }
-            }
+        input:not(#button){
+            width: 60%;
+            height: auto;
+            padding: 1%;
+            border: none;
+            background-color: #daa52091;
+            font-size: 125%;
+            border-radius: 10px;
+            font-family: 'NomDeVotrePolice1', sans-serif;
+            transition: ease-in-out 0.3s all;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
         }
 
-        .bottom_f{
-            width: 90%;
-            height: 20%;
-            border-top: #0000007c 1px solid ;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
+        textarea{
+            text-align: left;
+            height: 40%;
+            padding: 1%;
+            border: none;
+            background-color: #daa52091;
+            font-size: 125%;
+            border-radius: 10px;
+            width: 60%;
+            font-family: 'NomDeVotrePolice1', sans-serif;
+            resize: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 1%;
+            transition: ease-in-out 0.3s all;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+        }
 
-            p{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 50%;
-                height: 80%;
-                font-size: 110%;
-                transition: 0.3s ease-in-out;
+        input:hover:not(#button), textarea:hover{
+            width: 61%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.76);
+        }
 
-            }
+        #button{
+            position: relative;
+            left: -15%;
+            width: 30%;
+            height: auto;
+            padding: 1%;
+            border: none;
+            background-color: #daa52091;
+            font-size: 125%;
+            border-radius: 10px;
+            font-family: 'NomDeVotrePolice1', sans-serif;
+            transition: ease-in-out 0.4s all;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+        }
 
-            .paiement_type{
-                width: 50%;
-                height: 80%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-
-
-                img{
-                    height: 80%;
-                    margin-left: 5%;
-                    transition: 0.3s ease-in-out;
-                }
-            }
+        #button:hover{
+            background-color: #000000ad;
+            font-weight: bolder;
+            margin-top: 1.5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.76);
         }
     }
 }

@@ -241,33 +241,7 @@
                         
                     </div>
                 </div>
-                <div class="faq">
-                    <div class="title">
-                        <h2>FAQ</h2>
-                    </div>
-                    <ul>
-                        <li>
-                            <h3>aide 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
-                        </li>
-                        <li>
-                            <h3>aide 2</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
-                        </li>
-                        <li>
-                            <h3>aide 3</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
-                        </li>
-                        <li>
-                            <h3>aide 4</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
-                        </li>
-                        <li>
-                            <h3>aide 5</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora accusantium velit magni suscipit quasi non distinctio tenetur explicabo quis ipsum, iste atque neque laborum error quos? Explicabo, eaque sapiente?</p>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="footer">
                     <div class="top_f">
                         <div class="left">
@@ -282,6 +256,7 @@
                                 <li>Mention légale</li>
                                 <li>CGV</li>
                                 <li>Politique de confidentialité</li>
+                                <li>FAQ</li>
                                 <li>Contact</li>
                             </ul>
                         </div>
