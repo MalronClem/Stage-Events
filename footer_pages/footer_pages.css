@@ -120,7 +120,6 @@ main{
             width: 100%;
             font-size: 275%;
             height: 4%;
-
         }
         ul{
             width: 100%;
@@ -146,8 +145,8 @@ main{
                     font-size: 150%;
                     margin-bottom:2%;
                     letter-spacing: 2px;
-                    font-weight: bold;
                     transition: 0.3s ease-in-out all;
+
 
                 }
 
