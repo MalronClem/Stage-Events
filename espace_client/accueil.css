@@ -1,6 +1,20 @@
 @font-face {
-    font-family: 'NomDeVotrePolice';
+    font-family: 'NomDeVotrePolice1';
     src: url('../font/Oxygen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NomDeVotrePolice2';
+    src: url('../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NomDeVotrePolice3';
+    src: url('../font/PlayfairDisplaySC-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +31,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    font-family: 'NomDeVotrePolice', sans-serif;
+    font-family: 'NomDeVotrePolice1', sans-serif;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -74,14 +88,12 @@ nav{
 }
 
 main{
+    position: absolute;
+    top: 11%;
     width: 100%;
     height: 89%;
-    overflow: hidden;        
-}
+    overflow-y: scroll;
 
-.container{
-    width: 100%;
-    height: 100%;
 }
 
 #accueil{
@@ -239,7 +251,7 @@ main{
             top: 0;
             left: 0;
             width: 100%;
-            height: 26%;
+            height: 22%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -400,6 +412,7 @@ main{
                     margin-bottom: 1%;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.678);
                     transition: all ease-in-out 0.4s;
+
                     h3{
                         font-size: 125%; 
                     }
@@ -424,7 +437,7 @@ main{
 
         .for_prestataire{
             position: relative;
-            height: 26%;
+            height: 30%;
             width: 100%;
             overflow: hidden;
 
@@ -484,6 +497,7 @@ main{
                         font-weight: bolder;
                         font-family: 'NomDeVotrePolice2', sans-serif;
                         letter-spacing: 1px;
+                        margin-top: 2%;
     
                     }
                     input:hover{
@@ -521,7 +535,7 @@ main{
 
                 .carousel-container {
                     position: absolute;
-                    top: 15%;
+                    top: 17%;
                     max-width: 80%;
                     margin: auto;
                     overflow: hidden;
@@ -767,101 +781,6 @@ main{
                 background: #DAA520;
             }
         }
-        /*
-        .faq{
-            position: relative;
-            height: 16%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            justify-content: space-around;
-
-            .title{
-                width: 100%;
-
-                h2{
-                    position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    text-align: center;
-                    width: 90%;
-                    font-size: 230%;
-                    color: #000000;
-                    font-weight: bold;
-                    border-bottom: solid 1px rgba(0, 0, 0, 0.596);
-                    padding-bottom: 1%;
-                }
-            }
-
-            ul{
-                margin-bottom: 1%;
-                height: 80%;
-                width: 80%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                justify-content: space-between;
-                flex-direction: column;
-
-                li{
-                    
-                    border-radius: 15px;
-                    width: 100%;
-                    background-color: #ffffff;
-                    height: 14%;
-                    overflow-x: hidden;
-                    overflow-y: hidden;
-                    padding-left: 2%;
-                    padding-right: 2%;
-                    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.363), 2px 2px 10px rgba(0, 0, 0, 0.363);
-                    transition: 0.4s ease-in-out all;
-                    transition-delay: 0.1s;
-
-                    h3{
-                        position: relative;
-                        height: 100%;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: left;
-                        transition: 0.5s ease-in-out all;
-                        font-size: 200%;
-                        letter-spacing: 1px;
-                        margin-left: 5%;
-                    }
-
-                    p{
-                        position: relative;
-                        height: 100%;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        opacity: 0;
-                        transition: 0.6s ease-in-out all;
-                        font-size: 125%;
-
-                    }
-                }
-
-                li:hover{
-                    background-color: #DAA520;
-                    color: #000000;
-                    width: 101%;
-                }
-                li:hover h3{
-                    transform: translateY(-100%);
-                    opacity: 0;
-                }
-
-                li:hover p{
-                    opacity: 1;
-                    transform: translateY(-100%);
-                }
-            }
-        }*/
 
         .footer{
             position: absolute;
@@ -980,7 +899,7 @@ main{
 }
 
 #prestataires{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 100%;

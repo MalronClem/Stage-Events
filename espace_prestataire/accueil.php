@@ -102,22 +102,22 @@
                     <h2> NOUS VOUS PROPOSONS :</h2>
                     <div class="grid">
                         <div class="card">
-                            <h3>Card 1</h3>
+                            <h3>Gestion Invités</h3>
                         </div>
                         <div class="card">
-                            <h3>Card 2</h3>
+                            <h3>Gestion Tables</h3>
                         </div>
                         <div class="card">
-                            <h3>Card 3</h3>
+                            <h3>Gestion Budjet</h3>
                         </div>
                         <div class="card">
-                            <h3>Card 4</h3>
+                            <h3>Partenaires</h3>
                         </div>
                         <div class="card">
-                            <h3>Card 5</h3>
+                            <h3>Idées</h3>
                         </div>
                         <div class="card">
-                            <h3>Card 6</h3>
+                            <h3>Accompagnement Personnel</h3>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,6 @@
                         
                     </div>
                 </div>
-
                 <div class="footer">
                     <div class="top_f">
                         <div class="left">

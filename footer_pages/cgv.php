@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité</title>
+    <title>CGV</title>
     <link rel="stylesheet" href="footer_pages.css">
 </head>
 <body>
@@ -45,9 +45,8 @@
     <main>
         <div class="conf">
             <div class="data">
-                <h1>Politique de confidentialité</h1>
-                <!--à adapter aux réelles politique de confidentialité-->
-
+                <h1>CGV</h1>
+                <!--à adapter aux réelles cgv-->
                 <ul>
                     <li>
                         <h2>Introduction</h2>
@@ -124,9 +123,6 @@
                         </P>
                     </li>
                 </ul>
-            </div>
-            <div class="footer">
-                
             </div>
         </div>
     </main>

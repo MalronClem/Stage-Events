@@ -316,6 +316,19 @@ document.addEventListener('DOMContentLoaded', function() {
         video.style.display = 'none';
     });
 
+    // Cacher tous les divs du <main> sauf celui avec l'ID "accueil"
+    document.querySelectorAll('main > div').forEach(div => {
+        if (div.id !== 'accueil') {
+            div.style.display = 'none';
+        }
+    });
+
+    // Afficher le div avec l'ID "accueil"
+    const accueilDiv = document.getElementById('accueil');
+    if (accueilDiv) {
+        accueilDiv.style.display = 'flex';
+    }
+
     // Ajouter des écouteurs de clic à chaque <li>
     const navItems = document.querySelectorAll('nav ul li');
     navItems.forEach(item => {
@@ -348,8 +361,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
 
 
 

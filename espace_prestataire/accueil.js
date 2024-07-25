@@ -168,3 +168,13 @@ function prevSlide() {
         moveToSlide(track, currentIndex2);
     }
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var headings = document.querySelectorAll(".card h3");
+    headings.forEach(function(heading) {
+        heading.setAttribute("data-text", heading.textContent);
+    });
+});

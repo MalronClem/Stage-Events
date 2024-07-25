@@ -75,7 +75,6 @@
                     
         </ul>
     </nav>
-
     <main>
         <div class="container" id="accueil">
             <div class="top">   
@@ -136,7 +135,7 @@
                     <h2> NOUS VOUS PROPOSONS :</h2>
                     <div class="grid">
                         <div class="card">
-                            <h3>Card 1</h3>
+                            <h3>Organisation </h3>
                         </div>
                         <div class="card">
                             <h3>Card 2</h3>
@@ -275,7 +274,6 @@
                         
                     </div>
                 </div>
-
                 <div class="footer">
                     <div class="top_f">
                         <div class="left">
@@ -408,6 +406,7 @@
             </div>
         </div>
         <div class="container" id="mariage">
+            <!--à finir-->
         </div>
         <div class="container" id="aide">
             <div class="search-container">
