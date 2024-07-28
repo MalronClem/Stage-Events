@@ -845,26 +845,31 @@ main{
             .grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, auto);
                 gap: 2%;
                 width: 75%;
                 margin: 0 auto;
-                height: 75%;
+                height: 75%; 
+                max-height: 75%; 
+                overflow-y: auto;
                 transition: all ease-in-out 0.2s;
+                padding: 2%;
 
                 .card {
                     border: 1px solid #ccc;
                     padding: 7%;
                     background-color: #daa520b0;
                     border-radius: 15px;
-                    margin-top: 1%;
-                    margin-bottom: 1%;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.678);
                     transition: all ease-in-out 0.4s;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     overflow-x: hidden;
+                    height: 300px; 
+                    cursor: pointer;
+                    background-size: cover; 
+                    background-position: center;
+            
 
                     h3{
                         width: 100%;
@@ -874,9 +879,12 @@ main{
                         align-items: center;
                         flex-direction: row;
                         position: relative;
-                        transition: all 1s ease; /* Transition pour l'effet de déplacement */
-                        font-size: 131%;
+                        transition: all 1s ease;
+                        font-size: 125%;
                         text-transform: uppercase;
+                        text-shadow: 0 0 10px #000000;
+                        color: #d9d9f8;
+
                     }
 
                     h3::after{
@@ -887,7 +895,27 @@ main{
                         text-align: center;
                         white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
                         transition: all 1s ease; /* Transition pour l'effet de déplacement */
+                        text-shadow: 0 0 5px #000000;
                     }
+                }
+                
+                #card1{
+                    background-image: url('../media/accueil/pexels-paggiarofrancesco-2111015.jpg');
+                }
+                #card2{
+                    background-image: url('../media/accueil/pexels-bertellifotografia-2377000.jpg');
+                }
+                #card3{
+                    background-image: url('../media/accueil/pexels-brunomassao-2095594.jpg');
+                }
+                #card4{
+                    background-image: url('../media/accueil/pexels-elletakesphotos-2696064.jpg');
+                }
+                #card5{
+                    background-image: url('../media/accueil/pexels-venus-xu-463658495-16978344.jpg');
+                }
+                #card6{
+                    background-image: url('../media/accueil/pexels-bertellifotografia-17206164.jpg');
                 }
 
                 .card:hover h3 {
@@ -898,6 +926,8 @@ main{
                     transform: scale(1.2);
                     text-shadow: 0 0 5px rgba(0, 0, 0, 0.466);
                     letter-spacing: 1px;
+                    text-shadow: 0 0 5px #000000;
+
                 }
             
 

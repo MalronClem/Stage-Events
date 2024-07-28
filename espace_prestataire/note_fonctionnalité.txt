@@ -1,0 +1,6 @@
+- Pour la partie #accueil/bootm/proposition/grid/card: 
+    - il faut que les cartes soit cliquable et amène directement sur la liste des prestataires qui propose cette prestation.
+    - il faut que les nouveau service proposé par le site soit rajouter sous forme de nouvelle card avec le css qui suit et un contenu qui suit (titre et image)
+
+-Pour la partie #accueil/bootm/for_prestataire/bottom/carousel-container/carousel-track-container/carousel-track/card:
+    - il faut que les prestataires qui paient, aient leur card dans le carousel avec un css et un contenu qui suit (image, nom, rapide présentation) 

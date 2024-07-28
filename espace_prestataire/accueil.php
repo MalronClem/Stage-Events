@@ -101,23 +101,23 @@
                 <div class="proposition">
                     <h2> NOUS VOUS PROPOSONS :</h2>
                     <div class="grid">
-                        <div class="card">
-                            <h3>Gestion Invités</h3>
+                        <div class="card" id="card1">
+                            <h3>DJ</h3>
                         </div>
-                        <div class="card">
-                            <h3>Gestion Tables</h3>
+                        <div class="card" id="card2">
+                            <h3>Photographe</h3>
                         </div>
-                        <div class="card">
-                            <h3>Gestion Budjet</h3>
+                        <div class="card" id="card3">
+                            <h3>vidéaste</h3>
                         </div>
-                        <div class="card">
-                            <h3>Partenaires</h3>
+                        <div class="card" id="card4">
+                            <h3>traiteur</h3>
                         </div>
-                        <div class="card">
-                            <h3>Idées</h3>
+                        <div class="card" id="card5">
+                            <h3>Maquilleuse</h3>
                         </div>
-                        <div class="card">
-                            <h3>Accompagnement Personnel</h3>
+                        <div class="card" id="card6">
+                            <h3>location salles</h3>
                         </div>
                     </div>
                 </div>
