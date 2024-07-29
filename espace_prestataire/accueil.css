@@ -853,11 +853,10 @@ main{
                 overflow-y: auto;
                 transition: all ease-in-out 0.2s;
                 padding: 2%;
+                overflow-x: hidden;
 
                 .card {
-                    border: 1px solid #ccc;
                     padding: 7%;
-                    background-color: #daa520b0;
                     border-radius: 15px;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.678);
                     transition: all ease-in-out 0.4s;
@@ -869,7 +868,8 @@ main{
                     cursor: pointer;
                     background-size: cover; 
                     background-position: center;
-            
+                    overflow: hidden; /* Assurez-vous que le pseudo-élément ne déborde pas */
+                
 
                     h3{
                         width: 100%;
@@ -883,7 +883,8 @@ main{
                         font-size: 125%;
                         text-transform: uppercase;
                         text-shadow: 0 0 10px #000000;
-                        color: #d9d9f8;
+                        color: #ffffff;
+                        z-index: 2;
 
                     }
 
@@ -897,6 +898,17 @@ main{
                         transition: all 1s ease; /* Transition pour l'effet de déplacement */
                         text-shadow: 0 0 5px #000000;
                     }
+                }
+            
+                .card::before {
+                    content: "";
+                    position: absolute;
+                    width: 432px;
+                    height: 300px;
+                    background: rgba(0, 0, 0, 0.315); 
+                    z-index: 1;
+                    border-radius: 15px;
+
                 }
                 
                 #card1{
@@ -930,21 +942,18 @@ main{
 
                 }
             
-
                 .card:hover{
-                    transform: scale(1.05);
-                    background-color: #daa520ce;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+                    transform: scale(1.05);
 
                 }
             }
 
             .grid:hover .card:not(:hover) {
                 transform: scale(0.99);
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-                background-color: #daa5209a;
-                filter: blur(1px);
 
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+                filter: blur(1px); 
             }
         }
 
@@ -1059,7 +1068,6 @@ main{
                     .carousel-track-container {
                         overflow: hidden;
                         border-radius: 15px;
-
 
                         .carousel-track {
                             display: flex;
