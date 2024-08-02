@@ -76,6 +76,129 @@
         </ul>
     </nav>
     <main>
+        <div class="container" id="mariage">
+            <div class="souhait">
+                <div class="left">
+                    <h1>Description des Souhaits</h1>
+                    <label for="ideas">Décrivez votre mariage de rève</label>
+                    <textarea id="ideas" placeholder="Ce qui vous passe par la tête..."></textarea>
+                    <button id="submit1">Soumettre</button>
+
+                </div>
+                <div class="right">
+                    <div class="theme-container">
+                        <h2>Choisissez votre thème </h2>
+                        <select id="theme-select" >
+                            <option value="">--Choisissez un thème--</option>
+                            <option value="romantique">Romantique</option>
+                            <option value="classique">Classique</option>
+                            <option value="moderne">Moderne</option>
+                            <option value="rustique">Rustique</option>
+                        </select>
+                        <h4>Ou ajoutez un nouveau thème:</h4>
+                        <input type="text" id="new-theme" placeholder="Nouveau thème">
+                        <button id="add-theme">Ajouter le thème</button>
+                    </div>
+
+                    <div class="color-container">
+                        <h2>Choisissez vos couleurs</h2>
+                        <div class="color-picker">
+                            <label for="primary-color">Couleur principale:</label>
+                            <input type="color" id="primary-color" name="primary-color" value="#ff0000">
+                        </div>
+                        <div class="color-picker">
+                            <label for="secondary-color">Couleur secondaire:</label>
+                            <input type="color" id="secondary-color" name="secondary-color" value="#00ff00">
+                        </div>
+                        <div class="color-picker">
+                            <label for="tertiary-color">Couleur tertiaire:</label>
+                            <input type="color" id="tertiary-color" name="tertiary-color" value="#0000ff">
+                        </div>
+                    </div>
+
+                    <button id="submit2">Soumettre</button>
+
+                </div>
+            </div>
+            <div class="raccourcis">
+                <div class="card-container">
+                    <div class="card">
+                        <h1>J-150</h1>
+                    </div>
+                    <h3>Jours restant</h3>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h1>70/93</h1>
+                    </div>
+                    <h3>Invités</h3>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h1></h1>
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h1></h1>
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h1></h1>
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h1></h1>
+                    </div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="tasks">
+                <h1>Tâches à réaliser</h1>
+                <div class="card new">
+                    <h2>Nouveau</h2>
+                    <ul>
+                        <li>Sélection et réservation du lieu de la réception</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Sélection et réservation du lieu de la réception</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Sélection et réservation du lieu de la réception</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Sélection et réservation du lieu de la réception</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                        <li>Engager un photographe et un vidéaste</li>
+                    </ul>
+                    <div class="bottom">
+                        <input type="button" value="Nouvelle tâche">
+                    </div>
+                </div>
+                <div class="card in_progress">
+                    <h2>En progression</h2>
+                    <ul>
+                        <li>Créer et envoyer les invitations</li>
+                        <li>Planifier la cérémonie</li>
+                    </ul>
+                    <div class="bottom">
+                    </div>
+                </div>
+                <div class="card done">
+                    <h2>Terminé</h2>
+                    <ul>
+                        <li>Choisir les tenues de mariage</l>
+                    </ul>
+                    <div class="bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container" id="accueil">
             <div class="top">   
                 <div class="carousel">
@@ -134,23 +257,23 @@
                 <div class="proposition">
                     <h2> NOUS VOUS PROPOSONS :</h2>
                     <div class="grid">
-                        <div class="card">
-                            <h3>Organisation </h3>
+                        <div class="card" id="card1">
+                            <h3>DJ</h3>
                         </div>
-                        <div class="card">
-                            <h3>Card 2</h3>
+                        <div class="card" id="card2">
+                            <h3>Photographe</h3>
                         </div>
-                        <div class="card">
-                            <h3>Card 3</h3>
+                        <div class="card" id="card3">
+                            <h3>vidéaste</h3>
                         </div>
-                        <div class="card">
-                            <h3>Card 4</h3>
+                        <div class="card" id="card4">
+                            <h3>traiteur</h3>
                         </div>
-                        <div class="card">
-                            <h3>Card 5</h3>
+                        <div class="card" id="card5">
+                            <h3>Maquilleuse</h3>
                         </div>
-                        <div class="card">
-                            <h3>Card 6</h3>
+                        <div class="card" id="card6">
+                            <h3>location salles</h3>
                         </div>
                     </div>
                 </div>
@@ -404,9 +527,6 @@
                     <div class="bouton">Non</div>
                 </div>
             </div>
-        </div>
-        <div class="container" id="mariage">
-            <!--à finir-->
         </div>
         <div class="container" id="aide">
             <div class="search-container">

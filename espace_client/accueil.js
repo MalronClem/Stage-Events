@@ -384,62 +384,114 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /****************************************************************************************/
-// gestion du carousel (page logo)
+// gestion page d'accueil
 
-const prevButton = document.querySelector('.carousel-control-prev'); // Sélectionne le bouton précédent du carousel
-const nextButton = document.querySelector('.carousel-control-next'); // Sélectionne le bouton suivant du carousel
-const carouselInner = document.querySelector('.carousel-inner'); // Sélectionne l'élément contenant les diapositives du carousel
-const carouselItems = document.querySelectorAll('.carousel-item'); // Sélectionne toutes les diapositives du carousel
-let currentIndex = 0; // Index de la diapositive actuelle
-let autoScrollInterval; // Variable pour stocker l'intervalle de défilement automatique
+const prevButton = document.querySelector('.carousel-control-prev');
+const nextButton = document.querySelector('.carousel-control-next');
+const carouselInner = document.querySelector('.carousel-inner');
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+let autoScrollInterval;
 
-// Fonction pour afficher une diapositive donnée
-function showSlide(index) {
-    if (index >= carouselItems.length) {
-        currentIndex = 0; // Retourne à la première diapositive si l'index dépasse la longueur
-    } else if (index < 0) {
-        currentIndex = carouselItems.length - 1; // Passe à la dernière diapositive si l'index est négatif
-    } else {
-        currentIndex = index; // Définit l'index actuel
+// Vérifiez que tous les éléments nécessaires existent
+if (prevButton && nextButton && carouselInner && carouselItems.length > 0) {
+
+    // Fonction pour afficher le slide correspondant à l'index donné
+    function showSlide(index) {
+        if (index >= carouselItems.length) {
+            currentIndex = 0; // Revenir au premier slide si l'index est trop élevé
+        } else if (index < 0) {
+            currentIndex = carouselItems.length - 1; // Revenir au dernier slide si l'index est trop bas
+        } else {
+            currentIndex = index;
+        }
+        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`; // Met à jour la position du carousel
+
+    // Fonction pour aller au slide suivant
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    // Fonction pour démarrer le défilement automatique
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(nextSlide, 4000);
+    }
+
+    // Fonction pour arrêter le défilement automatique
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    // Ajouter des écouteurs d'événements pour les boutons de navigation
+    nextButton.addEventListener('click', () => {
+        stopAutoScroll(); // Arrêtez d'abord le défilement automatique
+        nextSlide(); // Affichez le slide suivant
+        startAutoScroll(); // Redémarrez le défilement automatique
+    });
+
+    prevButton.addEventListener('click', () => {
+        stopAutoScroll(); // Arrêtez d'abord le défilement automatique
+        showSlide(currentIndex - 1); // Affichez le slide précédent
+        startAutoScroll(); // Redémarrez le défilement automatique
+    });
+
+    // Démarrer le défilement automatique au chargement de la page
+    startAutoScroll();
+} else {
+    console.error('Un ou plusieurs éléments nécessaires pour le carousel sont manquants.');
 }
 
-// Fonction pour afficher la diapositive suivante
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
 
-// Fonction pour démarrer le défilement automatique
-function startAutoScroll() {
-    autoScrollInterval = setInterval(nextSlide, 4000); // Change la diapositive toutes les 4 secondes
-}
-
-// Fonction pour arrêter le défilement automatique
-function stopAutoScroll() {
-    clearInterval(autoScrollInterval); // Efface l'intervalle de défilement automatique
-}
-
-// Événement pour le bouton suivant du carousel
-nextButton.addEventListener('click', () => {
-    nextSlide();
-    stopAutoScroll(); // Arrête le défilement automatique lors du clic
-    startAutoScroll(); // Redémarre le défilement automatique
+// Initialiser les attributs data-text pour les titres des cartes
+document.addEventListener("DOMContentLoaded", function() {
+    var headings = document.querySelectorAll(".card h3");
+    headings.forEach(function(heading) {
+        heading.setAttribute("data-text", heading.textContent);
+    });
 });
 
-// Événement pour le bouton précédent du carousel
-prevButton.addEventListener('click', () => {
-    showSlide(currentIndex - 1);
-    stopAutoScroll(); // Arrête le défilement automatique lors du clic
-    startAutoScroll(); // Redémarre le défilement automatique
+
+
+// Gestion du carrousel de cartes
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const cards = Array.from(track.children);
+    const prevButton2 = document.querySelector('.prev');
+    const nextButton2 = document.querySelector('.next');
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const cardsToShow = 3; // Nombre de cartes affichées simultanément
+    const totalCards = cards.length;
+    const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;
+
+    let currentIndex2 = 0;
+
+    function moveToSlide(index) {
+        const amountToMove = -index * cardWidth * cardsToShow;
+        track.style.transform = `translateX(${amountToMove}px)`;
+        console.log(`Déplacement du carrousel à l'index ${index}, transformation: ${track.style.transform}`);
+    }
+
+    nextButton2.addEventListener('click', () => {
+        console.log('Bouton "suivant" cliqué.');
+        if (currentIndex2 < maxIndex) {
+            currentIndex2++;
+            moveToSlide(currentIndex2);
+        } else {
+            console.log('Impossible d\'avancer, dernière carte atteinte.');
+        }
+    });
+
+    prevButton2.addEventListener('click', () => {
+        console.log('Bouton "précédent" cliqué.');
+        if (currentIndex2 > 0) {
+            currentIndex2--;
+            moveToSlide(currentIndex2);
+        } else {
+            console.log('Impossible de reculer, première carte atteinte.');
+        }
+    });
 });
-
-startAutoScroll(); // Démarre le défilement automatique au chargement de la page
-
-
-
-
-
 
 /****************************************************************************************/
 // gestion de la page aide
@@ -473,3 +525,45 @@ function filterContent() {
 // gestion de la page prestataires
 
 // (Il n'y a pas de code fourni pour la gestion de la page des prestataires)
+
+
+
+
+/****************************************************************************************/
+// gestion de la page mariage
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeSelect = document.getElementById('theme-select');
+    const newThemeInput = document.getElementById('new-theme');
+    const addThemeButton = document.getElementById('add-theme');
+    const submitButton = document.getElementById('submit2');
+
+    // Fonction pour ajouter un nouveau thème à la liste déroulante
+    addThemeButton.addEventListener('click', function() {
+        const newTheme = newThemeInput.value.trim();
+        if (newTheme) {
+            const option = document.createElement('option');
+            option.value = newTheme.toLowerCase().replace(/\s+/g, '-');
+            option.textContent = newTheme;
+            themeSelect.appendChild(option);
+            themeSelect.value = option.value;
+            newThemeInput.value = '';
+        }
+    });
+
+    // Fonction pour soumettre les choix
+    submitButton.addEventListener('click', function() {
+        const selectedTheme = themeSelect.value;
+        const primaryColor = document.getElementById('primary-color').value;
+        const secondaryColor = document.getElementById('secondary-color').value;
+        const tertiaryColor = document.getElementById('tertiary-color').value;
+
+        // Validation basique
+        if (!selectedTheme) {
+            alert('Veuillez choisir un thème.');
+            return;
+        }
+
+        alert(`Thème sélectionné: ${selectedTheme}\nCouleur principale: ${primaryColor}\nCouleur secondaire: ${secondaryColor}\nCouleur tertiaire: ${tertiaryColor}`);
+    });
+});
