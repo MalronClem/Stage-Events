@@ -162,7 +162,7 @@
                 <h1>Tâches à réaliser</h1>
                 <div class="card new">
                     <h2>Nouveau</h2>
-                    <ul id="task-list">
+                    <ul id="task-list-new">
                         <li>Sélection et réservation du lieu de la réception</li>
                         <li>Engager un photographe et un vidéaste</li>
                         <li>Engager un photographe et un vidéaste</li>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="card in_progress">
                     <h2>En progression</h2>
-                    <ul>
+                    <ul id="task-list-in-progress">
                         <li>Créer et envoyer les invitations</li>
                         <li>Planifier la cérémonie</li>
                     </ul>
@@ -182,10 +182,20 @@
                 </div>
                 <div class="card done">
                     <h2>Terminé</h2>
-                    <ul>
+                    <ul id="task-list-done">
                         <li>Choisir les tenues de mariage</l>
                     </ul>
                     <div class="bottom">
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlay"></div>
+                <div class="popup" id="popup">
+                    <p id="popup-message">Que voulez-vous faire avec cette tâche ?</p>
+                    <div class="popup-buttons">
+                        <button id="move-btn">Déplacer</button>
+                        <button id="delete-btn">Supprimer</button>
+                        <button id="cancel-btn">Annuler</button>
                     </div>
                 </div>
             </div>

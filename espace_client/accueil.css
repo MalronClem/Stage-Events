@@ -1213,6 +1213,8 @@ main{
         justify-content: space-around;
         flex-direction: row;
         border-top: 2px solid black;
+        background-color: #daa52044;
+        border-bottom: 2px solid black;
 
         .card-container{
             height: 70%;
@@ -1367,7 +1369,7 @@ main{
                     justify-content: left;
                     overflow-x: auto;
                     overflow-y: hidden;
-                    transition: all 0.3s ease-in-out;
+                    transition: 0.4s ease-in-out all;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
                     cursor: pointer;
@@ -1384,12 +1386,10 @@ main{
                     display: inline-block; 
                     border-radius: 50%;
                     margin-right: 5%;
-                    transition: 0.3s ease-in-out all;
-
+                    transition: 0.4s ease-in-out all;
                 }
 
                 li:hover{
-                    font-size: larger;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.547);
                     background-color: #daa5204c;
                 }
@@ -1410,14 +1410,16 @@ main{
                     box-sizing: border-box;
                     text-decoration: none;
                     list-style-type: none;
-            
                     margin-left: 5%;
-
+                    height: 15px;
                 }
 
                 li:hover::after {
-                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
+
             }
 
             .bottom{
@@ -1430,20 +1432,16 @@ main{
 
                 input{
                     border: none;
-                }
-                input{
-                    border: none;
                     padding: 1.5%;
                     border-radius: 7px;
                     box-shadow: 0 0 15px 5px #00000086;
                     transition: all ease-in-out 0.3s;
                     cursor: pointer;
                     font-size: 110%;
-                    font-weight: bolder;
                 }
     
                 input:hover{
-                    color: #d9d9f8;
+                    color: #DAA520;
                     background-color: black;
                     box-shadow: 0 0 15px 5px #daa5209b;
                 }
@@ -1472,7 +1470,7 @@ main{
                 display: inline-block;
                 width: 18px; 
                 height: 18px; 
-                background-color: rgb(203, 149, 0); 
+                background-color: rgb(255, 251, 0); 
                 border-radius: 50%; 
                 position: absolute;
                 right: -16%; 
@@ -1498,14 +1496,13 @@ main{
                     justify-content: left;
                     overflow-x: auto;
                     overflow-y: hidden;
-                    transition: all 0.3s ease-in-out;
+                    transition: all 0.4s ease-in-out;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
                     cursor: pointer;
                     height: auto;
                     margin-bottom: 10%;
                     margin-top: 2%;
-
                 }
 
                 li::before {
@@ -1513,16 +1510,14 @@ main{
                     position: relative;
                     width: 10px;
                     height: 10px;
-                    background-color: rgb(203, 149, 0); 
+                    background-color: rgb(255, 251, 0); 
                     display: inline-block; 
                     border-radius: 50%;
                     margin-right: 5%;
                     transition: 0.3s ease-in-out all;
-
                 }
 
                 li:hover{
-                    font-size: larger;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.547);
                     background-color: #daa5204c;
                 }
@@ -1543,13 +1538,14 @@ main{
                     box-sizing: border-box;
                     text-decoration: none;
                     list-style-type: none;
-            
                     margin-left: 5%;
-
+                    height: 15px;
                 }
 
                 li:hover::after {
-                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
 
@@ -1613,14 +1609,13 @@ main{
                     justify-content: left;
                     overflow-x: auto;
                     overflow-y: hidden;
-                    transition: all 0.3s ease-in-out;
+                    transition: all 0.4s ease-in-out;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
-                    cursor: pointer;
                     height: auto;
                     margin-bottom: 10%;
                     margin-top: 2%;
-
+                    cursor: pointer;
                 }
 
                 li::before {
@@ -1637,7 +1632,6 @@ main{
                 }
 
                 li:hover{
-                    font-size: larger;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.547);
                     background-color: #daa5204c;
                 }
@@ -1658,6 +1652,56 @@ main{
             }
         }
 
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            padding: 2%;
+            border-radius: 15px;
+        
+            p{
+                font-size: 140%;
+                margin-bottom: 10%;
+            }
+
+            .popup-buttons {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-around;
+
+                button{
+                    border: none;
+                    padding: 2%;
+                    border-radius: 7px;
+                    box-shadow: 0 0 15px 5px #00000086;
+                    transition: all ease-in-out 0.3s;
+                    cursor: pointer;
+                    font-size: 110%;
+                }
+    
+                button:hover{
+                    color: #DAA520;
+                    background-color: black;
+                    box-shadow: 0 0 15px 5px #daa520c8;
+                }
+            }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.704);
+            z-index: 999;
+            display: none;
+        }
     }
 }
 

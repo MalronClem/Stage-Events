@@ -582,6 +582,76 @@ function addTask() {
         newTask.textContent = taskText;
         
         // Ajouter le nouvel élément <li> à la liste des tâches
-        document.getElementById('task-list').appendChild(newTask);
+        document.getElementById('task-list-new').appendChild(newTask);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ajoutez des écouteurs de clic aux <li> de chaque liste de tâches
+    addClickListeners('task-list-new', 'task-list-in-progress');
+    addClickListeners('task-list-in-progress', 'task-list-done');
+    addClickListeners('task-list-done', null);
+});
+
+function addClickListeners(sourceListId, targetListId) {
+    const sourceList = document.getElementById(sourceListId);
+    const targetList = targetListId ? document.getElementById(targetListId) : null;
+
+    sourceList.addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI') {
+            showPopup(event.target, targetList, sourceList);
+        }
+    });
+}
+
+function showPopup(task, targetList, sourceList) {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+    const message = document.getElementById('popup-message');
+    const moveBtn = document.getElementById('move-btn');
+
+    overlay.style.display = 'block';
+    popup.style.display = 'block';
+
+    if (targetList) {
+        message.textContent = "Que voulez-vous faire avec cette tâche ?";
+        moveBtn.style.display = 'inline-block';
+        moveBtn.onclick = function() {
+            targetList.appendChild(task);
+            hidePopup();
+        };
+    } else {
+        message.textContent = "Voulez-vous supprimer cette tâche ?";
+        moveBtn.style.display = 'none';
+    }
+
+    document.getElementById('delete-btn').onclick = function() {
+        sourceList.removeChild(task);
+        hidePopup();
+    };
+
+    document.getElementById('cancel-btn').onclick = function() {
+        hidePopup();
+    };
+}
+
+function hidePopup() {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+    popup.style.display = 'none';
+}
+
+function addTask() {
+    const task = prompt('Entrez une nouvelle tâche:');
+    if (task) {
+        const newTask = document.createElement('li');
+        newTask.textContent = task;
+        const taskListNew = document.getElementById('task-list-new');
+        taskListNew.appendChild(newTask);
+        // Ajouter un écouteur de clic à la nouvelle tâche
+        newTask.addEventListener('click', function() {
+            showPopup(newTask, document.getElementById('task-list-in-progress'), taskListNew);
+        });
     }
 }
