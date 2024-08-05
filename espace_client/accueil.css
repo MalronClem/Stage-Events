@@ -1557,7 +1557,10 @@ main{
 
         .done{
             display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
+            justify-content: space-between;
 
             h2{
                 text-transform: uppercase;
@@ -1567,7 +1570,6 @@ main{
                 align-items: center;
                 position: relative;
                 margin-top: 2%;
-
             }
 
             h2::after{
@@ -1575,10 +1577,10 @@ main{
                 display: inline-block;
                 width: 18px; 
                 height: 18px; 
-                background-color: rgb(0, 255, 8); 
+                background-color: rgb(171, 255, 3); 
                 border-radius: 50%; 
                 position: absolute;
-                right: -30%;
+                right: -16%; 
                 top: 50%;
                 transform: translateY(-50%); 
             }
@@ -1587,11 +1589,13 @@ main{
                 height: 80%;
                 width: 100%;
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 flex-direction: column;
                 overflow-y: scroll;
                 padding: 2%;
                 background-color: #00000070;
-                
+
                 li{
                     padding: 8%;
                     width: 95%;
@@ -1653,6 +1657,7 @@ main{
                     display: block;
                 }
             }
+            
         }
 
     }
