@@ -1353,11 +1353,11 @@ main{
                 height: 70%;
                 width: 100%;
                 display: flex;
-                justify-content: center;
+                justify-content: top;
+                align-items: center;
                 flex-direction: column;
                 overflow-y: scroll;
                 padding: 2%;
-                background-color: #00000070;
 
                 li{
                     padding: 8%;
@@ -1365,14 +1365,14 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: left;
-                    margin-top: 10%;
                     overflow-x: auto;
                     overflow-y: hidden;
                     transition: all 0.3s ease-in-out;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
                     cursor: pointer;
-                    height: 120px;
+                    margin-bottom: 10%;
+                    margin-top: 2%;
                 }
 
                 li::before {
@@ -1481,15 +1481,14 @@ main{
             }
 
             ul{
-                height: 80%;
+                height: 70%;
                 width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: top;
                 flex-direction: column;
                 overflow-y: scroll;
                 padding: 2%;
-                background-color: #00000070;
 
                 li{
                     padding: 8%;
@@ -1497,14 +1496,15 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: left;
-                    margin-top: 10%;
                     overflow-x: auto;
                     overflow-y: hidden;
                     transition: all 0.3s ease-in-out;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
                     cursor: pointer;
-                    height: 120px;
+                    height: auto;
+                    margin-bottom: 10%;
+                    margin-top: 2%;
 
                 }
 
@@ -1552,7 +1552,15 @@ main{
                     display: block;
                 }
             }
-            
+
+            .bottom{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                margin-right: 10%;
+            }
         }
 
         .done{
@@ -1561,6 +1569,7 @@ main{
             justify-content: center;
             flex-direction: column;
             justify-content: space-between;
+            justify-content: top;
 
             h2{
                 text-transform: uppercase;
@@ -1577,24 +1586,24 @@ main{
                 display: inline-block;
                 width: 18px; 
                 height: 18px; 
-                background-color: rgb(171, 255, 3); 
+                background-color: rgb(7, 255, 3); 
                 border-radius: 50%; 
                 position: absolute;
-                right: -16%; 
+                right: -30%; 
                 top: 50%;
                 transform: translateY(-50%); 
+
             }
 
             ul{
-                height: 80%;
+                height: 70%;
                 width: 100%;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                justify-content: top;
                 flex-direction: column;
                 overflow-y: scroll;
                 padding: 2%;
-                background-color: #00000070;
+                align-items: center;
 
                 li{
                     padding: 8%;
@@ -1602,14 +1611,15 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: left;
-                    margin-top: 10%;
                     overflow-x: auto;
                     overflow-y: hidden;
                     transition: all 0.3s ease-in-out;
                     border-radius: 13px;
                     box-shadow:  0 0 10px rgba(0, 0, 0, 0.345);
                     cursor: pointer;
-                    height: 120px;
+                    height: auto;
+                    margin-bottom: 10%;
+                    margin-top: 2%;
 
                 }
 
@@ -1618,7 +1628,7 @@ main{
                     position: relative;
                     width: 10px;
                     height: 10px;
-                    background-color: rgb(203, 149, 0); 
+                    background-color: rgb(7, 255, 3); 
                     display: inline-block; 
                     border-radius: 50%;
                     margin-right: 5%;
@@ -1636,28 +1646,16 @@ main{
                     width: 15px;
                     height: 15px;
                 }
-
-                li::after {
-                    content: '→';
-                    font-size: 200%;
-                    color: black; 
-                    display: none; 
-                    margin-left: 2%; 
-                    position: relative;
-                    padding: 0;
-                    box-sizing: border-box;
-                    text-decoration: none;
-                    list-style-type: none;
-            
-                    margin-left: 5%;
-
-                }
-
-                li:hover::after {
-                    display: block;
-                }
             }
             
+            .bottom{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                margin-right: 10%;
+            }
         }
 
     }

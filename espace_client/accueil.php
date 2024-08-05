@@ -162,22 +162,13 @@
                 <h1>Tâches à réaliser</h1>
                 <div class="card new">
                     <h2>Nouveau</h2>
-                    <ul>
-                        <li>Sélection et réservation du lieu de la réception</li>
-                        <li>Engager un photographe et un vidéaste</li>
-                        <li>Engager un photographe et un vidéaste</li>
-                        <li>Sélection et réservation du lieu de la réception</li>
-                        <li>Engager un photographe et un vidéaste</li>
-                        <li>Engager un photographe et un vidéaste</li>
-                        <li>Sélection et réservation du lieu de la réception</li>
-                        <li>Engager un photographe et un vidéaste</li>
-                        <li>Engager un photographe et un vidéaste</li>
+                    <ul id="task-list">
                         <li>Sélection et réservation du lieu de la réception</li>
                         <li>Engager un photographe et un vidéaste</li>
                         <li>Engager un photographe et un vidéaste</li>
                     </ul>
                     <div class="bottom">
-                        <input type="button" value="Nouvelle tâche">
+                        <input type="button" value="Ajouter une tâche" onclick="addTask()">
                     </div>
                 </div>
                 <div class="card in_progress">

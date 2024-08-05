@@ -567,3 +567,21 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(`Thème sélectionné: ${selectedTheme}\nCouleur principale: ${primaryColor}\nCouleur secondaire: ${secondaryColor}\nCouleur tertiaire: ${tertiaryColor}`);
     });
 });
+
+
+function addTask() {
+    // Afficher un prompt pour obtenir le texte de la nouvelle tâche
+    const taskText = prompt("Entrez le texte de la nouvelle tâche:");
+    
+    // Si l'utilisateur entre du texte, ajouter la nouvelle tâche à la liste
+    if (taskText) {
+        // Créer un nouvel élément <li>
+        const newTask = document.createElement('li');
+        
+        // Définir le texte de l'élément <li>
+        newTask.textContent = taskText;
+        
+        // Ajouter le nouvel élément <li> à la liste des tâches
+        document.getElementById('task-list').appendChild(newTask);
+    }
+}
