@@ -1069,8 +1069,8 @@ main{
                 select{
                     width: 40%;
                     border: none;
-                    background-color: #000000;
-                    color: #d9d9f8;
+                    background-color: #ffffff;
+                    color: #000000;
                     padding: 0.5%;
                     border-radius: 5px;
                     margin-right: 20%;
@@ -1087,8 +1087,8 @@ main{
                 input{
                     width: 40%;
                     border: none;
-                    background-color: #000000;
-                    color: #d9d9f8;
+                    background-color: #ffffff;
+                    color: #000000;
                     padding: 0.5%;
                     border-radius: 5px;
                     margin-right: 20%;
@@ -1224,6 +1224,7 @@ main{
             justify-content: center;
             flex-direction: column;
             justify-content: space-between;
+            color: #000000;
 
             .card{
                 width: 150px;
@@ -1235,12 +1236,10 @@ main{
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-    
-                h3{
-                    position: absolute;
-                    top: 82%;
-                }
-    
+            }
+
+            h3{
+                margin-top: 5%;
             }
         }
     }
@@ -1900,8 +1899,8 @@ main{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
-    overflow-y: hidden;
+    height: 140%;
+    overflow-y: auto;
     color: #d9d9f8;
 
     video {
@@ -1909,20 +1908,20 @@ main{
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 98%;
         object-fit: cover; 
         z-index: -1;
     }
 
     .liste_invites{
         width: 35%;
-        height: 100%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         background-color: #00000046;
-
+        border-bottom: #000000 3px solid;
 
         .title{
             display: flex;
@@ -2028,12 +2027,13 @@ main{
 
     .gestion_place{
         width: 65%;
-        height: 100%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         background-color: #0000008c;
+        border-bottom: #000000 3px solid;
 
         .title{
             display: flex;
@@ -2132,6 +2132,195 @@ main{
                     0 0 10px 0.5px #DAA520;
                 color: #DAA520;
             }
+        }
+    }
+
+    .rsvp{
+        position: absolute;
+        top: 98%;
+        width: 100%;
+        height: 42%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        color: #000000;
+        overflow-x: hidden;
+
+        .left{
+            width: 20%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
+            transition: all 0.2s ease-in-out;
+
+            h1 {
+                position: relative;
+                top: 5%;
+                text-transform: uppercase;
+                font-size: 300%;
+                letter-spacing: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'NomDeVotrePolice2', sans-serif;
+                font-weight: bolder;
+                transition: all 0.4s ease-in-out
+    
+            }
+            
+            h1::before,
+            h1::after {
+                content: '';
+                position: absolute;
+                bottom: -2px; /* Position it at the bottom of the h1 */
+                width: 0;
+                height: 2px;
+                background: black;
+                transition: all 0.4s ease-in-out
+            }
+            
+            h1::before {
+                left: 50%;
+            }
+            
+            h1::after {
+                right: 50%;
+            }
+            
+            h1:hover::before,
+            h1:hover::after {
+                width: 70%;
+            }
+    
+            h1:hover{
+                color: #DAA520;
+                letter-spacing: 5px;
+            }
+
+            
+            button{
+                border: none;
+                padding: 4%;
+                border-radius: 7px;
+                box-shadow: 0 0 15px 5px #00000086;
+                transition: all ease-in-out 0.3s;
+                cursor: pointer;
+                font-size: 120%;
+            }
+
+            button:hover{
+                color: #DAA520;
+                background-color: black;
+                box-shadow: 0 0 15px 5px #daa520c8;
+                transform: scale(1.1);
+            }
+        }
+
+        .left:hover{
+            width: 21%;
+        }
+
+        .right{
+            width: 80%;
+            height: 100%;
+            border-left: #000000 solid 2px;
+            background: linear-gradient(to right, white, #daa52044);
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .container_listes{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .container_liste{
+                    width: 28%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    h2{
+                        width: 100%;
+                        height: 12%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        overflow-x: auto;
+                    }
+
+                    ul{
+                        width: 100%;
+                        height: 85%;
+                        border-radius: 7px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: top;
+                        flex-direction: column;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        box-shadow: 0 0 7px rgba(0, 0, 0, 0.506);
+                        background-color: #daa52044;
+                        transition: all 0.3s ease-in-out;
+
+                        li{
+                            height: auto;
+                            width: 90%;
+                            margin-top: 3%;
+                            padding: 2%;
+                            margin-bottom: 4%;
+                            transition: color 0.4s ease-in-out;
+                            display: inline-block;
+                            position: relative;
+                            font-size: 110%;
+                            font-weight: bolder;
+                        }
+
+                        li::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: #DAA520;
+                            transition: width 0.4s ease-in-out; 
+                        }
+                        
+                        li:hover::before {
+                            width: 100%;
+                        }
+                        
+                        li:hover {
+                            color: #DAA520;
+                        }
+                    }
+
+                    ul:hover{
+                        box-shadow: 0 0 7px rgba(0, 0, 0, 0.663);
+                        background-color: #daa5205c;
+                    }
+                }
+                
+            }
+        }
+
+        .right:hover{
+            width: 83%;
         }
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <nav>
@@ -122,40 +123,22 @@
             </div>
             <div class="raccourcis">
                 <div class="card-container">
-                    <div class="card">
+                    <div class="card" id="card_days">
                         <h1>J-150</h1>
                     </div>
                     <h3>Jours restant</h3>
                 </div>
                 <div class="card-container">
-                    <div class="card">
+                    <div class="card" id="invite">
                         <h1>70/93</h1>
                     </div>
                     <h3>Invités</h3>
                 </div>
                 <div class="card-container">
-                    <div class="card">
+                    <div class="card" id="task">
                         <h1></h1>
                     </div>
-                    <h3></h3>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <h1></h1>
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <h1></h1>
-                    </div>
-                    <h3></h3>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <h1></h1>
-                    </div>
-                    <h3></h3>
+                    <h3>Taches réalisées</h3>
                 </div>
             </div>
             <div class="tasks">
@@ -506,7 +489,7 @@
                 </div>
             </div>
             <div class="gestion_place">
-            <div class="title">
+                <div class="title">
                     <h1>Gestion des places</h1>
                 </div>
                 <div class="liste">
@@ -517,6 +500,39 @@
                     <div class="bouton" id="btn_add_table">Ajouter</div>
                     <div class="bouton" id="btn_modifie_table">Modifier</div>
                     <div class="bouton" id="btn_remove_table">Supprimer</div>
+                </div>
+            </div>
+            <div class="rsvp">
+                <div class="left">
+                    <h1>RSVP</h1>
+                    <button>Envoyer faire-part</button>
+                </div>
+                <div class="right">
+                    <div class="container_listes">
+                        <div class="container_liste">
+                            <h2>Invitation acceptée</h2>
+                            <ul id="accepte">
+                                <li>test</li>
+                                <li>test</li>
+                            </ul>
+                        </div>
+                        <div class="container_liste">
+                            <h2>Réponse en attente</h2>
+
+                            <ul id="attente">
+                                <li>test</li>
+                                <li>test</li>
+                            </ul>
+                        </div>
+                        <div class="container_liste">
+                            <h2>Invitation refusée</h2>
+
+                            <ul id="refuse">
+                                <li>test</li>
+                                <li>test</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

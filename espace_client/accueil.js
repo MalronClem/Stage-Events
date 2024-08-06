@@ -655,3 +655,26 @@ function addTask() {
         });
     }
 }
+
+function countTasks() {
+    // Sélectionner tous les éléments <li> dans les différentes sections
+    var newTasks = document.querySelectorAll('#task-list-new li');
+    var inProgressTasks = document.querySelectorAll('#task-list-in-progress li');
+    var doneTasks = document.querySelectorAll('#task-list-done li');
+    
+    // Compter le nombre total de <li>
+    var totalTasks = newTasks.length + inProgressTasks.length + doneTasks.length;
+    
+    // Compter le nombre de tâches réalisées (dans la section "Terminé")
+    var completedTasks = doneTasks.length;
+    
+    // Mettre à jour le contenu de <h1> avec le format "12/50"
+    var h1Element = document.querySelector('#task h1');
+    h1Element.textContent = `${completedTasks}/${totalTasks}`;
+}
+
+// Appel de la fonction pour mettre à jour le <h1> toutes les 5 secondes
+setInterval(countTasks, 5000);
+
+// Appel initial pour afficher les tâches dès que la page est chargée
+document.addEventListener('DOMContentLoaded', countTasks);
