@@ -182,6 +182,36 @@
                     </div>
                 </div>
             </div>
+            <div class="faire_part">
+                <h1>Faire-part</h1>
+                <form id="weddingForm">
+                    <div class="left">
+                        <label for="perso">Faire-part personnalisé (tarifé)</label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="customInviteCheckbox" onchange="toggleFormVisibility()">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Veuillez contacter le +33 7 56 96 44 96 ou Les1001Clicks@outlook.com</span>
+                        </label>                        
+                        <label class="non_perso" for="brideName">Nom de la Mariée:</label>
+                        <input class="non_perso" type="text" id="brideName" name="brideName" required>
+                        <label class="non_perso" for="groomName">Nom du Marié:</label>
+                        <input class="non_perso" type="text" id="groomName" name="groomName" required>
+                        <label class="non_perso" for="date">Date:</label>
+                        <input class="non_perso" type="date" id="date" name="date" required>
+                        <label class="non_perso" for="venue">Lieu:</label>
+                        <input class="non_perso" type="text" id="venue" name="venue" required>
+                        <label class="non_perso"for="time">Heure:</label>
+                        <input class="non_perso" type="time" id="time" name="time" required>
+                    </div>
+                    <div class="right" id="rightSide">
+                        <label for="backgroundImage">Image d'Arrière-plan:</label>
+                        <input type="file" id="backgroundImage" accept="image/*" required>
+                        <label for="customText">Message supplémentaire:</label>
+                        <textarea id="customText" name="customText" rows="4" cols="50" placeholder="Écrivez votre message ici..."></textarea>
+                        <button type="button" onclick="generatePDF()">Générer le PDF</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="container" id="accueil">
             <div class="top">   
@@ -502,10 +532,10 @@
                     <div class="bouton" id="btn_remove_table">Supprimer</div>
                 </div>
             </div>
-            <div class="rsvp">
+            <div class="rsvp"> 
                 <div class="left">
                     <h1>RSVP</h1>
-                    <button>Envoyer faire-part</button>
+                    <button onclick="generatePDF()">Envoyer faire-part</button>
                 </div>
                 <div class="right">
                     <div class="container_listes">
@@ -622,7 +652,5 @@
         </div>
     </main>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="accueil.js"></script>
-
 </html>

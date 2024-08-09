@@ -379,137 +379,142 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
 /****************************************************************************************/
-// gestion page d'accueil
+// Gestion du carrousel d'images sur la page d'accueil
 
-const prevButton = document.querySelector('.carousel-control-prev');
-const nextButton = document.querySelector('.carousel-control-next');
-const carouselInner = document.querySelector('.carousel-inner');
-const carouselItems = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
-let autoScrollInterval;
+// Sélection des éléments nécessaires pour le carrousel d'images
+const prevButton = document.querySelector('.carousel-control-prev');  // Bouton pour faire défiler les images vers la gauche
+const nextButton = document.querySelector('.carousel-control-next');  // Bouton pour faire défiler les images vers la droite
+const carouselInner = document.querySelector('.carousel-inner');  // Conteneur des images dans le carrousel
+const carouselItems = document.querySelectorAll('.carousel-item');  // Toutes les images du carrousel
+let currentIndex = 0;  // Index de l'image actuellement affichée
+let autoScrollInterval;  // Intervalle pour le défilement automatique
 
-// Vérifiez que tous les éléments nécessaires existent
+// Vérification que tous les éléments nécessaires sont présents
 if (prevButton && nextButton && carouselInner && carouselItems.length > 0) {
 
-    // Fonction pour afficher le slide correspondant à l'index donné
+    // Fonction pour afficher l'image correspondant à l'index donné
     function showSlide(index) {
+        // Si l'index dépasse le nombre d'images, revenir à la première image
         if (index >= carouselItems.length) {
-            currentIndex = 0; // Revenir au premier slide si l'index est trop élevé
+            currentIndex = 0;  // Revenir à la première image
+        // Si l'index est inférieur à 0, revenir à la dernière image
         } else if (index < 0) {
-            currentIndex = carouselItems.length - 1; // Revenir au dernier slide si l'index est trop bas
+            currentIndex = carouselItems.length - 1;  // Revenir à la dernière image
         } else {
-            currentIndex = index;
+            currentIndex = index;  // Mettre à jour l'index actuel
         }
+        // Déplacer le carrousel pour afficher l'image correspondant à l'index actuel
         carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    // Fonction pour aller au slide suivant
+    // Fonction pour afficher l'image suivante dans le carrousel
     function nextSlide() {
-        showSlide(currentIndex + 1);
+        showSlide(currentIndex + 1);  // Afficher l'image suivante
     }
 
-    // Fonction pour démarrer le défilement automatique
+    // Fonction pour démarrer le défilement automatique des images
     function startAutoScroll() {
-        autoScrollInterval = setInterval(nextSlide, 4000);
+        autoScrollInterval = setInterval(nextSlide, 4000);  // Passer à l'image suivante toutes les 4 secondes
     }
 
-    // Fonction pour arrêter le défilement automatique
+    // Fonction pour arrêter le défilement automatique des images
     function stopAutoScroll() {
-        clearInterval(autoScrollInterval);
+        clearInterval(autoScrollInterval);  // Arrêter l'intervalle de défilement automatique
     }
 
-    // Ajouter des écouteurs d'événements pour les boutons de navigation
+    // Ajouter des écouteurs d'événements pour les boutons de navigation du carrousel
     nextButton.addEventListener('click', () => {
-        stopAutoScroll(); // Arrêtez d'abord le défilement automatique
-        nextSlide(); // Affichez le slide suivant
-        startAutoScroll(); // Redémarrez le défilement automatique
+        stopAutoScroll();  // Arrêter d'abord le défilement automatique
+        nextSlide();  // Passer à l'image suivante
+        startAutoScroll();  // Redémarrer le défilement automatique
     });
 
     prevButton.addEventListener('click', () => {
-        stopAutoScroll(); // Arrêtez d'abord le défilement automatique
-        showSlide(currentIndex - 1); // Affichez le slide précédent
-        startAutoScroll(); // Redémarrez le défilement automatique
+        stopAutoScroll();  // Arrêter d'abord le défilement automatique
+        showSlide(currentIndex - 1);  // Passer à l'image précédente
+        startAutoScroll();  // Redémarrer le défilement automatique
     });
 
-    // Démarrer le défilement automatique au chargement de la page
+    // Démarrer le défilement automatique dès le chargement de la page
     startAutoScroll();
 } else {
-    console.error('Un ou plusieurs éléments nécessaires pour le carousel sont manquants.');
+    console.error('Un ou plusieurs éléments nécessaires pour le carrousel sont manquants.');  // Afficher un message d'erreur en console si des éléments sont manquants
 }
 
-
-// Initialiser les attributs data-text pour les titres des cartes
+// Initialisation des attributs data-text pour les titres des cartes dès le chargement de la page
 document.addEventListener("DOMContentLoaded", function() {
-    var headings = document.querySelectorAll(".card h3");
+    var headings = document.querySelectorAll(".card h3");  // Sélectionner tous les titres des cartes
     headings.forEach(function(heading) {
-        heading.setAttribute("data-text", heading.textContent);
+        heading.setAttribute("data-text", heading.textContent);  // Ajouter un attribut data-text à chaque titre, contenant son texte
     });
 });
 
-
-
-// Gestion du carrousel de cartes
+// Gestion du carrousel de cartes sur la page d'accueil
 document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.carousel-track');
-    const cards = Array.from(track.children);
-    const prevButton2 = document.querySelector('.prev');
-    const nextButton2 = document.querySelector('.next');
-    const cardWidth = cards[0].getBoundingClientRect().width;
-    const cardsToShow = 3; // Nombre de cartes affichées simultanément
-    const totalCards = cards.length;
-    const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;
+    const track = document.querySelector('.carousel-track');  // Conteneur des cartes
+    const cards = Array.from(track.children);  // Toutes les cartes du carrousel
+    const prevButton2 = document.querySelector('.prev');  // Bouton pour faire défiler les cartes vers la gauche
+    const nextButton2 = document.querySelector('.next');  // Bouton pour faire défiler les cartes vers la droite
+    const cardWidth = cards[0].getBoundingClientRect().width;  // Largeur d'une seule carte
+    const cardsToShow = 3;  // Nombre de cartes affichées simultanément
+    const totalCards = cards.length;  // Nombre total de cartes
+    const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;  // Index maximum pour le défilement complet
 
-    let currentIndex2 = 0;
+    let currentIndex2 = 0;  // Index actuel pour le carrousel de cartes
 
+    // Fonction pour déplacer le carrousel à l'index spécifié
     function moveToSlide(index) {
-        const amountToMove = -index * cardWidth * cardsToShow;
-        track.style.transform = `translateX(${amountToMove}px)`;
-        console.log(`Déplacement du carrousel à l'index ${index}, transformation: ${track.style.transform}`);
+        const amountToMove = -index * cardWidth * cardsToShow;  // Calculer la distance à déplacer
+        track.style.transform = `translateX(${amountToMove}px)`;  // Appliquer la transformation pour déplacer le carrousel
+        console.log(`Déplacement du carrousel à l'index ${index}, transformation: ${track.style.transform}`);  // Afficher dans la console l'information sur le déplacement
     }
 
+    // Gestionnaire d'événement pour le bouton "suivant"
     nextButton2.addEventListener('click', () => {
         console.log('Bouton "suivant" cliqué.');
-        if (currentIndex2 < maxIndex) {
-            currentIndex2++;
-            moveToSlide(currentIndex2);
+        if (currentIndex2 < maxIndex) {  // Vérifier si l'index actuel est inférieur à l'index maximum
+            currentIndex2++;  // Incrémenter l'index
+            moveToSlide(currentIndex2);  // Déplacer le carrousel vers la droite
         } else {
-            console.log('Impossible d\'avancer, dernière carte atteinte.');
+            console.log('Impossible d\'avancer, dernière carte atteinte.');  // Message en console si la dernière carte est atteinte
         }
     });
 
+    // Gestionnaire d'événement pour le bouton "précédent"
     prevButton2.addEventListener('click', () => {
         console.log('Bouton "précédent" cliqué.');
-        if (currentIndex2 > 0) {
-            currentIndex2--;
-            moveToSlide(currentIndex2);
+        if (currentIndex2 > 0) {  // Vérifier si l'index actuel est supérieur à 0
+            currentIndex2--;  // Décrémenter l'index
+            moveToSlide(currentIndex2);  // Déplacer le carrousel vers la gauche
         } else {
-            console.log('Impossible de reculer, première carte atteinte.');
+            console.log('Impossible de reculer, première carte atteinte.');  // Message en console si la première carte est atteinte
         }
     });
 });
 
-/****************************************************************************************/
-// gestion de la page aide
 
-// Fonction pour filtrer le contenu de la page d'aide
+
+
+
+/****************************************************************************************/
+// Gestion de la page d'aide
+
+// Fonction pour filtrer le contenu de la page d'aide en fonction de la recherche de l'utilisateur
 function filterContent() {
-    const input = document.getElementById('searchInput').value.toLowerCase(); // Récupère la valeur du champ de recherche et la convertit en minuscules
-    const helpItems = document.querySelectorAll('.help-item'); // Sélectionne tous les éléments d'aide
+    const input = document.getElementById('searchInput').value.toLowerCase();  // Récupérer la valeur du champ de recherche et la convertir en minuscules
+    const helpItems = document.querySelectorAll('.help-item');  // Sélectionner tous les éléments d'aide sur la page
 
     helpItems.forEach(item => {
-        const keywords = item.getAttribute('data-keywords').toLowerCase(); // Récupère les mots-clés de l'élément et les convertit en minuscules
+        const keywords = item.getAttribute('data-keywords').toLowerCase();  // Récupérer les mots-clés associés à l'élément d'aide
         if (keywords.includes(input)) {
-            item.style.display = 'block'; // Affiche l'élément si les mots-clés contiennent la valeur de recherche
+            item.style.display = 'block';  // Afficher l'élément si les mots-clés correspondent à la recherche
         } else {
-            item.style.display = 'none'; // Cache l'élément si les mots-clés ne contiennent pas la valeur de recherche
+            item.style.display = 'none';  // Masquer l'élément si les mots-clés ne correspondent pas à la recherche
         }
     });
 }
+
 
 
 
@@ -519,162 +524,265 @@ function filterContent() {
 /****************************************************************************************/
 // gestion de la page messages
 
-// (Il n'y a pas de code fourni pour la gestion de la page des messages)
-
-
-// gestion de la page prestataires
-
-// (Il n'y a pas de code fourni pour la gestion de la page des prestataires)
-
-
-
-
-/****************************************************************************************/
-// gestion de la page mariage
-
+// Lorsque le DOM est complètement chargé, exécuter la fonction principale
 document.addEventListener('DOMContentLoaded', function() {
-    const themeSelect = document.getElementById('theme-select');
-    const newThemeInput = document.getElementById('new-theme');
-    const addThemeButton = document.getElementById('add-theme');
-    const submitButton = document.getElementById('submit2');
+    // Récupération des éléments HTML nécessaires pour la gestion des thèmes de mariage
+    const themeSelect = document.getElementById('theme-select');  // Sélecteur de thème
+    const newThemeInput = document.getElementById('new-theme');  // Champ d'entrée pour un nouveau thème
+    const addThemeButton = document.getElementById('add-theme');  // Bouton pour ajouter un nouveau thème
+    const submitButton = document.getElementById('submit2');  // Bouton pour soumettre les informations du mariage
 
     // Fonction pour ajouter un nouveau thème à la liste déroulante
     addThemeButton.addEventListener('click', function() {
-        const newTheme = newThemeInput.value.trim();
+        const newTheme = newThemeInput.value.trim();  // Récupérer et nettoyer la valeur entrée par l'utilisateur
         if (newTheme) {
-            const option = document.createElement('option');
-            option.value = newTheme.toLowerCase().replace(/\s+/g, '-');
-            option.textContent = newTheme;
-            themeSelect.appendChild(option);
-            themeSelect.value = option.value;
-            newThemeInput.value = '';
+            const option = document.createElement('option');  // Créer un nouvel élément <option> pour le thème
+            option.value = newTheme.toLowerCase().replace(/\s+/g, '-');  // Définir la valeur de l'option, formatée en minuscules et avec des tirets
+            option.textContent = newTheme;  // Définir le texte affiché de l'option
+            themeSelect.appendChild(option);  // Ajouter la nouvelle option à la liste déroulante
+            themeSelect.value = option.value;  // Sélectionner automatiquement la nouvelle option
+            newThemeInput.value = '';  // Réinitialiser le champ d'entrée
         }
     });
 
-    // Fonction pour soumettre les choix
+    // Fonction pour soumettre les choix de l'utilisateur
     submitButton.addEventListener('click', function() {
+        // Récupérer les valeurs sélectionnées ou entrées par l'utilisateur
         const selectedTheme = themeSelect.value;
         const primaryColor = document.getElementById('primary-color').value;
         const secondaryColor = document.getElementById('secondary-color').value;
         const tertiaryColor = document.getElementById('tertiary-color').value;
 
-        // Validation basique
+        // Validation basique : vérifier que le thème est sélectionné
         if (!selectedTheme) {
             alert('Veuillez choisir un thème.');
             return;
         }
 
+        // Afficher un message avec les choix de l'utilisateur
         alert(`Thème sélectionné: ${selectedTheme}\nCouleur principale: ${primaryColor}\nCouleur secondaire: ${secondaryColor}\nCouleur tertiaire: ${tertiaryColor}`);
     });
 });
 
-
+// Fonction pour ajouter une nouvelle tâche à la liste
 function addTask() {
-    // Afficher un prompt pour obtenir le texte de la nouvelle tâche
+    // Demander à l'utilisateur d'entrer le texte de la nouvelle tâche
     const taskText = prompt("Entrez le texte de la nouvelle tâche:");
     
-    // Si l'utilisateur entre du texte, ajouter la nouvelle tâche à la liste
+    // Si l'utilisateur a entré un texte, ajouter la tâche à la liste
     if (taskText) {
-        // Créer un nouvel élément <li>
-        const newTask = document.createElement('li');
-        
-        // Définir le texte de l'élément <li>
-        newTask.textContent = taskText;
-        
-        // Ajouter le nouvel élément <li> à la liste des tâches
-        document.getElementById('task-list-new').appendChild(newTask);
+        const newTask = document.createElement('li');  // Créer un nouvel élément de liste <li>
+        newTask.textContent = taskText;  // Définir le texte de la tâche
+        document.getElementById('task-list-new').appendChild(newTask);  // Ajouter la tâche à la liste des tâches
     }
 }
 
+// Lorsque le DOM est complètement chargé, ajouter des écouteurs d'événements pour chaque tâche
 document.addEventListener('DOMContentLoaded', function() {
-    // Ajoutez des écouteurs de clic aux <li> de chaque liste de tâches
+    // Ajouter des écouteurs de clics pour chaque liste de tâches, afin de gérer les déplacements entre listes
     addClickListeners('task-list-new', 'task-list-in-progress');
     addClickListeners('task-list-in-progress', 'task-list-done');
     addClickListeners('task-list-done', null);
 });
 
+// Fonction pour ajouter des écouteurs d'événements aux tâches d'une liste source et les déplacer vers une liste cible
 function addClickListeners(sourceListId, targetListId) {
-    const sourceList = document.getElementById(sourceListId);
-    const targetList = targetListId ? document.getElementById(targetListId) : null;
+    const sourceList = document.getElementById(sourceListId);  // Récupérer la liste source
+    const targetList = targetListId ? document.getElementById(targetListId) : null;  // Récupérer la liste cible, si elle existe
 
+    // Ajouter un écouteur d'événement pour détecter les clics sur les éléments <li> de la liste source
     sourceList.addEventListener('click', function(event) {
         if (event.target.tagName === 'LI') {
-            showPopup(event.target, targetList, sourceList);
+            showPopup(event.target, targetList, sourceList);  // Afficher une popup pour gérer la tâche cliquée
         }
     });
 }
 
+// Fonction pour afficher une popup permettant de déplacer ou supprimer une tâche
 function showPopup(task, targetList, sourceList) {
-    const popup = document.getElementById('popup');
-    const overlay = document.getElementById('overlay');
-    const message = document.getElementById('popup-message');
-    const moveBtn = document.getElementById('move-btn');
+    const popup = document.getElementById('popup');  // Récupérer l'élément popup
+    const overlay = document.getElementById('overlay');  // Récupérer l'élément overlay
+    const message = document.getElementById('popup-message');  // Récupérer le message de la popup
+    const moveBtn = document.getElementById('move-btn');  // Récupérer le bouton de déplacement
 
-    overlay.style.display = 'block';
-    popup.style.display = 'block';
+    overlay.style.display = 'block';  // Afficher l'overlay
+    popup.style.display = 'block';  // Afficher la popup
 
     if (targetList) {
-        message.textContent = "Que voulez-vous faire avec cette tâche ?";
-        moveBtn.style.display = 'inline-block';
+        message.textContent = "Que voulez-vous faire avec cette tâche ?";  // Message pour déplacement
+        moveBtn.style.display = 'inline-block';  // Afficher le bouton de déplacement
         moveBtn.onclick = function() {
-            targetList.appendChild(task);
-            hidePopup();
+            targetList.appendChild(task);  // Déplacer la tâche vers la liste cible
+            hidePopup();  // Cacher la popup
         };
     } else {
-        message.textContent = "Voulez-vous supprimer cette tâche ?";
-        moveBtn.style.display = 'none';
+        message.textContent = "Voulez-vous supprimer cette tâche ?";  // Message pour suppression
+        moveBtn.style.display = 'none';  // Cacher le bouton de déplacement
     }
 
     document.getElementById('delete-btn').onclick = function() {
-        sourceList.removeChild(task);
-        hidePopup();
+        sourceList.removeChild(task);  // Supprimer la tâche de la liste source
+        hidePopup();  // Cacher la popup
     };
 
     document.getElementById('cancel-btn').onclick = function() {
-        hidePopup();
+        hidePopup();  // Cacher la popup sans effectuer d'action
     };
 }
 
+// Fonction pour cacher la popup et l'overlay
 function hidePopup() {
-    const popup = document.getElementById('popup');
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
-    popup.style.display = 'none';
+    const popup = document.getElementById('popup');  // Récupérer l'élément popup
+    const overlay = document.getElementById('overlay');  // Récupérer l'élément overlay
+    overlay.style.display = 'none';  // Cacher l'overlay
+    popup.style.display = 'none';  // Cacher la popup
 }
 
+// Fonction pour ajouter une nouvelle tâche avec un écouteur de clic
 function addTask() {
-    const task = prompt('Entrez une nouvelle tâche:');
+    const task = prompt('Entrez une nouvelle tâche:');  // Demander à l'utilisateur de saisir une nouvelle tâche
     if (task) {
-        const newTask = document.createElement('li');
-        newTask.textContent = task;
-        const taskListNew = document.getElementById('task-list-new');
-        taskListNew.appendChild(newTask);
-        // Ajouter un écouteur de clic à la nouvelle tâche
-        newTask.addEventListener('click', function() {
-            showPopup(newTask, document.getElementById('task-list-in-progress'), taskListNew);
+        const newTask = document.createElement('li');  // Créer un nouvel élément <li> pour la tâche
+        newTask.textContent = task;  // Définir le texte de la tâche
+        const taskListNew = document.getElementById('task-list-new');  // Récupérer la liste "Nouvelle tâche"
+        taskListNew.appendChild(newTask);  // Ajouter la nouvelle tâche à la liste
+        newTask.addEventListener('click', function() {  // Ajouter un écouteur de clic à la nouvelle tâche
+            showPopup(newTask, document.getElementById('task-list-in-progress'), taskListNew);  // Afficher la popup pour gérer la tâche
         });
     }
 }
 
+// Fonction pour compter et afficher le nombre de tâches dans chaque liste
 function countTasks() {
-    // Sélectionner tous les éléments <li> dans les différentes sections
-    var newTasks = document.querySelectorAll('#task-list-new li');
-    var inProgressTasks = document.querySelectorAll('#task-list-in-progress li');
-    var doneTasks = document.querySelectorAll('#task-list-done li');
+    const newTasks = document.querySelectorAll('#task-list-new li');  // Récupérer toutes les tâches dans la liste "Nouvelle tâche"
+    const inProgressTasks = document.querySelectorAll('#task-list-in-progress li');  // Récupérer toutes les tâches en cours
+    const doneTasks = document.querySelectorAll('#task-list-done li');  // Récupérer toutes les tâches terminées
     
-    // Compter le nombre total de <li>
-    var totalTasks = newTasks.length + inProgressTasks.length + doneTasks.length;
+    const totalTasks = newTasks.length + inProgressTasks.length + doneTasks.length;  // Calculer le nombre total de tâches
+    const completedTasks = doneTasks.length;  // Calculer le nombre de tâches terminées
     
-    // Compter le nombre de tâches réalisées (dans la section "Terminé")
-    var completedTasks = doneTasks.length;
-    
-    // Mettre à jour le contenu de <h1> avec le format "12/50"
-    var h1Element = document.querySelector('#task h1');
-    h1Element.textContent = `${completedTasks}/${totalTasks}`;
+    const h1Element = document.querySelector('#task h1');  // Récupérer l'élément <h1> pour l'affichage des résultats
+    h1Element.textContent = `${completedTasks}/${totalTasks}`;  // Mettre à jour le texte du <h1> avec le nombre de tâches terminées/total
 }
 
-// Appel de la fonction pour mettre à jour le <h1> toutes les 5 secondes
+// Appel de la fonction de comptage des tâches toutes les 5 secondes
 setInterval(countTasks, 5000);
 
-// Appel initial pour afficher les tâches dès que la page est chargée
+// Appel initial de la fonction de comptage dès que la page est chargée
 document.addEventListener('DOMContentLoaded', countTasks);
+
+// Fonction pour générer un PDF avec les informations de mariage
+async function generatePDF() {
+    const { jsPDF } = window.jspdf;  // Récupérer la bibliothèque jsPDF
+    const brideName = document.getElementById('brideName').value;  // Récupérer le nom de la mariée
+    const groomName = document.getElementById('groomName').value;  // Récupérer le nom du marié
+    const date = document.getElementById('date').value;  // Récupérer la date du mariage
+    const venue = document.getElementById('venue').value;  // Récupérer le lieu du mariage
+    const time = document.getElementById('time').value;  // Récupérer l'heure du mariage
+    const customText = document.getElementById('customText').value;  // Récupérer le texte personnalisé
+    const backgroundImage = document.getElementById('backgroundImage').files[0];  // Récupérer l'image d'arrière-plan
+
+    // Validation pour vérifier que tous les champs sont remplis
+    if (!brideName || !groomName || !date || !venue || !time || !backgroundImage) {
+        alert('Veuillez remplir tous les champs et sélectionner une image.');
+        return;
+    }
+
+    // Créer un nouveau PDF en format A4
+    const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4"
+    });
+
+    const reader = new FileReader();  // Créer un lecteur de fichier
+
+    reader.onload = function(e) {
+        const imgData = e.target.result;  // Récupérer les données de l'image
+    
+        applyBlurToImage(imgData, function(blurredImgData) {
+            // Créer un PDF et ajouter l'image floutée en arrière-plan
+            const pdf = new jsPDF('p', 'mm', 'a4'); // Créez un nouvel objet jsPDF
+            pdf.addImage(blurredImgData, 'JPEG', 0, 0, 210, 297);  // Dimensions A4 en mm
+    
+            // Ajouter l'en-tête avec les noms des mariés
+            pdf.setFontSize(50);
+            pdf.setFont("PlayfairDisplay", "normal"); // Utiliser la police personnalisée
+            const headerText = `${brideName} & ${groomName}`;
+            const headerY = (pdf.internal.pageSize.getHeight() / 2) - 60;
+    
+            // Ajouter le texte principal par-dessus l'ombre
+            pdf.setTextColor(255, 255, 255);  // Couleur du texte: Blanc
+            pdf.text(headerText, pdf.internal.pageSize.getWidth() / 2, headerY, { align: 'center' });
+    
+            // Ajouter le corps du texte avec les informations du mariage
+            pdf.setFontSize(16);
+            pdf.setFont("PlayfairDisplay", "normal"); // Utiliser la police personnalisée
+            const bodyText = `Sont heureux de vous inviter à leur mariage\n` +
+                              `qui se déroulera au ${venue}\n` +
+                              `le ${date} à ${time}.\n` +
+                              `En espérant vous voir présent.`;
+            const bodyY = pdf.internal.pageSize.getHeight() / 2;
+    
+            // Ajouter le texte principal par-dessus l'ombre
+            pdf.setTextColor(255, 255, 255);  // Couleur du texte: Blanc
+            pdf.text(bodyText, pdf.internal.pageSize.getWidth() / 2, bodyY, { align: 'center', maxWidth: 190 });
+    
+            // Ajouter un pied de page avec le texte personnalisé
+            pdf.setFontSize(14);
+            pdf.setFont("PlayfairDisplay", "normal"); // Utiliser la police personnalisée
+            const footerY = (pdf.internal.pageSize.getHeight() / 2) + 60;
+    
+            // Ajouter le texte principal par-dessus l'ombre
+            pdf.setTextColor(255, 255, 255);  // Couleur du texte: Blanc
+            pdf.text(customText, pdf.internal.pageSize.getWidth() / 2, footerY, { align: 'center', maxWidth: 190 });
+    
+            // Sauvegarder le PDF sous le nom "faire-part.pdf"
+            pdf.save('faire-part.pdf');
+        });
+    };
+    
+
+    reader.readAsDataURL(backgroundImage);  // Lire les données de l'image en tant qu'URL
+}
+
+// Fonction pour appliquer un flou à une image
+function applyBlurToImage(imgData, callback) {
+    const img = new Image();  // Créer un nouvel objet Image
+    img.onload = function() {
+        const canvas = document.createElement('canvas');  // Créer un élément canvas
+        const ctx = canvas.getContext('2d');  // Récupérer le contexte du canvas
+        canvas.width = img.width;  // Définir la largeur du canvas
+        canvas.height = img.height;  // Définir la hauteur du canvas
+        ctx.drawImage(img, 0, 0);  // Dessiner l'image sur le canvas
+
+        // Appliquer un effet de flou au canvas
+        ctx.filter = 'blur(13px)';
+        ctx.drawImage(img, 0, 0);
+
+        // Convertir le canvas en une image base64
+        const blurredImgData = canvas.toDataURL('image/jpeg');
+        callback(blurredImgData);  // Retourner l'image floutée via la fonction de rappel
+    };
+    img.src = imgData;  // Définir la source de l'image
+}
+
+// Fonction pour afficher ou masquer des sections du formulaire en fonction de la case à cocher
+function toggleFormVisibility() {
+    const checkbox = document.getElementById('customInviteCheckbox');  // Récupérer la case à cocher
+    const formDetails = document.querySelectorAll('.non_perso');  // Récupérer toutes les sections du formulaire à afficher/masquer
+    const rightSide = document.getElementById('rightSide');  // Récupérer la section droite du formulaire
+
+    // Si la case est cochée, masquer les sections de formulaire; sinon, les afficher
+    if (checkbox.checked) {
+        formDetails.forEach(element => {
+            element.style.display = 'none';  // Masquer chaque élément de la liste
+        });
+        rightSide.style.display = 'none';  // Masquer la section droite
+    } else {
+        formDetails.forEach(element => {
+            element.style.display = 'flex';  // Afficher chaque élément de la liste
+        });
+        rightSide.style.display = 'flex';  // Afficher la section droite
+    }
+}
