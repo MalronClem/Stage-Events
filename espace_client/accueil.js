@@ -698,6 +698,14 @@ async function generatePDF() {
     const reader = new FileReader();  // Créer un lecteur de fichier
 
     reader.onload = function(e) {
+
+        /*il faut intégrer la police: (avec un jsPDF Font Converter )
+        @font-face {
+            font-family: 'NomDeVotrePolice2';
+            src: url('../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }*/
         const imgData = e.target.result;  // Récupérer les données de l'image
     
         applyBlurToImage(imgData, function(blurredImgData) {
