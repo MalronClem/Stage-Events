@@ -334,41 +334,6 @@ main{
                     }
                 }
             }
-            /*
-            .cta{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                background-color: rgb(0, 0, 0);
-                width: 100%;
-                height: 56%;
-                background-image: url("../media/pexels-john-andrew-nolia-blazo-341165382-15111007.jpg");
-                background-position-x: -15%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover; 
-                border-top: 2px black solid;
-
-                input{
-                    border: none;
-                    padding: 1.5%;
-                    border-radius: 7px;
-                    box-shadow: 0 0 15px 5px #DAA520;
-                    transition: all ease-in-out 0.2s;
-                    cursor: pointer;
-                    font-size: 110%;
-                    font-weight: bolder;
-                    font-family: 'NomDeVotrePolice2', sans-serif;
-                    letter-spacing: 1px;
-                    margin-top: 1%;
-                }
-
-                input:hover{
-                    background-color: #DAA520;
-                    box-shadow: 0 0 15px 5px black;
-                }
-            }*/
         }
 
         .proposition{
@@ -419,7 +384,7 @@ main{
                     cursor: pointer;
                     background-size: cover; 
                     background-position: center;
-                    overflow: hidden; /* Assurez-vous que le pseudo-élément ne déborde pas */
+                    overflow: hidden;
                 
 
                     h3{
@@ -445,8 +410,8 @@ main{
                         left: 100%;
                         width: 100%;
                         text-align: center;
-                        white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
-                        transition: all 1s ease; /* Transition pour l'effet de déplacement */
+                        white-space: nowrap; 
+                        transition: all 1s ease;
                         text-shadow: 0 0 5px #000000;
                     }
                 }
@@ -482,7 +447,7 @@ main{
                 }
 
                 .card:hover h3 {
-                    transform: translateX(-100%); /* Déplace le texte h3 vers la gauche */
+                    transform: translateX(-100%); 
                 }
 
                 .card:hover h3::after{
@@ -837,12 +802,12 @@ main{
             }
 
             .wrapper::-webkit-scrollbar {
-                width: 10px; /* Largeur de la barre de défilement */
+                width: 10px; 
                 height: 14px;
             }
             
             .wrapper::-webkit-scrollbar-track {
-                background: #f1f1f1; /* Couleur de fond de la piste */
+                background: #f1f1f1; 
             }
             
             .wrapper::-webkit-scrollbar-thumb {
@@ -1273,7 +1238,7 @@ main{
         h1::after {
             content: '';
             position: absolute;
-            bottom: -2px; /* Position it at the bottom of the h1 */
+            bottom: -2px; 
             width: 0;
             height: 2px;
             background: black;
@@ -1736,7 +1701,7 @@ main{
         h1::after {
             content: '';
             position: absolute;
-            bottom: -2px; /* Position it at the bottom of the h1 */
+            bottom: -2px; 
             width: 0;
             height: 2px;
             background: black;
@@ -1837,7 +1802,7 @@ main{
                         font-size: 14px;
                         color: #000000;
                         font-size: 115%;
-                        transition: opacity 1s ease-in-out, visibility 0.3s ease; /* Transition sur l'opacité et la visibilité */
+                        transition: opacity 1s ease-in-out, visibility 0.3s ease; 
                     }
 
                     span{
@@ -1887,17 +1852,18 @@ main{
                 }
 
                 button{
-                    margin-top: 2%;
+                    position: relative;
                     border: none;
-                    padding: 1.5%;
+                    padding: 1%;
                     border-radius: 7px;
                     box-shadow: 0 0 15px 5px #DAA520;
                     transition: all ease-in-out 0.2s;
                     cursor: pointer;
-                    font-size: 125%;
+                    font-size: 115%;
                     font-weight: bolder;
                     font-family: 'NomDeVotrePolice2', sans-serif;
                     letter-spacing: 1px;
+                    margin-left: 10%;
                 }
     
                 button:hover{
@@ -2383,7 +2349,7 @@ main{
             h1::after {
                 content: '';
                 position: absolute;
-                bottom: -2px; /* Position it at the bottom of the h1 */
+                bottom: -2px; 
                 width: 0;
                 height: 2px;
                 background: black;

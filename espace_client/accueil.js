@@ -671,6 +671,12 @@ setInterval(countTasks, 5000);
 // Appel initial de la fonction de comptage dès que la page est chargée
 document.addEventListener('DOMContentLoaded', countTasks);
 
+
+
+
+
+
+
 // Fonction pour générer un PDF avec les informations de mariage
 async function generatePDF() {
     const { jsPDF } = window.jspdf;  // Récupérer la bibliothèque jsPDF
